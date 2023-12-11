@@ -5,75 +5,103 @@ namespace App\Http\Controllers;
 use App\Models\Course;
 use App\Http\Requests\StoreCourseRequest;
 use App\Http\Requests\UpdateCourseRequest;
-use App\Http\Requests\CourseCreateRequest;
-use App\Traits\HttpResponses;
-use Illuminate\Support\Facades\Storage;
-
+use App\Http\Resources\CourseResource;
+use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
-    use HttpResponses;
-
     /**
-     * Show the form for creating a new resource.
+     * Display a paginated listing of courses.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
-    public function create(CourseCreateRequest $request)
+    public function index(Request $request)
     {
-        $cloudfrontOrigin = env('CLOUDFRONT_ORIGIN');
+        $pageNum = $request->input('pageNum', 1);
+        $pageSize = $request->input('pageSize', 15);
 
-        $video = $request->file('video');
-        $filename = $video->getClientOriginalName();
+        $courses = Course::paginate($pageSize, ['*'], 'page', $pageNum);
 
-        $filePath = $filename;
-        $response = Storage::disk('s3')->put($filePath, file_get_contents($video));
-
-        try {
-            $response = Storage::disk('s3')->put($filePath, file_get_contents($video), 'public');
-            $videoUrl = $cloudfrontOrigin . '/' . $filePath;
-
-            return $this->success('Video uploaded successfully! URL: ' . $videoUrl, 'success');
-        } catch (\Exception $e) {
-            return $this->error($e->getMessage(), 'error');
-        }
+        return CourseResource::collection($courses);
     }
 
+
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created course in storage.
+     *
+     * Validates input and creates a new Course instance.
+     *
+     * @param  \App\Http\Requests\StoreCourseRequest  $request
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(StoreCourseRequest $request)
     {
-        //
+        $validatedData = $request->validated();
+        $course = Course::create($validatedData);
+        return new CourseResource($course);
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified course.
+     *
+     * @param  \App\Models\Course  $course
+     * @return \App\Http\Resources\CourseResource|\Illuminate\Http\JsonResponse
      */
-    public function show(Course $course)
+    public function show($course_id)
     {
-        //
+        $course = Course::find($course_id);
+
+        if (!$course) {
+            return response()->json(['message' => 'Course not found'], 404);
+        }
+
+        return new CourseResource($course);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Course $course)
-    {
-        //
-    }
+
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified course in storage.
+     *
+     * Validates input and updates the existing Course instance.
+     *
+     * @param  \App\Http\Requests\UpdateCourseRequest  $request
+     * @param  int  $course_id
+     * @return \App\Http\Resources\CourseResource|\Illuminate\Http\JsonResponse
      */
-    public function update(UpdateCourseRequest $request, Course $course)
+    public function update(UpdateCourseRequest $request, $course_id)
     {
-        //
+        $course = Course::find($course_id);
+
+        if (!$course) {
+            return response()->json(['message' => 'Course not found'], 404);
+        }
+
+        $validatedData = $request->validated();
+        $course->update($validatedData);
+
+        return new CourseResource($course);
     }
 
+
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified course from storage.
+     *
+     * Deletes a Course instance and returns a JSON response.
+     *
+     * @param  int  $course_id
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function destroy(Course $course)
+    public function destroy($course_id)
     {
-        //
+        $course = Course::find($course_id);
+
+        if (!$course) {
+            return response()->json(['message' => 'Course not found'], 404);
+        }
+
+        $course->delete();
+        return response()->json(['message' => 'Course deleted'], 204);
     }
 }

@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\TopicController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +23,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::post('/course',[CourseController::class, 'create']);
+Route::apiResource('/courses', CourseController::class);
+Route::apiResource('/categories', CategoryController::class);
+Route::apiResource('/topics', TopicController::class);
 
 Route::group([
     'middleware' => 'api',

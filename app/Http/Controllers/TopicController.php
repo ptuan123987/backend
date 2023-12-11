@@ -4,62 +4,102 @@ namespace App\Http\Controllers;
 
 use App\Models\Topic;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreTopicRequest;
+use App\Http\Requests\UpdateTopicRequest;
+use App\Http\Resources\TopicResource;
+use Illuminate\Http\Response;
 
 class TopicController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of topics.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $topics = Topic::with('categories')->get();
+        return TopicResource::collection($topics);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Store a newly created topic in storage.
+     *
+     * @param  \App\Http\Requests\StoreTopicRequest  $request
+     * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function store(StoreTopicRequest $request)
     {
-        //
+        $validatedData = $request->validated();
+        $topic = Topic::where('name', $validatedData['name'])->first();
+
+        if($topic) {
+            return response()->json(['message' => 'Topic already exists'], Response::HTTP_CONFLICT);
+        }
+
+        $topic = Topic::create($validatedData);
+
+        if ($request->has('category_id')) {
+            $topic->categories()->attach($request->category_id);
+        }
+
+        return new TopicResource($topic);
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Display the specified topic.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function show($id)
     {
-        //
+        $topic = Topic::find($id);
+
+        if (!$topic) {
+            return response()->json(['message' => 'Topic not found'], Response::HTTP_NOT_FOUND);
+        }
+
+        return response()->json($topic);
     }
 
     /**
-     * Display the specified resource.
+     * Update the specified topic in storage.
+     *
+     * @param  \App\Http\Requests\UpdateTopicRequest  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
      */
-    public function show(Topic $topic)
+    public function update(UpdateTopicRequest $request, $id)
     {
-        //
+        $topic = Topic::find($id);
+
+        if (!$topic) {
+            return response()->json(['message' => 'Topic not found'], Response::HTTP_NOT_FOUND);
+        }
+
+        $validatedData = $request->validated();
+        $topic->update($validatedData);
+
+        return response()->json($topic);
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Remove the specified topic from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
      */
-    public function edit(Topic $topic)
+    public function destroy($id)
     {
-        //
-    }
+        $topic = Topic::find($id);
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Topic $topic)
-    {
-        //
-    }
+        if (!$topic) {
+            return response()->json(['message' => 'Topic not found'], Response::HTTP_NOT_FOUND);
+        }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Topic $topic)
-    {
-        //
+        $topic->delete();
+
+        return response()->json(['message' => 'Topic deleted'], Response::HTTP_NO_CONTENT);
     }
 }
