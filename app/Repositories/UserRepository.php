@@ -18,8 +18,15 @@ class UserRepository
         $user = $this->user->create([
             'display_name'=> $request->display_name,
             'email'=> $request->email,
-            'password'=> Hash::make($request->password),
+            'password'=> bcrypt($request->password),
         ]);
+        return $user;
+    }
+    public function updatePassword($request) {
+        $userId = auth()->user()->id;
+        $user = User::where('id', $userId)->update(
+            ['password' => bcrypt($request->new_password)]
+        );
         return $user;
     }
 

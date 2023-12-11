@@ -19,12 +19,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//public routes
-Route::post('/login',[AuthController::class,'login']);
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'auth'
 
-Route::post('/register',[AuthController::class,'register']);
-
-// protected routes
-Route::group(['middleware' => ['auth:sanctum']],function() {
-    Route::post('/logout',[AuthController::class,'logout']);
+], function () {
+    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/register', [AuthController::class, 'register']);
+    Route::post('/refresh', [AuthController::class, 'refresh']);
+    Route::get('/user-profile', [AuthController::class, 'userProfile']);
+    Route::post('/change-password', [AuthController::class, 'changePassWord']);
 });
