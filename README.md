@@ -11,6 +11,9 @@ php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
 composer require doctrine/annotations
 
 ```
+### Swagger for front-end dev
+
+-  `http://localhost:8000/api/documentation`
 
 ## To set up the database schema, run the following Artisan command:
 ```bash
@@ -42,7 +45,7 @@ php artisan serve
 {
     "display_name": "Phan Tuấn",
     "email": "tuan123@gmail.com",
-    "password": "12345678"
+    "password": "Ptuan123@"
 }
 ```
 
@@ -57,7 +60,7 @@ php artisan serve
 ```json
 {
     "email": "tuan123@gmail.com",
-    "password": "12345678"
+    "password": "Ptuan123@"
 }
 ```
 ## user-profile (require bearer token)
