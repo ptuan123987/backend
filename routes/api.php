@@ -27,14 +27,18 @@ Route::apiResource('/courses', CourseController::class);
 Route::apiResource('/categories', CategoryController::class);
 Route::apiResource('/topics', TopicController::class);
 
-Route::group([
-    'middleware' => 'api',
-    'prefix' => 'auth'
 
-], function () {
+Route::group([
+    'prefix' => 'auth'
+],function() {
     Route::post('/login', [AuthController::class, 'login']);
     Route::post('/register', [AuthController::class, 'register']);
+});
+
+Route::group([
+    'middleware' => 'api',
+    'prefix'=> 'user'], function () {
     Route::post('/refresh', [AuthController::class, 'refresh']);
-    Route::get('/user-profile', [AuthController::class, 'userProfile']);
+    Route::get('/me', [AuthController::class, 'userProfile']);
     Route::post('/change-password', [AuthController::class, 'changePassWord']);
 });

@@ -3,7 +3,16 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use OpenApi\Annotations as OA;
 
+/**
+ * @OA\Schema(
+ *     title="User Registration Request",
+ *     description="User registration request body data",
+ *     type="object",
+ *     required={"display_name", "email", "password"}
+ * )
+ */
 class RegisterRequest extends FormRequest
 {
     /**
@@ -24,7 +33,7 @@ class RegisterRequest extends FormRequest
         return [
             "display_name" => "required|max:100|string",
             "email"=> "required|email|unique:users|max:255",
-            "password" => "required|min:6"
+            "password" => "required|min:8|regex:/^(?=.*[A-Z])(?=.*\d).+$/"
         ];
     }
 }

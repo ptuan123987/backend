@@ -3,7 +3,16 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use OpenApi\Annotations as OA;
 
+/**
+ * @OA\Schema(
+ *     title="Password Change Request",
+ *     description="Password change request body data",
+ *     type="object",
+ *     required={"old_password", "new_password"}
+ * )
+ */
 class PasswordRequest extends FormRequest
 {
     /**
@@ -22,8 +31,8 @@ class PasswordRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'old_password' => 'required|string|min:6',
-            'new_password' => 'required|string|min:6',
+            'old_password' => "required|min:8|regex:/^(?=.*[A-Z])(?=.*\d).+$/",
+            'new_password' => "required|min:8|regex:/^(?=.*[A-Z])(?=.*\d).+$/",
         ];
     }
 }

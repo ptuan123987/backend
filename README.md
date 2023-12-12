@@ -1,8 +1,18 @@
+
+
 # Running Migrations
 
 copy .env.example to .env 
 
-To set up the database schema, run the following Artisan command:
+### 
+```bash
+composer require "darkaonline/l5-swagger"
+php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
+composer require doctrine/annotations
+
+```
+
+## To set up the database schema, run the following Artisan command:
 ```bash
 composer install
 php artisan migrate
@@ -12,6 +22,11 @@ run laravel application :
 ```bash
 php artisan serve
 ```
+
+### Swagger for front-end dev
+
+-  `http://localhost:8000/api/documentation`
+
 
 # This API provides authentication endpoints for user registration, login, and logout.
 
@@ -46,18 +61,18 @@ php artisan serve
 }
 ```
 ## user-profile (require bearer token)
-- **GET** `http://localhost:8000/api/auth/user-profile`
+- **GET** `http://localhost:8000/api/user/me`
 
 
 ## refresh-token (require bearer token)
-- **POST** `http://localhost:8000/api/auth/refresh`
+- **POST** `http://localhost:8000/api/user/refresh`
 
 ## change-password (require bearer token)
-- **POST** `http://localhost:8000/api/auth/change-password`
+- **POST** `http://localhost:8000/api/user/change-password`
 ```json
 {
-    "old_password" : "12345678",
-    "new_password" : "87654321"
+    "old_password" : "",
+    "new_password" : ""
 }
 ```
 

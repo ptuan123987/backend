@@ -1,0 +1,158 @@
+openapi: 3.0.0
+info:
+  title: 'Udemy API'
+  description: 'BY ĐẶNG HỮU TẤN SIÊU CẤP VŨ TRỤ '
+  contact:
+    name: 'Swagger API Team'
+  version: '1.0'
+servers:
+  -
+    url: 'http://localhost:8000'
+    description: 'API server'
+paths:
+  /api/auth/login:
+    post:
+      tags:
+        - auth
+      summary: Login
+      description: 'Login a user and return a JWT token'
+      operationId: 535ffeda4b78916efd658b2844ea897a
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: ptuan123987@gmail.com
+                password:
+                  type: string
+                  format: password
+                  example: Ptuan123@
+              type: object
+      responses:
+        200:
+          description: 'Successful login'
+        401:
+          description: Unauthorized
+  /api/auth/register:
+    post:
+      tags:
+        - auth
+      summary: Register
+      description: 'Register a new user'
+      operationId: da8643013c2941f5ed7f8a9c9b4a7f7a
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                display_name:
+                  type: string
+                  example: 'Phan Văn Tuấn'
+                email:
+                  type: string
+                  format: email
+                  example: ptuan123@gmail.com
+                password:
+                  type: string
+                  format: password
+                  example: Ptuan1234@
+              type: object
+      responses:
+        201:
+          description: 'User successfully registered'
+        422:
+          description: 'Unprocessable Entity'
+  /api/user/refresh:
+    post:
+      tags:
+        - auth
+      summary: 'Refresh token'
+      description: 'Refresh the JWT token'
+      operationId: 3cad74591db1465c49fad64378a2ceb0
+      responses:
+        200:
+          description: 'Token refreshed successfully'
+      security:
+        -
+          bearerAuth: []
+  /api/user/me:
+    get:
+      tags:
+        - auth
+      summary: 'User profile'
+      description: 'Get the authenticated user profile'
+      operationId: 19bb431e7c8c1af9e3d80c353acc38be
+      responses:
+        200:
+          description: 'User profile retrieved successfully'
+      security:
+        -
+          bearerAuth: []
+  api/user/change-password:
+    post:
+      tags:
+        - auth
+      summary: 'Change password'
+      description: 'Change the password of the authenticated user'
+      operationId: 12d15e471b32c4894e298f169f73d805
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                current_password:
+                  type: string
+                  format: password
+                  example: old_password
+                new_password:
+                  type: string
+                  format: password
+                  example: new_password
+              type: object
+      responses:
+        201:
+          description: 'User password changed successfully'
+      security:
+        -
+          bearerAuth: []
+components:
+  schemas:
+    LoginRequest:
+      title: 'Login Request'
+      description: 'Login request body data'
+      required:
+        - email
+        - password
+      type: object
+    PasswordRequest:
+      title: 'Password Change Request'
+      description: 'Password change request body data'
+      required:
+        - old_password
+        - new_password
+      type: object
+    RegisterRequest:
+      title: 'User Registration Request'
+      description: 'User registration request body data'
+      required:
+        - display_name
+        - email
+        - password
+      type: object
+  securitySchemes:
+    bearerAuth:
+      type: http
+      description: 'Login with email and password from user module to get the authentication token'
+      name: Authorization
+      in: header
+      scheme: bearer
+tags:
+  -
+    name: auth
+    description: 'Authentication operations'

@@ -3,7 +3,16 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use OpenApi\Annotations as OA;
 
+/**
+ * @OA\Schema(
+ *     title="Login Request",
+ *     description="Login request body data",
+ *     type="object",
+ *     required={"email", "password"}
+ * )
+ */
 class LoginRequest extends FormRequest
 {
     /**
@@ -22,8 +31,8 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "email"=> "required|email",
-            "password"=> "required|min:6",
+            "email" => "required|email",
+            "password" => "required|min:8|regex:/^(?=.*[A-Z])(?=.*\d).+$/",
         ];
     }
 }
