@@ -4,6 +4,18 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+
+/**
+ * @OA\Schema(
+ *     schema="StoreCourseRequest",
+ *     type="object",
+ *     title="Store Course Request",
+ *     @OA\Property(property="title", type="string", maxLength=255, description="The title of the course."),
+ *     @OA\Property(property="description", type="string", description="The description of the course."),
+ *     @OA\Property(property="price", type="number", format="float", description="The price of the course."),
+ *     @OA\Property(property="author", type="string", maxLength=255, description="The author of the course."),
+ * )
+ */
 class StoreCourseRequest extends FormRequest
 {
     /**

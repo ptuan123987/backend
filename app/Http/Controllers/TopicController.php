@@ -9,10 +9,25 @@ use App\Http\Requests\UpdateTopicRequest;
 use App\Http\Resources\TopicResource;
 use Illuminate\Http\Response;
 
+/**
+ * @OA\Tag(
+ *     name="Topics",
+ *     description="Endpoints for managing topics"
+ * )
+ */
+
 class TopicController extends Controller
 {
     /**
      * Display a listing of topics.
+     *
+     * @OA\Get(
+     *     path="/api/topics",
+     *     tags={"Topics"},
+     *     summary="Get a list of topics",
+     *     description="Gets a paginated list of topics with categories.",
+     *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(type="array", @OA\Items(ref="#/components/schemas/TopicResource"))),
+     * )
      *
      * @return \Illuminate\Http\Response
      */
@@ -25,6 +40,19 @@ class TopicController extends Controller
     /**
      * Store a newly created topic in storage.
      *
+     * @OA\Post(
+     *     path="/api/topics",
+     *     tags={"Topics"},
+     *     summary="Create a new topic",
+     *     description="Creates a new topic with the provided data.",
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(ref="#/components/schemas/StoreTopicRequest"),
+     *     ),
+     *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(ref="#/components/schemas/TopicResource")),
+     *     @OA\Response(response="409", description="Topic already exists"),
+     * )
+     *
      * @param  \App\Http\Requests\StoreTopicRequest  $request
      * @return \Illuminate\Http\Response
      */
@@ -33,7 +61,7 @@ class TopicController extends Controller
         $validatedData = $request->validated();
         $topic = Topic::where('name', $validatedData['name'])->first();
 
-        if($topic) {
+        if ($topic) {
             return response()->json(['message' => 'Topic already exists'], Response::HTTP_CONFLICT);
         }
 
@@ -48,6 +76,16 @@ class TopicController extends Controller
 
     /**
      * Display the specified topic.
+     *
+     * @OA\Get(
+     *     path="/api/topics/{id}",
+     *     tags={"Topics"},
+     *     summary="Get a specific topic",
+     *     description="Gets details of a specific topic by ID.",
+     *     @OA\Parameter(name="id", in="path", required=true, description="Topic ID", @OA\Schema(type="integer")),
+     *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(ref="#/components/schemas/TopicResource")),
+     *     @OA\Response(response="404", description="Topic not found"),
+     * )
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -65,6 +103,20 @@ class TopicController extends Controller
 
     /**
      * Update the specified topic in storage.
+     *
+     * @OA\Put(
+     *     path="/api/topics/{id}",
+     *     tags={"Topics"},
+     *     summary="Update a specific topic",
+     *     description="Updates a specific topic by ID with the provided data.",
+     *     @OA\Parameter(name="id", in="path", required=true, description="Topic ID", @OA\Schema(type="integer")),
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(ref="#/components/schemas/UpdateTopicRequest"),
+     *     ),
+     *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(ref="#/components/schemas/TopicResource")),
+     *     @OA\Response(response="404", description="Topic not found"),
+     * )
      *
      * @param  \App\Http\Requests\UpdateTopicRequest  $request
      * @param  int  $id
@@ -86,6 +138,16 @@ class TopicController extends Controller
 
     /**
      * Remove the specified topic from storage.
+     *
+     * @OA\Delete(
+     *     path="/api/topics/{id}",
+     *     tags={"Topics"},
+     *     summary="Delete a specific topic",
+     *     description="Deletes a specific topic by ID.",
+     *     @OA\Parameter(name="id", in="path", required=true, description="Topic ID", @OA\Schema(type="integer")),
+     *     @OA\Response(response="204", description="Successful operation with no content"),
+     *     @OA\Response(response="404", description="Topic not found"),
+     * )
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

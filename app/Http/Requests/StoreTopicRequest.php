@@ -5,6 +5,16 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Validator;
 
+/**
+ * @OA\Schema(
+ *     title="Store Topic Request",
+ *     description="Request body data for creating a new topic.",
+ *     type="object",
+ *     required={"category_id", "name"},
+ *     @OA\Property(property="category_id", type="integer", description="ID of the category to which the topic belongs."),
+ *     @OA\Property(property="name", type="string", maxLength=255, description="Name of the new topic."),
+ * )
+ */
 class StoreTopicRequest extends FormRequest
 {
     /**

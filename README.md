@@ -78,5 +78,24 @@ php artisan serve
     "new_password" : ""
 }
 ```
+## forgot-password
+- **POST** `http://localhost:8000/api/auth/forgot-password`
+```json
+{
+  "email": "user@example.com",
+}
+```
+after send mail, get token from `http://localhost:8000/response-password-reset?token=`
+
+##  reset-password
+- **POST** `http://localhost:8000/api/auth/reset-password`
+```json
+{
+  "email": "user@example.com",
+  "resetToken": "string",
+  "password": "string"
+}
+```
+
 
 

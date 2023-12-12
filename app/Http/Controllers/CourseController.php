@@ -8,13 +8,45 @@ use App\Http\Requests\UpdateCourseRequest;
 use App\Http\Resources\CourseResource;
 use Illuminate\Http\Request;
 
+
+/**
+ * @OA\Tag(
+ *     name="Courses",
+ *     description="Endpoints for managing courses"
+ * )
+ */
 class CourseController extends Controller
 {
     /**
      * Display a paginated listing of courses.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     * @OA\Get(
+     *     path="/api/courses",
+     *     summary="Get a paginated listing of courses",
+     *     tags={"Courses"},
+     *     @OA\Parameter(
+     *         name="pageNum",
+     *         in="query",
+     *         description="Page number",
+     *         required=false,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Parameter(
+     *         name="pageSize",
+     *         in="query",
+     *         description="Number of items per page",
+     *         required=false,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/CourseResource")
+     *         )
+     *     )
+     * )
      */
     public function index(Request $request)
     {
@@ -27,13 +59,23 @@ class CourseController extends Controller
     }
 
 
-    /**
+   /**
      * Store a newly created course in storage.
      *
-     * Validates input and creates a new Course instance.
-     *
-     * @param  \App\Http\Requests\StoreCourseRequest  $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @OA\Post(
+     *     path="/api/courses",
+     *     summary="Store a newly created course",
+     *     tags={"Courses"},
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(ref="#/components/schemas/StoreCourseRequest")
+     *     ),
+     *     @OA\Response(
+     *         response=201,
+     *         description="Course created successfully",
+     *         @OA\JsonContent()
+     *     )
+     * )
      */
     public function store(StoreCourseRequest $request)
     {
@@ -42,11 +84,30 @@ class CourseController extends Controller
         return new CourseResource($course);
     }
 
-    /**
+   /**
      * Display the specified course.
      *
-     * @param  \App\Models\Course  $course
-     * @return \App\Http\Resources\CourseResource|\Illuminate\Http\JsonResponse
+     * @OA\Get(
+     *     path="/api/courses/{course_id}",
+     *     summary="Display the specified course",
+     *     tags={"Courses"},
+     *     @OA\Parameter(
+     *         name="course_id",
+     *         in="path",
+     *         description="ID of the course",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(ref="#/components/schemas/CourseResource")
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Course not found"
+     *     )
+     * )
      */
     public function show($course_id)
     {
@@ -59,16 +120,34 @@ class CourseController extends Controller
         return new CourseResource($course);
     }
 
-
-
     /**
      * Update the specified course in storage.
      *
-     * Validates input and updates the existing Course instance.
-     *
-     * @param  \App\Http\Requests\UpdateCourseRequest  $request
-     * @param  int  $course_id
-     * @return \App\Http\Resources\CourseResource|\Illuminate\Http\JsonResponse
+     * @OA\Put(
+     *     path="/api/courses/{course_id}",
+     *     summary="Update the specified course",
+     *     tags={"Courses"},
+     *     @OA\Parameter(
+     *         name="course_id",
+     *         in="path",
+     *         description="ID of the course",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(ref="#/components/schemas/UpdateCourseRequest")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Course updated successfully",
+     *         @OA\JsonContent(ref="#/components/schemas/CourseResource")
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Course not found"
+     *     )
+     * )
      */
     public function update(UpdateCourseRequest $request, $course_id)
     {
@@ -85,13 +164,29 @@ class CourseController extends Controller
     }
 
 
-    /**
+   /**
      * Remove the specified course from storage.
      *
-     * Deletes a Course instance and returns a JSON response.
-     *
-     * @param  int  $course_id
-     * @return \Illuminate\Http\JsonResponse
+     * @OA\Delete(
+     *     path="/api/courses/{course_id}",
+     *     summary="Remove the specified course",
+     *     tags={"Courses"},
+     *     @OA\Parameter(
+     *         name="course_id",
+     *         in="path",
+     *         description="ID of the course",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=204,
+     *         description="Course deleted successfully"
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Course not found"
+     *     )
+     * )
      */
     public function destroy($course_id)
     {

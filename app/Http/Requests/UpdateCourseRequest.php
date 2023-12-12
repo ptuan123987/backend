@@ -3,7 +3,17 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+/**
+ * @OA\Schema(
+ *     schema="UpdateCourseRequest",
+ *     type="object",
+ *     title="Update Course Request",
+ *     @OA\Property(property="title", type="string", maxLength=255, description="The updated title of the course."),
+ *     @OA\Property(property="description", type="string", description="The updated description of the course."),
+ *     @OA\Property(property="price", type="number", format="float", description="The updated price of the course."),
+ *     @OA\Property(property="author", type="string", maxLength=255, description="The updated author of the course."),
+ * )
+ */
 class UpdateCourseRequest extends FormRequest
 {
     /**

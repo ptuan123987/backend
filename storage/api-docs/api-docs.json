@@ -32,12 +32,12 @@
                                     "email": {
                                         "type": "string",
                                         "format": "email",
-                                        "example": "ptuan123987@gmail.com"
+                                        "example": "ptuan123@gmail.com"
                                     },
                                     "password": {
                                         "type": "string",
                                         "format": "password",
-                                        "example": "Ptuan123@"
+                                        "example": "Ptuan1234@"
                                     }
                                 },
                                 "type": "object"
@@ -180,10 +180,673 @@
                     }
                 ]
             }
+        },
+        "/api/categories": {
+            "get": {
+                "tags": [
+                    "Categories"
+                ],
+                "summary": "Get a list of categories",
+                "description": "Get a list of categories",
+                "operationId": "3f5817a34833d0a1f4af4548dd3aeaba",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/CategoryResource"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Category not found"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Categories"
+                ],
+                "summary": "Store a new category",
+                "operationId": "71fcad552bb0eaba9fb191fd8d8dcab0",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CategoryRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Category created successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CategoryResource"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/categories/{id}": {
+            "get": {
+                "tags": [
+                    "Categories"
+                ],
+                "summary": "Display the specified category",
+                "description": "Display the specified category",
+                "operationId": "c68e76d323c008827a9e47398b1583de",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the category",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CategoryResource"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Category not found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Categories"
+                ],
+                "summary": "Update the specified category",
+                "description": "Update the specified category",
+                "operationId": "0e686b2748211cc688333ed705dc111f",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the category",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CategoryRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Category updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Category not found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Categories"
+                ],
+                "summary": "Remove the specified category",
+                "description": "Remove the specified category",
+                "operationId": "4c12e22a7f8c617bd83bfa1fdc05428d",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the category",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Category removed successfully"
+                    },
+                    "404": {
+                        "description": "Category not found"
+                    }
+                }
+            }
+        },
+        "/api/auth/reset-password": {
+            "post": {
+                "tags": [
+                    "Password Reset"
+                ],
+                "summary": "Process password reset",
+                "operationId": "b3e2f1d1e79a537a8ce80356eaa12a88",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "resetToken",
+                                    "password",
+                                    "password_confirmation"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "description": "Email address for password reset",
+                                        "type": "string",
+                                        "format": "email"
+                                    },
+                                    "resetToken": {
+                                        "description": "Token received for password reset",
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "description": "New password",
+                                        "type": "string",
+                                        "format": "password"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Password updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Password has been updated."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Invalid email or token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "type": "string",
+                                            "example": "Either your email or token is wrong."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/courses": {
+            "get": {
+                "tags": [
+                    "Courses"
+                ],
+                "summary": "Get a paginated listing of courses",
+                "description": "Display a paginated listing of courses.",
+                "operationId": "02eeda67042dba2d22a517f26fb8eaf1",
+                "parameters": [
+                    {
+                        "name": "pageNum",
+                        "in": "query",
+                        "description": "Page number",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "Number of items per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/CourseResource"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Courses"
+                ],
+                "summary": "Store a newly created course",
+                "description": "Store a newly created course in storage.",
+                "operationId": "a4d6b7e7be59571034428ffbb86aaf0a",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreCourseRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Course created successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/courses/{course_id}": {
+            "get": {
+                "tags": [
+                    "Courses"
+                ],
+                "summary": "Display the specified course",
+                "description": "Display the specified course.",
+                "operationId": "f507f69de30e73b038b9d68c035cbc4f",
+                "parameters": [
+                    {
+                        "name": "course_id",
+                        "in": "path",
+                        "description": "ID of the course",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CourseResource"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Course not found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Courses"
+                ],
+                "summary": "Update the specified course",
+                "description": "Update the specified course in storage.",
+                "operationId": "5ac71575dd6a7d9268ffe6235c535e64",
+                "parameters": [
+                    {
+                        "name": "course_id",
+                        "in": "path",
+                        "description": "ID of the course",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateCourseRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Course updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CourseResource"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Course not found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Courses"
+                ],
+                "summary": "Remove the specified course",
+                "description": "Remove the specified course from storage.",
+                "operationId": "bec73dfbe0ae9a5de705f020d589ded1",
+                "parameters": [
+                    {
+                        "name": "course_id",
+                        "in": "path",
+                        "description": "ID of the course",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Course deleted successfully"
+                    },
+                    "404": {
+                        "description": "Course not found"
+                    }
+                }
+            }
+        },
+        "/api/auth/forgot-password": {
+            "post": {
+                "tags": [
+                    "Password Reset"
+                ],
+                "summary": "Send password reset email",
+                "operationId": "700d31a494a62adf0e7706c73a2604a1",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "description": "Email address for password reset",
+                                        "type": "string",
+                                        "format": "email"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Password reset email sent successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Reset Email is sent successfully. Please check your inbox."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Email not found in the database",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "error": {
+                                            "type": "string",
+                                            "example": "Email doesn't found on our database"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/topics": {
+            "get": {
+                "tags": [
+                    "Topics"
+                ],
+                "summary": "Get a list of topics",
+                "description": "Gets a paginated list of topics with categories.",
+                "operationId": "8e16748db53ac966e8af74d772501056",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/TopicResource"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Topics"
+                ],
+                "summary": "Create a new topic",
+                "description": "Creates a new topic with the provided data.",
+                "operationId": "fead0ba561f17de0c4c6bccc6f8605e0",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreTopicRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TopicResource"
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "Topic already exists"
+                    }
+                }
+            }
+        },
+        "/api/topics/{id}": {
+            "get": {
+                "tags": [
+                    "Topics"
+                ],
+                "summary": "Get a specific topic",
+                "description": "Gets details of a specific topic by ID.",
+                "operationId": "615c928c6685afe8fd57e2961667b24f",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Topic ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TopicResource"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Topic not found"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Topics"
+                ],
+                "summary": "Update a specific topic",
+                "description": "Updates a specific topic by ID with the provided data.",
+                "operationId": "008fde2a26f834347140fc61e91b92f2",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Topic ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateTopicRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TopicResource"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Topic not found"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Topics"
+                ],
+                "summary": "Delete a specific topic",
+                "description": "Deletes a specific topic by ID.",
+                "operationId": "37b43ac2b6d2aed36106fb9c32e65964",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Topic ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Successful operation with no content"
+                    },
+                    "404": {
+                        "description": "Topic not found"
+                    }
+                }
+            }
         }
     },
     "components": {
         "schemas": {
+            "CategoryRequest": {
+                "title": "Category Request",
+                "required": [
+                    "name"
+                ],
+                "properties": {
+                    "parent_category_id": {
+                        "description": "ID of the parent category, if any.",
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "name": {
+                        "description": "Name of the category.",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
             "LoginRequest": {
                 "title": "Login Request",
                 "description": "Login request body data",
@@ -211,6 +874,267 @@
                     "password"
                 ],
                 "type": "object"
+            },
+            "StoreCourseRequest": {
+                "title": "Store Course Request",
+                "properties": {
+                    "title": {
+                        "description": "The title of the course.",
+                        "type": "string",
+                        "maxLength": 255
+                    },
+                    "description": {
+                        "description": "The description of the course.",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "The price of the course.",
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "author": {
+                        "description": "The author of the course.",
+                        "type": "string",
+                        "maxLength": 255
+                    }
+                },
+                "type": "object"
+            },
+            "StoreTopicRequest": {
+                "title": "Store Topic Request",
+                "description": "Request body data for creating a new topic.",
+                "required": [
+                    "category_id",
+                    "name"
+                ],
+                "properties": {
+                    "category_id": {
+                        "description": "ID of the category to which the topic belongs.",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the new topic.",
+                        "type": "string",
+                        "maxLength": 255
+                    }
+                },
+                "type": "object"
+            },
+            "UpdateCourseRequest": {
+                "title": "Update Course Request",
+                "properties": {
+                    "title": {
+                        "description": "The updated title of the course.",
+                        "type": "string",
+                        "maxLength": 255
+                    },
+                    "description": {
+                        "description": "The updated description of the course.",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "The updated price of the course.",
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "author": {
+                        "description": "The updated author of the course.",
+                        "type": "string",
+                        "maxLength": 255
+                    }
+                },
+                "type": "object"
+            },
+            "UpdatePasswordRequest": {
+                "title": "Update Password Request",
+                "required": [
+                    "email",
+                    "password"
+                ],
+                "properties": {
+                    "email": {
+                        "description": "User email",
+                        "type": "string",
+                        "format": "email"
+                    },
+                    "password": {
+                        "description": "User password (minimum 8 characters with at least one uppercase letter and one digit)",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "UpdateTopicRequest": {
+                "title": "Store Topic Request",
+                "description": "Request body data for creating a new topic",
+                "required": [
+                    "category_id",
+                    "name"
+                ],
+                "properties": {
+                    "category_id": {
+                        "description": "ID of the category to which the topic belongs.",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Name of the new topic.",
+                        "type": "string",
+                        "maxLength": 255
+                    }
+                },
+                "type": "object"
+            },
+            "CategoryResource": {
+                "title": "Category Resource",
+                "description": "Represents a category resource.",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier for the category.",
+                        "type": "integer"
+                    },
+                    "parent_category": {
+                        "$ref": "#/components/schemas/CategoryResource"
+                    },
+                    "name": {
+                        "description": "The name of the category.",
+                        "type": "string"
+                    },
+                    "courses": {
+                        "description": "List of courses associated with the category.",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CourseResource"
+                        }
+                    },
+                    "topics": {
+                        "description": "List of topics associated with the category.",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/TopicResource"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "CourseResource": {
+                "title": "Course Resource",
+                "description": "Represents a course resource.",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier for the course.",
+                        "type": "integer"
+                    },
+                    "title": {
+                        "description": "The title of the course.",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "The description of the course.",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "The price of the course.",
+                        "type": "number"
+                    },
+                    "author": {
+                        "description": "The author of the course.",
+                        "type": "string"
+                    },
+                    "categories": {
+                        "description": "List of categories associated with the course.",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CategoryResource"
+                        }
+                    },
+                    "reviews": {
+                        "description": "List of reviews associated with the course.",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CourseReviewResource"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "CourseReviewResource": {
+                "title": "Course Review Resource",
+                "description": "Represents a course review resource.",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier for the review.",
+                        "type": "integer"
+                    },
+                    "user": {
+                        "$ref": "#/components/schemas/UserResource"
+                    },
+                    "rating": {
+                        "description": "The rating given in the review.",
+                        "type": "integer"
+                    },
+                    "content": {
+                        "description": "The content of the review.",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "The timestamp when the review was created.",
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                },
+                "type": "object"
+            },
+            "TopicResource": {
+                "title": "Topic Resource",
+                "description": "Represents a topic resource.",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier for the topic.",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "The name of the topic.",
+                        "type": "string"
+                    },
+                    "categories": {
+                        "description": "List of categories associated with the topic.",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CategoryResource"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "UserResource": {
+                "title": "User Resource",
+                "description": "Represents a user resource.",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier for the user.",
+                        "type": "integer"
+                    },
+                    "display_name": {
+                        "description": "The display name of the user.",
+                        "type": "string"
+                    },
+                    "email": {
+                        "description": "The email address of the user.",
+                        "type": "string",
+                        "format": "email"
+                    },
+                    "created_at": {
+                        "description": "The timestamp when the user was created.",
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "updated_at": {
+                        "description": "The timestamp when the user was last updated.",
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                },
+                "type": "object"
             }
         },
         "securitySchemes": {
@@ -227,6 +1151,21 @@
         {
             "name": "auth",
             "description": "Authentication operations"
+        },
+        {
+            "name": "Categories",
+            "description": "Endpoints for managing categories"
+        },
+        {
+            "name": "Courses",
+            "description": "Endpoints for managing courses"
+        },
+        {
+            "name": "Password Reset"
+        },
+        {
+            "name": "Topics",
+            "description": "Endpoints for managing topics"
         }
     ]
 }

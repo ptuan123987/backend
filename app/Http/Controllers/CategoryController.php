@@ -9,16 +9,32 @@ use Symfony\Component\HttpFoundation\Response;
 use App\Http\Resources\CategoryResource;
 
 /**
- * Class CategoryController
- *
- * @package App\Http\Controllers
+ * @OA\Tag(
+ *     name="Categories",
+ *     description="Endpoints for managing categories"
+ * )
  */
 class CategoryController extends Controller
 {
     /**
-     * Display a listing of categories.
-     *
-     * @return \Illuminate\Http\JsonResponse
+     * Get a list of categories
+     * @OA\Get(
+     *     path="/api/categories",
+     *     summary="Get a list of categories",
+     *     tags={"Categories"},
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/CategoryResource")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Category not found"
+     *     )
+     * )
      */
     public function index()
     {
@@ -27,10 +43,22 @@ class CategoryController extends Controller
     }
 
     /**
-     * Store a newly created category in storage.
-     *
-     * @param  CategoryRequest  $request
-     * @return \Illuminate\Http\JsonResponse
+     * @OA\Post(
+     *     path="/api/categories",
+     *     summary="Store a new category",
+     *     tags={"Categories"},
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             ref="#/components/schemas/CategoryRequest"
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=201,
+     *         description="Category created successfully",
+     *         @OA\JsonContent(ref="#/components/schemas/CategoryResource")
+     *     )
+     * )
      */
     public function store(CategoryRequest $request)
     {
@@ -39,10 +67,29 @@ class CategoryController extends Controller
     }
 
     /**
-     * Display the specified category.
+     * Display the specified category
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\JsonResponse
+     * @OA\Get(
+     *     path="/api/categories/{id}",
+     *     summary="Display the specified category",
+     *     tags={"Categories"},
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="ID of the category",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(ref="#/components/schemas/CategoryResource")
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Category not found"
+     *     )
+     * )
      */
     public function show($id)
     {
@@ -56,11 +103,33 @@ class CategoryController extends Controller
     }
 
     /**
-     * Update the specified category in storage.
+     * Update the specified category
      *
-     * @param  CategoryRequest  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\JsonResponse
+     * @OA\Put(
+     *     path="/api/categories/{id}",
+     *     summary="Update the specified category",
+     *     tags={"Categories"},
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="ID of the category",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(ref="#/components/schemas/CategoryRequest")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Category updated successfully",
+     *         @OA\JsonContent()
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Category not found"
+     *     )
+     * )
      */
     public function update(CategoryRequest $request, $id)
     {
@@ -76,10 +145,28 @@ class CategoryController extends Controller
     }
 
     /**
-     * Remove the specified category from storage.
+     * Remove the specified category
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\JsonResponse
+     * @OA\Delete(
+     *     path="/api/categories/{id}",
+     *     summary="Remove the specified category",
+     *     tags={"Categories"},
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="ID of the category",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=204,
+     *         description="Category removed successfully"
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Category not found"
+     *     )
+     * )
      */
     public function destroy($id)
     {
