@@ -278,6 +278,143 @@ paths:
                     type: string
                     example: 'Either your email or token is wrong.'
                 type: object
+  /api/chapters:
+    get:
+      tags:
+        - Chapters
+      summary: 'Get a list of chapters'
+      description: 'Gets a paginated list of chapters with associated course.'
+      operationId: b6ebe3e8de23b7e46a978c81c4216c58
+      responses:
+        200:
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ChapterResource'
+    post:
+      tags:
+        - Chapters
+      summary: 'Store a new chapter'
+      description: 'Stores a new chapter with associated course.'
+      operationId: e703ac0c005c047a7b315cbb59d395d2
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StoreChapterRequest'
+      responses:
+        200:
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChapterResource'
+        500:
+          description: 'Internal server error'
+          content:
+            application/json:
+              schema:
+                properties:
+                  error:
+                    type: string
+                type: object
+  '/api/chapters/{id}':
+    get:
+      tags:
+        - Chapters
+      summary: 'Get a specific chapter'
+      description: 'Gets a specific chapter with associated course.'
+      operationId: 4d3cb5f74452fade7c888c549392d086
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID of the chapter'
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChapterResource'
+        404:
+          description: 'Chapter not found'
+          content:
+            application/json:
+              schema:
+                properties:
+                  message:
+                    type: string
+                type: object
+    put:
+      tags:
+        - Chapters
+      summary: 'Update a specific chapter'
+      description: 'Updates a specific chapter with associated course.'
+      operationId: a45835cfd37038ca7124d96fb62b31fe
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID of the chapter'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateChapterRequest'
+      responses:
+        200:
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChapterResource'
+        404:
+          description: 'Chapter not found'
+          content:
+            application/json:
+              schema:
+                properties:
+                  message:
+                    type: string
+                type: object
+    delete:
+      tags:
+        - Chapters
+      summary: 'Delete a specific chapter'
+      description: 'Deletes a specific chapter.'
+      operationId: b0c347fa26045b6ea323bf088fffb814
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID of the chapter'
+          required: true
+          schema:
+            type: integer
+      responses:
+        204:
+          description: 'No Content'
+        404:
+          description: 'Chapter not found'
+          content:
+            application/json:
+              schema:
+                properties:
+                  message:
+                    type: string
+                type: object
   /api/courses:
     get:
       tags:
@@ -399,6 +536,104 @@ paths:
           description: 'Course deleted successfully'
         404:
           description: 'Course not found'
+  /api/lectures:
+    get:
+      tags:
+        - lectures
+      summary: 'List all lectures'
+      description: 'Display a listing of the lectures'
+      operationId: 9e761e5869f01f3dab9a5ea6cd5cf0fa
+      responses:
+        200:
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LectureResource'
+    post:
+      tags:
+        - lectures
+      summary: 'Create a lecture'
+      description: 'Store a newly created lecture in storage'
+      operationId: 885111951104828aad3a2a12f19a93ad
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StoreLectureRequest'
+      responses:
+        200:
+          description: 'Category updated successfully'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LectureResource'
+        500:
+          description: 'Error creating lecture'
+  '/api/lectures/{id}':
+    get:
+      tags:
+        - lectures
+      summary: 'Show a specific lecture'
+      description: 'Display the specified lecture'
+      operationId: cba6066aacd9cd43738aff77eab50c4b
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID of lecture to return'
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: 'Successful operation'
+        404:
+          description: 'Lecture not found'
+    delete:
+      tags:
+        - lectures
+      summary: 'Delete a lecture'
+      description: 'Remove the specified lecture from storage'
+      operationId: 6dbcc2ad9cd55a64f673d6f55ed826b0
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID of lecture to delete'
+          required: true
+          schema:
+            type: integer
+      responses:
+        204:
+          description: 'Lecture deleted'
+        404:
+          description: 'Lecture not found'
+  '/api/lectures/{lecture}':
+    put:
+      tags:
+        - lectures
+      summary: 'Update a lecture'
+      description: 'Update the specified lecture in storage'
+      operationId: 4ff1c5f80d0b79be6b911dafc325307a
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateLectureRequest'
+      responses:
+        200:
+          description: 'Category updated successfully'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LectureResource'
+        500:
+          description: 'Error updating lecture'
   /api/auth/forgot-password:
     post:
       tags:
@@ -585,6 +820,20 @@ components:
         - email
         - password
       type: object
+    StoreChapterRequest:
+      title: 'Store Chapter Request'
+      description: 'Store Chapter Request body data'
+      required:
+        - course_id
+        - title
+      properties:
+        course_id:
+          description: 'ID of the associated course'
+          type: integer
+        title:
+          description: 'Title of the chapter'
+          type: string
+      type: object
     StoreCourseRequest:
       title: 'Store Course Request'
       properties:
@@ -604,6 +853,43 @@ components:
           type: string
           maxLength: 255
       type: object
+    StoreLectureRequest:
+      title: 'Store Lecture Request'
+      required:
+        - chapter_id
+        - title
+        - video
+      properties:
+        chapter_id:
+          description: 'ID of the associated chapter.'
+          type: integer
+          format: int64
+        title:
+          description: 'Title of the lecture.'
+          type: string
+        video:
+          description: video.
+          type: file
+        thumbnail_img:
+          description: 'Lthumbnail image.'
+          type: file
+        resources:
+          description: 'List of resources for the lecture.'
+          type: array
+          items:
+            required:
+              - title
+              - link
+            properties:
+              title:
+                description: 'Title of the resource.'
+                type: string
+              link:
+                description: 'Link to the resource.'
+                type: string
+                format: uri
+            type: object
+      type: object
     StoreTopicRequest:
       title: 'Store Topic Request'
       description: 'Request body data for creating a new topic.'
@@ -618,6 +904,20 @@ components:
           description: 'Name of the new topic.'
           type: string
           maxLength: 255
+      type: object
+    UpdateChapterRequest:
+      title: 'Update Chapter Request'
+      description: 'Update Chapter Request body data'
+      required:
+        - course_id
+        - title
+      properties:
+        course_id:
+          description: 'ID of the associated course'
+          type: integer
+        title:
+          description: 'Title of the chapter'
+          type: string
       type: object
     UpdateCourseRequest:
       title: 'Update Course Request'
@@ -637,6 +937,36 @@ components:
           description: 'The updated author of the course.'
           type: string
           maxLength: 255
+      type: object
+    UpdateLectureRequest:
+      title: 'Update Lecture Request'
+      required:
+        - chapter_id
+        - title
+      properties:
+        chapter_id:
+          description: 'ID of the associated chapter.'
+          type: integer
+          format: int64
+        title:
+          description: 'Title of the lecture.'
+          type: string
+        resources:
+          description: 'List of updated resources for the lecture.'
+          type: array
+          items:
+            required:
+              - title
+              - link
+            properties:
+              title:
+                description: 'Title of the resource.'
+                type: string
+              link:
+                description: 'Link to the resource.'
+                type: string
+                format: uri
+            type: object
       type: object
     UpdatePasswordRequest:
       title: 'Update Password Request'
@@ -690,6 +1020,25 @@ components:
           items:
             $ref: '#/components/schemas/TopicResource'
       type: object
+    ChapterResource:
+      title: 'Chapter Resource'
+      description: 'Represents a chapter resource.'
+      properties:
+        id:
+          description: 'The unique identifier for the chapter.'
+          type: integer
+        course_id:
+          description: 'The unique identifier of the course associated with the chapter.'
+          type: integer
+        title:
+          description: 'The title of the chapter.'
+          type: string
+        lectures:
+          description: 'A collection of lectures related to the chapter.'
+          type: array
+          items:
+            $ref: '#/components/schemas/LectureResource'
+      type: object
     CourseResource:
       title: 'Course Resource'
       description: 'Represents a course resource.'
@@ -740,6 +1089,93 @@ components:
           type: string
           format: date-time
       type: object
+    LectureResource:
+      title: 'Lecture Resource'
+      description: 'Represents a lecture resource.'
+      properties:
+        id:
+          description: 'The unique identifier for the lecture.'
+          type: integer
+        chapter_id:
+          description: 'The unique identifier of the chapter associated with the lecture.'
+          type: integer
+        title:
+          description: 'The title of the lecture.'
+          type: string
+        resources:
+          description: 'A collection of resources related to the lecture.'
+          type: array
+          items:
+            $ref: '#/components/schemas/LectureResourceResource'
+        video:
+          $ref: '#/components/schemas/LectureVideoResource'
+        created_at:
+          description: 'The date and time when the lecture was created.'
+          type: string
+          format: date-time
+        updated_at:
+          description: 'The date and time when the lecture was last updated.'
+          type: string
+          format: date-time
+      type: object
+    LectureResourceResource:
+      title: LectureResourceModelResource
+      description: 'Lecture resource model resource'
+      properties:
+        id:
+          description: 'ID of the lecture resource'
+          type: integer
+        lecture_id:
+          description: 'The ID of the lecture associated with this resource'
+          type: integer
+        title:
+          description: 'Title of the lecture resource'
+          type: string
+        link:
+          description: 'A link to the lecture resource'
+          type: string
+          format: uri
+      type: object
+      xml:
+        name: LectureResourceModelResource
+    LectureVideoResource:
+      title: LectureVideoResource
+      description: 'Lecture video resource'
+      properties:
+        data:
+          properties:
+            id:
+              description: 'Unique identifier for the lecture video'
+              type: integer
+              example: 1
+            url:
+              description: 'URL of the video'
+              type: string
+              example: 'http://example.com/video.mp4'
+            thumbnail_url:
+              description: 'Thumbnail URL of the video'
+              type: string
+              example: 'http://example.com/thumbnail.jpg'
+            duration:
+              description: 'Duration of the video in seconds'
+              type: integer
+              example: 3600
+            lecture_id:
+              description: 'Foreign key to Lecture'
+              type: integer
+              example: 10
+            created_at:
+              description: 'Creation date of the video'
+              type: string
+              format: date-time
+            updated_at:
+              description: 'Last update date of the video'
+              type: string
+              format: date-time
+          type: object
+      type: object
+      xml:
+        name: LectureVideoResource
     TopicResource:
       title: 'Topic Resource'
       description: 'Represents a topic resource.'
@@ -796,6 +1232,9 @@ tags:
   -
     name: Courses
     description: 'Endpoints for managing courses'
+  -
+    name: lectures
+    description: 'Operations about lectures'
   -
     name: 'Password Reset'
   -

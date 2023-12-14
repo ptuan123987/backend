@@ -4,6 +4,8 @@ use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ChangePasswordController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\LectureController;
+use App\Http\Controllers\ChapterController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\PasswordResetController;
 use App\Http\Controllers\TopicController;
@@ -29,6 +31,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('/courses', CourseController::class);
 Route::apiResource('/categories', CategoryController::class);
 Route::apiResource('/topics', TopicController::class);
+Route::apiResource('/lectures', LectureController::class);
+Route::apiResource('/chapters', ChapterController::class);
 
 
 Route::group([
