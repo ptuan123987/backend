@@ -1,4 +1,8 @@
 <?php
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
 /**
  * @OA\Schema(
  *     schema="StoreLectureRequest",
@@ -7,8 +11,8 @@
  *     required={"chapter_id", "title", "video"},
  *     @OA\Property(property="chapter_id", type="integer", format="int64", description="ID of the associated chapter."),
  *     @OA\Property(property="title", type="string", description="Title of the lecture."),
- *     @OA\Property(property="video", type="string", format="uri", description="Link to the video."),
- *     @OA\Property(property="thumbnail_img", type="string", format="uri", description="Link to the thumbnail image."),
+ *     @OA\Property(property="video", type="file", description="video."),
+ *     @OA\Property(property="thumbnail_img", type="file", description="Lthumbnail image."),
  *     @OA\Property(
  *         property="resources",
  *         type="array",
@@ -45,9 +49,9 @@ class StoreLectureRequest extends FormRequest
         return [
             'chapter_id' => 'required|exists:chapters,id',
             'title' => 'required|string|max:255',
-            'video' => 'required|url',
-            'thumbnail_img' => 'nullable|url',
-            'resources' => 'sometimes|array',
+            'video' => 'required|file|mimes:mp4,mov,avi|max:102400',
+            'thumbnail_img' => 'nullable|file|mimes:jpeg,png,jpg,gif',
+            'resources' => 'nullable|array',
             'resources.*.title' => 'required|string|max:255',
             'resources.*.link' => 'required|url',
         ];

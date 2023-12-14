@@ -10,6 +10,8 @@ use App\Http\Requests\StoreLectureRequest;
 use App\Http\Requests\UpdateLectureRequest;
 use App\Jobs\PutVideoToS3;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * @OA\Tag(
@@ -50,8 +52,10 @@ class LectureController extends Controller
      *     description="Store a newly created lecture in storage",
      *     @OA\RequestBody(
      *         required=true,
-     *         @OA\JsonContent(ref="#/components/schemas/StoreLectureRequest")
-     *     ),
+     *         @OA\MediaType(
+     *              mediaType="multipart/form-data",
+     *              @OA\Schema(ref="#/components/schemas/StoreLectureRequest")
+     *     )),
      *     @OA\Response(
      *         response=200,
      *         description="Category updated successfully",
@@ -66,6 +70,9 @@ class LectureController extends Controller
 
         try {
             $lecture = Lecture::create($request->validated());
+            $video = $request->file('video');
+            $videoName = $video->getClientOriginalName();
+            $videoPath = $video->storeAs('videos', $videoName, 'public');
 
             if ($request->has('resources') && is_array($request->input('resources'))) {
                 foreach ($request->input('resources') as $resourceData) {
@@ -75,9 +82,11 @@ class LectureController extends Controller
 
             DB::commit();
 
-            // Dispatch the job to put the video to S3
-            dispatch(new PutVideoToS3($lecture->id));
+            $filename = uniqid() . '_' . $video->getClientOriginalName();
+            Storage::put($filename, file_get_contents($video));
+            $filePath = Storage::disk('public')->path($filename);
 
+            PutVideoToS3::dispatch($lecture->id, $filePath);
             return new LectureResource($lecture);
         } catch (\Exception $e) {
             DB::rollBack();

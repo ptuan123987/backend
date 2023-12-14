@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lecture extends Model
 {
+    public $timestamps = false;
     use HasFactory;
     protected $fillable = ['chapter_id', 'title'];
 
