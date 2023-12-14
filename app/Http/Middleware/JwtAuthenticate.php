@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
-class JwtAdminMiddleware
+class JwtAuthenticate
 {
     /**
      * Handle an incoming request.
@@ -21,10 +21,6 @@ class JwtAdminMiddleware
         } catch (\Tymon\JWTAuth\Exceptions\JWTException $e) {
             return response()->json(['message' => 'Unauthorized'], 401);
         }
-        if ($user && $user->isAdmin()) {
-            return $next($request);
-        }
-
-        return response()->json(['message' => 'Unauthorized'], 401);
+        return $next($request);
     }
 }

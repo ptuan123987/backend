@@ -18,6 +18,10 @@ use Illuminate\Http\Response;
 
 class TopicController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+    }
     /**
      * Display a listing of topics.
      *

@@ -11,6 +11,11 @@ use App\Http\Requests\UpdateChapterRequest;
 
 class ChapterController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+    }
     /**
      * Display a listing of chapters.
      *
@@ -24,6 +29,8 @@ class ChapterController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
     public function index()
     {
         try {

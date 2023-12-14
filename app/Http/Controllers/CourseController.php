@@ -17,6 +17,10 @@ use Illuminate\Http\Request;
  */
 class CourseController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+    }
     /**
      * Display a paginated listing of courses.
      *

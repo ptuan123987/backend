@@ -15,6 +15,46 @@
         }
     ],
     "paths": {
+        "/api/admin/login": {
+            "post": {
+                "tags": [
+                    "admin"
+                ],
+                "summary": "Login",
+                "description": "Login a admin and return a JWT token",
+                "operationId": "7fa91d413b4099cb3908a831f02580eb",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "admin@gmail.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "Ptuan1234@"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful login"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
         "/api/auth/login": {
             "post": {
                 "tags": [
@@ -235,7 +275,12 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/categories/{id}": {
@@ -1781,6 +1826,10 @@
         }
     },
     "tags": [
+        {
+            "name": "admin",
+            "description": "Admin Authentication operations"
+        },
         {
             "name": "auth",
             "description": "Authentication operations"

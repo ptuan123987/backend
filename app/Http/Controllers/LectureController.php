@@ -22,6 +22,10 @@ use Illuminate\Support\Facades\Storage;
  */
 class LectureController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+    }
     /**
      * @OA\Get(
      *     path="/api/lectures",

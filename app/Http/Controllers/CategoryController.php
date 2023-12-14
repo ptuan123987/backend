@@ -16,6 +16,11 @@ use App\Http\Resources\CategoryResource;
  */
 class CategoryController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+    }
     /**
      * Get a list of categories
      * @OA\Get(
@@ -57,7 +62,9 @@ class CategoryController extends Controller
      *         response=201,
      *         description="Category created successfully",
      *         @OA\JsonContent(ref="#/components/schemas/CategoryResource")
-     *     )
+     *
+     *     ),
+     *      security={{"bearerAuth":{}}} )
      * )
      */
     public function store(CategoryRequest $request)

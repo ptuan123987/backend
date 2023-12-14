@@ -31,6 +31,20 @@ php artisan serve
 -  `http://localhost:8000/api/documentation`
 
 
+### admin example : 
+before run: 
+``` bash 
+    php artisan db:seed --class=AdminUserSeeder
+```
+login admin account
+- **POST** `http://localhost:8000/api/admin/login`
+```json
+{
+    "email": "admin@gmail.com",
+    "password": "Ptuan1234@"
+}
+```
+t
 # This API provides authentication endpoints for user registration, login, and logout.
 
 ## Register User

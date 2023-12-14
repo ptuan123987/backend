@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\AdminController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ChangePasswordController;
@@ -27,14 +28,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
-Route::apiResource('/courses', CourseController::class);
-Route::apiResource('/categories', CategoryController::class);
-Route::apiResource('/topics', TopicController::class);
-Route::apiResource('/lectures', LectureController::class);
-Route::apiResource('/chapters', ChapterController::class);
-
-
 Route::group([
     'prefix' => 'auth'
 ], function () {
@@ -57,4 +50,36 @@ Route::group([
     Route::post('/refresh', [AuthController::class, 'refresh']);
     Route::get('/me', [AuthController::class, 'userProfile']);
     Route::post('/change-password', [AuthController::class, 'changePassWord']);
+});
+
+Route::group([
+    'prefix' => 'admin'
+], function () {
+    Route::post('/login', [AdminController::class, 'login']);
+});
+
+
+Route::get('/courses', [CourseController::class, 'index']);
+Route::get('/categories', [CategoryController::class, 'index']);
+Route::get('/topics', [TopicController::class, 'index']);
+Route::get('/lectures', [LectureController::class, 'index']);
+Route::get('/chapters', [ChapterController::class, 'index']);
+
+Route::get('/courses/{id}', [CourseController::class, 'show']);
+Route::get('/categories/{id}', [CategoryController::class, 'show']);
+Route::get('/topics/{id}', [TopicController::class, 'show']);
+Route::get('/lectures/{id}', [LectureController::class, 'show']);
+Route::get('/chapters/{id}', [ChapterController::class, 'show']);
+
+
+// API Resources with middleware for POST, PUT, DELETE
+Route::group([
+    'middleware' => ['api','jwt.admin']
+], function () {
+    Route::apiResource('/courses', CourseController::class)->except(['index','show']);
+    Route::apiResource('/categories', CategoryController::class)->except(['index','show']);
+    Route::apiResource('/categories', CategoryController::class)->except(['index','show']);
+    Route::apiResource('/topics', TopicController::class)->except(['index','show']);
+    Route::apiResource('/lectures', LectureController::class)->except(['index','show']);
+    Route::apiResource('/chapters', ChapterController::class)->except(['index','show']);
 });

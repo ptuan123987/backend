@@ -18,7 +18,7 @@ class Lecture extends Model
 
     public function resources()
     {
-        return $this->hasMany(LectureResource::class, 'lecture_id');
+        return $this->hasMany(LectureResourceModel::class, 'lecture_id');
     }
 
     public function video()
