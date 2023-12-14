@@ -7,22 +7,25 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class SendMail extends Mailable
+class SendWelcomeMail extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $title;
-    public $customer_details;
+    public $email;
+    public $name;
+
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($title, $customer_details)
+    public function __construct($title, $email,$name)
     {
         $this->title = $title;
-		$this->customer_details= $customer_details;
+        $this->email = $email;
+        $this->name = $name;
     }
 
     /**
@@ -32,6 +35,8 @@ class SendMail extends Mailable
      */
     public function build()
     {  // customer_mail is the name of template
-        return $this->subject($this->title) ->view('customer_mail');
+        return $this->subject($this->title) ->view('customer_mail')>with([
+            'email' => $this->email
+        ]);
     }
 }

@@ -1,3 +1,9 @@
+@component('mail::message')
 dear {{ $customer_details['name'] }} <br/>
-		Thank you<br/> our contact detail as of below<br/> Tan Dang Udemy<br/>
+		Thank you registering <br/>
 		email : {{ $customer_details['email'] }}
+
+    Regards,<br/>
+    Tấn Đặng Udemy
+
+@endcomponent

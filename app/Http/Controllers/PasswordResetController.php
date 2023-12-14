@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendPasswordResetEmail;
 use App\Traits\HttpResponses;
 use Illuminate\Http\Request;
 
@@ -64,7 +65,7 @@ class PasswordResetController extends Controller
     public function send($email)
     {
         $token = $this->createToken($email);
-        Mail::to($email)->send(new SendMailReset($token, $email));
+        SendPasswordResetEmail::dispatch($token, $email);
     }
 
     public function createToken($email)

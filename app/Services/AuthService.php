@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Services;
+use App\Jobs\SendWelcomeEmail;
 use App\Traits\HttpResponses;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
@@ -24,7 +25,7 @@ class AuthService
     public function register(RegisterRequest $request) {
         $user = $this->userRepository->createUser($request);
 
-        // SendEmailRegistration::dispatch($user)->onQueue('emails');
+        SendWelcomeEmail::dispatch('Welcome!', $user->email, $user->name);
         return $user;
     }
 

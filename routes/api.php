@@ -39,10 +39,11 @@ Route::group([
 });
 
 Route::group([
+    'middleware' => 'api',
     'prefix' => 'auth'
 ], function () {
-    Route::post('/forgot-password', [PasswordResetController::class, 'sendEmail']);
     Route::post('/reset-password', [ChangePasswordController::class, 'passwordResetProcess']);
+    Route::post('/forgot-password', [PasswordResetController::class, 'sendEmail']);
 });
 
 Route::group([

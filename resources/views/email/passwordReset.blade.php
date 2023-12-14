@@ -1,12 +1,11 @@
 @component('mail::message')
 # Introduction
-
-The body of your message.
+If you forgots password, Let's touch button below !
 
 @component('mail::button', ['url' => 'http://localhost:8000/response-password-reset?token='.$token])
-Button Text
+Reset Password Link
 @endcomponent
 
 Thanks,<br>
-{{ config('app.name') }}
+Tấn Đặng Laravel
 @endcomponent
