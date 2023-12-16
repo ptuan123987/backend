@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class LectureVideo extends Model
 {
+    public $timestamps = false;
     use HasFactory;
     protected $fillable = ['url', 'thumbnail_url', 'duration', 'lecture_id'];
 

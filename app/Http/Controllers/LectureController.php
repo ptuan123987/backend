@@ -12,7 +12,7 @@ use App\Jobs\PutVideoToS3;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-
+use Illuminate\Support\Facades\Log;
 /**
  * @OA\Tag(
  *     name="lectures",
@@ -62,7 +62,7 @@ class LectureController extends Controller
      *     )),
      *     @OA\Response(
      *         response=200,
-     *         description="Category updated successfully",
+     *         description="Successful operation",
      *         @OA\JsonContent(ref="#/components/schemas/LectureResource")
      *     ),
      *     @OA\Response(response="500", description="Error creating lecture"),
@@ -76,23 +76,22 @@ class LectureController extends Controller
 
         try {
             $lecture = Lecture::create($request->validated());
-            $video = $request->file('video');
-            $videoName = $video->getClientOriginalName();
-            $videoPath = $video->storeAs('videos', $videoName, 'public');
+            $resources = $request->get('resources');
 
-            if ($request->has('resources') && is_array($request->input('resources'))) {
-                foreach ($request->input('resources') as $resourceData) {
-                    $lectureResource = new LectureResource($resourceData);
+
+            if ($resources) {
+                foreach ($resources as $resourceData) {
+                    $lecture->resources()->save($resourceData);
                 }
             }
 
             DB::commit();
 
-            $filename = uniqid() . '_' . $video->getClientOriginalName();
-            Storage::put($filename, file_get_contents($video));
-            $filePath = Storage::disk('public')->path($filename);
+            $video = $request->file('video');
+            $videoName = uniqid() . '_' . $video->getClientOriginalName();
+            Storage::disk('public')->put($videoName, file_get_contents($video));
+            PutVideoToS3::dispatch($lecture->id, $videoName);
 
-            PutVideoToS3::dispatch($lecture->id, $filePath);
             return new LectureResource($lecture);
         } catch (\Exception $e) {
             DB::rollBack();
@@ -131,7 +130,7 @@ class LectureController extends Controller
 
     /**
      * @OA\Put(
-     *     path="/api/lectures/{lecture}",
+     *     path="/api/lectures/{id}",
      *     tags={"lectures"},
      *     summary="Update a lecture",
      *     description="Update the specified lecture in storage",
@@ -141,21 +140,27 @@ class LectureController extends Controller
      *     ),
      *     @OA\Response(
      *         response=200,
-     *         description="Category updated successfully",
+     *         description="Lecture updated successfully",
      *         @OA\JsonContent(ref="#/components/schemas/LectureResource")
      *     ),
+     *     @OA\Response(response="404", description="Lecture not found"),
+     *     @OA\Response(response="422", description="Invalid input"),
      *     @OA\Response(response="500", description="Error updating lecture"),
      *  security={{"bearerAuth":{}}} )
      *
      * )
      */
-    public function update(UpdateLectureRequest $request, Lecture $lecture)
+    public function update(UpdateLectureRequest $request)
     {
-        DB::beginTransaction();
-
         try {
-            $lecture->update($request->validated());
+            $id = $request->input('id');
+            $lecture = Lecture::find($id);
 
+            if (!$lecture) {
+                return response()->json(['message' => 'lecture not found'], Response::HTTP_NOT_FOUND);
+            }
+
+            $lecture->update($request->validated());
             if ($request->has('resources') && is_array($request->input('resources'))) {
                 $currentResourceIds = $lecture->resources()->pluck('id')->toArray();
 
@@ -166,7 +171,7 @@ class LectureController extends Controller
                         $lecture->resources()->where('id', $resourceData['id'])->update($resourceData);
                         $idsToKeep[] = $resourceData['id'];
                     } else {
-                        $newResource = new LectureResource($resourceData);
+                        $newResource = new LectureResourceModel($resourceData);
                         $lecture->resources()->save($newResource);
                         $idsToKeep[] = $newResource->id;
                     }
@@ -176,11 +181,8 @@ class LectureController extends Controller
                 LectureResourceModel::destroy($idsToDelete);
             }
 
-            DB::commit();
-
             return new LectureResource($lecture);
         } catch (\Exception $e) {
-            DB::rollBack();
             return response()->json(['error' => $e->getMessage()], 500);
         }
     }

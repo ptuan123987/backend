@@ -11,44 +11,56 @@ use App\Models\Lecture;
 use \getID3;
 use App\Models\LectureVideo;
 use Illuminate\Foundation\Bus\Dispatchable;
-
+use Illuminate\Support\Facades\Log;
 
 class PutVideoToS3 implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     protected $lectureId;
-    protected $videoPath; // Ensure this property is set for the video path
+    protected $filename;
+    protected $is_update;
 
-    public function __construct($lectureId, $videoPath)
+    public function __construct($lectureId, $filename, $is_update=false)
     {
         $this->lectureId = $lectureId;
-        $this->videoPath = $videoPath;
+        $this->filename = $filename;
+        $this->is_update = $is_update;
     }
 
     public function handle()
     {
-        $lecture = Lecture::find($this->lectureId);
-        if ($lecture && Storage::disk('local')->exists($this->videoPath)) { // Check if the video exists in local storage
-            $videoName = basename($this->videoPath); // Get the base name of the file
-            $getID3 = new getID3();
+        try {
+            $lecture = Lecture::find($this->lectureId);
+            $videoName = $this->filename;
+            if ($lecture && Storage::disk('public')->exists($videoName)) {
+                $video = Storage::disk('public')->get($videoName);
+                $videoPath = Storage::disk('public')->path($videoName);
 
-            // Read the file from the local disk
-            $filePath = storage_path('public/' . $this->videoPath);
-            $fileContents = file_get_contents($filePath);
+                $getID3 = new getID3();
+                $fileContents = file_get_contents($videoPath);
 
-            $fileInfo = $getID3->analyze($filePath); // Use the local path for analysis
-            $durationSeconds = $fileInfo['playtime_seconds'] ?? null;
-            $cloudfrontUrl = env('AWS_CLOUDFRONT_ORIGIN');
+                $fileInfo = $getID3->analyze($videoPath);
+                $durationSeconds = $fileInfo['playtime_seconds'] ?? null;
 
-            // Now store the content to S3
-            Storage::disk('s3')->put('videos/' . $videoName, $fileContents);
+                $cloudfrontUrl = env('AWS_CLOUDFRONT_ORIGIN');
 
-            // Create a record for the uploaded video with its CloudFront URL
-            LectureVideo::create([
-                'lecture_id' => $lecture->id,
-                'url' => $cloudfrontUrl . '/videos/' . $videoName, // You might need to adjust this URL based on actual path structure
-            ]);
-        }
+                Storage::disk('s3')->put('videos/' . $videoName, $fileContents);
+                Storage::disk('public')->delete($videoName);
+
+                if ($this->is_update) {
+                    $lecture->video()->delete();
+                }
+
+                LectureVideo::create([
+                    'lecture_id' => $lecture->id,
+                    'url' => $cloudfrontUrl . '/videos/' . $videoName,
+                    'thumbnail_url' => $cloudfrontUrl . '/videos/' . $videoName . '.jpg',
+                    'duration' => $durationSeconds,
+                ]);
+            }
+        } catch (\Exception $e) {
+            Log::error('Error message: '.$e);
+       }
     }
 }
