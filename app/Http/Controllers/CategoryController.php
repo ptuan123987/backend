@@ -135,7 +135,8 @@ class CategoryController extends Controller
      *     @OA\Response(
      *         response=404,
      *         description="Category not found"
-     *     )
+     *     ),
+     *      security={{"bearerAuth":{}}} )
      * )
      */
     public function update(CategoryRequest $request, $id)
@@ -172,7 +173,8 @@ class CategoryController extends Controller
      *     @OA\Response(
      *         response=404,
      *         description="Category not found"
-     *     )
+     *     ),
+     *      security={{"bearerAuth":{}}} )
      * )
      */
     public function destroy($id)

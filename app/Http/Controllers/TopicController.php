@@ -55,6 +55,8 @@ class TopicController extends Controller
      *     ),
      *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(ref="#/components/schemas/TopicResource")),
      *     @OA\Response(response="409", description="Topic already exists"),
+     *  security={{"bearerAuth":{}}} )
+     *
      * )
      *
      * @param  \App\Http\Requests\StoreTopicRequest  $request
@@ -89,6 +91,7 @@ class TopicController extends Controller
      *     @OA\Parameter(name="id", in="path", required=true, description="Topic ID", @OA\Schema(type="integer")),
      *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(ref="#/components/schemas/TopicResource")),
      *     @OA\Response(response="404", description="Topic not found"),
+     *
      * )
      *
      * @param  int  $id
@@ -120,6 +123,7 @@ class TopicController extends Controller
      *     ),
      *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(ref="#/components/schemas/TopicResource")),
      *     @OA\Response(response="404", description="Topic not found"),
+     *      security={{"bearerAuth":{}}} )
      * )
      *
      * @param  \App\Http\Requests\UpdateTopicRequest  $request
@@ -151,6 +155,7 @@ class TopicController extends Controller
      *     @OA\Parameter(name="id", in="path", required=true, description="Topic ID", @OA\Schema(type="integer")),
      *     @OA\Response(response="204", description="Successful operation with no content"),
      *     @OA\Response(response="404", description="Topic not found"),
+     *      security={{"bearerAuth":{}}} )
      * )
      *
      * @param  int  $id

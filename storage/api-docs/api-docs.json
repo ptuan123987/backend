@@ -358,7 +358,12 @@
                     "404": {
                         "description": "Category not found"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             },
             "delete": {
                 "tags": [
@@ -385,7 +390,12 @@
                     "404": {
                         "description": "Category not found"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/auth/reset-password": {
@@ -530,7 +540,12 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/chapters/{id}": {
@@ -634,7 +649,12 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             },
             "delete": {
                 "tags": [
@@ -673,7 +693,12 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/courses": {
@@ -746,7 +771,12 @@
                             }
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/courses/{course_id}": {
@@ -826,7 +856,12 @@
                     "404": {
                         "description": "Course not found"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             },
             "delete": {
                 "tags": [
@@ -853,7 +888,12 @@
                     "404": {
                         "description": "Course not found"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/lectures": {
@@ -911,7 +951,12 @@
                     "500": {
                         "description": "Error creating lecture"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/lectures/{id}": {
@@ -967,7 +1012,12 @@
                     "404": {
                         "description": "Lecture not found"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/lectures/{lecture}": {
@@ -1002,7 +1052,12 @@
                     "500": {
                         "description": "Error updating lecture"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/auth/forgot-password": {
@@ -1123,7 +1178,12 @@
                     "409": {
                         "description": "Topic already exists"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/topics/{id}": {
@@ -1203,7 +1263,12 @@
                     "404": {
                         "description": "Topic not found"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             },
             "delete": {
                 "tags": [
@@ -1230,7 +1295,139 @@
                     "404": {
                         "description": "Topic not found"
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/user/wishlists": {
+            "get": {
+                "tags": [
+                    "Wishlists"
+                ],
+                "summary": "Get a list of wishlists",
+                "operationId": "22a6ed922e24e95120fb4280ff6a4fcf",
+                "parameters": [
+                    {
+                        "name": "pageNum",
+                        "in": "query",
+                        "description": "Page number",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    },
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "description": "Number of items per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "example": 15
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of wishlists",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/WishlistResource"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Wishlists"
+                ],
+                "summary": "Create a new wishlist item",
+                "operationId": "01414456df979c4cde3d1f6bb9b813e3",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/WishlistRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "New wishlist item created",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/WishlistResource"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/user/wishlists/{id}": {
+            "delete": {
+                "tags": [
+                    "Wishlists"
+                ],
+                "summary": "Delete a wishlist item by ID",
+                "operationId": "0ad67528df6360f6288e310bb04d8fd1",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the wishlist item",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Wishlist item deleted"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         }
     },
@@ -1516,6 +1713,19 @@
                         "description": "Name of the new topic.",
                         "type": "string",
                         "maxLength": 255
+                    }
+                },
+                "type": "object"
+            },
+            "WishlistRequest": {
+                "title": "Wishlist Request",
+                "required": [
+                    "course_name"
+                ],
+                "properties": {
+                    "course_name": {
+                        "description": "Name of the course in the wishlist.",
+                        "type": "string"
                     }
                 },
                 "type": "object"
@@ -1810,6 +2020,15 @@
                         "description": "The timestamp when the user was last updated.",
                         "type": "string",
                         "format": "date-time"
+                    }
+                },
+                "type": "object"
+            },
+            "WishlistResource": {
+                "title": "Wishlist Resource",
+                "properties": {
+                    "course": {
+                        "$ref": "#/components/schemas/CourseResource"
                     }
                 },
                 "type": "object"

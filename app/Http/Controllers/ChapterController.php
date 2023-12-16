@@ -55,6 +55,7 @@ class ChapterController extends Controller
      *     ),
      *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(ref="#/components/schemas/ChapterResource")),
      *     @OA\Response(response="500", description="Internal server error", @OA\JsonContent(type="object", @OA\Property(property="error", type="string"))),
+     *  security={{"bearerAuth":{}}} )
      * )
      *
      * @param  \App\Http\Requests\StoreChapterRequest  $request
@@ -116,6 +117,7 @@ class ChapterController extends Controller
      *     ),
      *     @OA\Response(response="200", description="Successful operation", @OA\JsonContent(ref="#/components/schemas/ChapterResource")),
      *     @OA\Response(response="404", description="Chapter not found", @OA\JsonContent(type="object", @OA\Property(property="message", type="string"))),
+     *  security={{"bearerAuth":{}}} )
      * )
      *
      * @param  \App\Http\Requests\UpdateChapterRequest  $request
@@ -149,6 +151,7 @@ class ChapterController extends Controller
      *     @OA\Parameter(name="id", in="path", required=true, description="ID of the chapter", @OA\Schema(type="integer")),
      *     @OA\Response(response="204", description="No Content"),
      *     @OA\Response(response="404", description="Chapter not found", @OA\JsonContent(type="object", @OA\Property(property="message", type="string"))),
+     *  security={{"bearerAuth":{}}} )
      * )
      *
      * @param  int  $id

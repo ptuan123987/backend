@@ -10,6 +10,7 @@ use App\Http\Controllers\ChapterController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\PasswordResetController;
 use App\Http\Controllers\TopicController;
+use App\Http\Controllers\WishlistController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,21 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/courses', [CourseController::class, 'index']);
+Route::get('/categories', [CategoryController::class, 'index']);
+Route::get('/topics', [TopicController::class, 'index']);
+Route::get('/lectures', [LectureController::class, 'index']);
+Route::get('/chapters', [ChapterController::class, 'index']);
+
+
+
+Route::get('/courses/{id}', [CourseController::class, 'show']);
+Route::get('/categories/{id}', [CategoryController::class, 'show']);
+Route::get('/topics/{id}', [TopicController::class, 'show']);
+Route::get('/lectures/{id}', [LectureController::class, 'show']);
+Route::get('/chapters/{id}', [ChapterController::class, 'show']);
+
 
 Route::group([
     'prefix' => 'auth'
@@ -50,6 +66,7 @@ Route::group([
     Route::post('/refresh', [AuthController::class, 'refresh']);
     Route::get('/me', [AuthController::class, 'userProfile']);
     Route::post('/change-password', [AuthController::class, 'changePassWord']);
+    Route::apiResource('/wishlists',WishlistController::class);
 });
 
 Route::group([
@@ -59,17 +76,6 @@ Route::group([
 });
 
 
-Route::get('/courses', [CourseController::class, 'index']);
-Route::get('/categories', [CategoryController::class, 'index']);
-Route::get('/topics', [TopicController::class, 'index']);
-Route::get('/lectures', [LectureController::class, 'index']);
-Route::get('/chapters', [ChapterController::class, 'index']);
-
-Route::get('/courses/{id}', [CourseController::class, 'show']);
-Route::get('/categories/{id}', [CategoryController::class, 'show']);
-Route::get('/topics/{id}', [TopicController::class, 'show']);
-Route::get('/lectures/{id}', [LectureController::class, 'show']);
-Route::get('/chapters/{id}', [ChapterController::class, 'show']);
 
 
 // API Resources with middleware for POST, PUT, DELETE

@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('topic_category', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('topic_id');
             $table->unsignedBigInteger('category_id');
 
@@ -19,8 +20,6 @@ return new class extends Migration
             $table->foreign('topic_id')->references('id')->on('topics')->onDelete('cascade');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
 
-            // Composite primary key
-            $table->primary(['topic_id', 'category_id']);
         });
     }
 

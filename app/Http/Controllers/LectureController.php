@@ -65,7 +65,9 @@ class LectureController extends Controller
      *         description="Category updated successfully",
      *         @OA\JsonContent(ref="#/components/schemas/LectureResource")
      *     ),
-     *     @OA\Response(response="500", description="Error creating lecture")
+     *     @OA\Response(response="500", description="Error creating lecture"),
+     *  security={{"bearerAuth":{}}} )
+     *
      * )
      */
     public function store(StoreLectureRequest $request)
@@ -112,7 +114,8 @@ class LectureController extends Controller
      *         @OA\Schema(type="integer")
      *     ),
      *     @OA\Response(response="200", description="Successful operation"),
-     *     @OA\Response(response="404", description="Lecture not found")
+     *     @OA\Response(response="404", description="Lecture not found"),
+     *
      * )
      */
     public function show($id)
@@ -141,7 +144,9 @@ class LectureController extends Controller
      *         description="Category updated successfully",
      *         @OA\JsonContent(ref="#/components/schemas/LectureResource")
      *     ),
-     *     @OA\Response(response="500", description="Error updating lecture")
+     *     @OA\Response(response="500", description="Error updating lecture"),
+     *  security={{"bearerAuth":{}}} )
+     *
      * )
      */
     public function update(UpdateLectureRequest $request, Lecture $lecture)
@@ -195,7 +200,9 @@ class LectureController extends Controller
      *         @OA\Schema(type="integer")
      *     ),
      *     @OA\Response(response="204", description="Lecture deleted"),
-     *     @OA\Response(response="404", description="Lecture not found")
+     *     @OA\Response(response="404", description="Lecture not found"),
+     *  security={{"bearerAuth":{}}} )
+     *
      * )
      */
     public function destroy($id)

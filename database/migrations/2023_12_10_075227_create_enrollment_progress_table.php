@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('enrollment_progress', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('enrollment_id');
             $table->unsignedBigInteger('completed_lecture');
 
@@ -19,8 +20,6 @@ return new class extends Migration
             $table->foreign('enrollment_id')->references('id')->on('enrollments')->onDelete('cascade');
             $table->foreign('completed_lecture')->references('id')->on('lectures')->onDelete('cascade');
 
-            // Composite primary key
-            $table->primary(['enrollment_id', 'completed_lecture']);
         });
     }
 

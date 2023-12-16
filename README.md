@@ -35,6 +35,7 @@ php artisan serve
 before run: 
 ``` bash 
     php artisan db:seed --class=AdminUserSeeder
+    php artisan db:seed --class=CategoriesTableSeeder
 ```
 login admin account
 - **POST** `http://localhost:8000/api/admin/login`

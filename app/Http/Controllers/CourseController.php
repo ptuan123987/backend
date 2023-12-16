@@ -78,7 +78,9 @@ class CourseController extends Controller
      *         response=201,
      *         description="Course created successfully",
      *         @OA\JsonContent()
-     *     )
+     *     ),
+     *  security={{"bearerAuth":{}}} )
+     *
      * )
      */
     public function store(StoreCourseRequest $request)
@@ -150,7 +152,9 @@ class CourseController extends Controller
      *     @OA\Response(
      *         response=404,
      *         description="Course not found"
-     *     )
+     *     ),
+     *  security={{"bearerAuth":{}}} )
+     *
      * )
      */
     public function update(UpdateCourseRequest $request, $course_id)
@@ -189,7 +193,9 @@ class CourseController extends Controller
      *     @OA\Response(
      *         response=404,
      *         description="Course not found"
-     *     )
+     *     ),
+     *  security={{"bearerAuth":{}}} )
+     *
      * )
      */
     public function destroy($course_id)
