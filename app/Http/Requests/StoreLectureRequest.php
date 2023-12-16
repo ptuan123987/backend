@@ -2,7 +2,6 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-
 /**
  * @OA\Schema(
  *     schema="StoreLectureRequest",
@@ -53,7 +52,7 @@ class StoreLectureRequest extends FormRequest
             'thumbnail_img' => 'nullable|file|mimes:jpeg,png,jpg,gif',
             'resources' => 'nullable|array',
             'resources.*.title' => 'required|string|max:255',
-            'resources.*.link' => 'required|url',
+            'resources.*.link' => 'required|string|max:255',
         ];
     }
 }

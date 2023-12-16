@@ -939,7 +939,7 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "Category updated successfully",
+                        "description": "Successful operation",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -987,6 +987,50 @@
                     }
                 }
             },
+            "put": {
+                "tags": [
+                    "lectures"
+                ],
+                "summary": "Update a lecture",
+                "description": "Update the specified lecture in storage",
+                "operationId": "254411344dbd902798e91585795562dc",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateLectureRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Lecture updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/LectureResource"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Lecture not found"
+                    },
+                    "422": {
+                        "description": "Invalid input"
+                    },
+                    "500": {
+                        "description": "Error updating lecture"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            },
             "delete": {
                 "tags": [
                     "lectures"
@@ -1011,46 +1055,6 @@
                     },
                     "404": {
                         "description": "Lecture not found"
-                    }
-                },
-                "security": [
-                    {
-                        "bearerAuth": []
-                    }
-                ]
-            }
-        },
-        "/api/lectures/{lecture}": {
-            "put": {
-                "tags": [
-                    "lectures"
-                ],
-                "summary": "Update a lecture",
-                "description": "Update the specified lecture in storage",
-                "operationId": "4ff1c5f80d0b79be6b911dafc325307a",
-                "requestBody": {
-                    "required": true,
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "#/components/schemas/UpdateLectureRequest"
-                            }
-                        }
-                    }
-                },
-                "responses": {
-                    "200": {
-                        "description": "Category updated successfully",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/LectureResource"
-                                }
-                            }
-                        }
-                    },
-                    "500": {
-                        "description": "Error updating lecture"
                     }
                 },
                 "security": [
@@ -1639,13 +1643,9 @@
             },
             "UpdateLectureRequest": {
                 "title": "Update Lecture Request",
-                "required": [
-                    "chapter_id",
-                    "title"
-                ],
                 "properties": {
-                    "chapter_id": {
-                        "description": "ID of the associated chapter.",
+                    "id": {
+                        "description": "ID of the lecture.",
                         "type": "integer",
                         "format": "int64"
                     },

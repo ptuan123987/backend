@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class LectureResourceModel extends Model
 {
+    public $timestamps = false;
+    protected $table = 'lecture_resources';
     use HasFactory;
     protected $fillable = ['lecture_id', 'title', 'link'];
 
