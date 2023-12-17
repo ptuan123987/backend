@@ -173,4 +173,49 @@ class TopicController extends Controller
 
         return response()->json(['message' => 'Topic deleted'], Response::HTTP_NO_CONTENT);
     }
+
+
+        /**
+     * @OA\Get(
+     *     path="/api/topics/{topicId}/courses",
+     *     summary="Get Courses by Topic",
+     *     tags={"Topics"},
+     *     description="Returns all courses under a specific topic",
+     *     operationId="getCoursesByTopic",
+     *     @OA\Parameter(
+     *         name="topicId",
+     *         in="path",
+     *         description="ID of the topic to return courses for",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="integer"
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/CourseResource")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Topic not found"
+     *     ),
+     *     security={{"bearerAuth":{}}} )
+     * )
+     */
+    public function getCourses($id)
+    {
+        $topic = Topic::find($id);
+
+        if (!$topic) {
+            return response()->json(['message' => 'Topic not found'], Response::HTTP_NOT_FOUND);
+        }
+
+        $courses = $topic->courses()->get();
+
+        return CourseResource::collection($courses);
+    }
 }

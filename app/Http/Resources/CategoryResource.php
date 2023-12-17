@@ -33,6 +33,7 @@ class CategoryResource extends JsonResource
             'id' => $this->id,
             'parent_category' => new CategoryResource($this->whenLoaded('parentCategory')),
             'name' => $this->name,
+            'subcategories' => CategoryResource::collection($this->whenLoaded('subcategories')),
             'courses' => CourseResource::collection($this->whenLoaded('courses')),
             'topics' => TopicResource::collection($this->whenLoaded('topics')),
         ];

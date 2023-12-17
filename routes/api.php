@@ -94,8 +94,11 @@ Route::group([
 ], function () {
     Route::apiResource('/courses', CourseController::class)->except(['index', 'show']);
     Route::apiResource('/categories', CategoryController::class)->except(['index', 'show']);
-    Route::apiResource('/categories', CategoryController::class)->except(['index', 'show']);
+    Route::get('/categories/{id}/topics', [CategoryController::class, 'getTopics']);
+    Route::get('/categories/{id}/courses', [CategoryController::class, 'getCourses']);
+    Route::patch('/categories/{id}/courses/{courseId}', [CategoryController::class, 'attachCourse']);
     Route::apiResource('/topics', TopicController::class)->except(['index', 'show']);
+    Route::get('/topics/{id}/courses', [TopicController::class, 'getCourses']);
     Route::apiResource('/lectures', LectureController::class)->except(['index', 'show']);
     Route::apiResource('/chapters', ChapterController::class)->except(['index', 'show']);
 });

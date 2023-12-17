@@ -86,7 +86,16 @@ class CourseController extends Controller
     public function store(StoreCourseRequest $request)
     {
         $validatedData = $request->validated();
+
+        $categoryIds = $validatedData['category_ids'];
+        unset($validatedData['category_ids']);
+
         $course = Course::create($validatedData);
+
+        if ($course) {
+            $course->categories()->sync($categoryIds);
+        }
+
         return new CourseResource($course);
     }
 
