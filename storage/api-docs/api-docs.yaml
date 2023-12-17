@@ -650,16 +650,32 @@ paths:
           description: 'Successful operation'
         404:
           description: 'Lecture not found'
-    put:
+    post:
       tags:
         - lectures
       summary: 'Update a lecture'
       description: 'Update the specified lecture in storage'
-      operationId: 254411344dbd902798e91585795562dc
+      operationId: dbd9063b23cddf7620b91338f22066af
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'ID of lecture to delete'
+          required: true
+          schema:
+            type: integer
+        -
+          name: _method
+          in: query
+          description: 'Method to be used'
+          required: false
+          schema:
+            type: string
+            default: PUT
       requestBody:
         required: true
         content:
-          application/json:
+          multipart/form-data:
             schema:
               $ref: '#/components/schemas/UpdateLectureRequest'
       responses:
@@ -1100,13 +1116,17 @@ components:
     UpdateLectureRequest:
       title: 'Update Lecture Request'
       properties:
-        id:
-          description: 'ID of the lecture.'
-          type: integer
-          format: int64
         title:
           description: 'Title of the lecture.'
           type: string
+        video:
+          description: 'Video file for the lecture in MP4, MOV, or AVI format.'
+          type: string
+          format: binary
+        thumbnail_img:
+          description: 'Thumbnail image for the lecture in JPEG, PNG, JPG, or GIF format.'
+          type: string
+          format: binary
         resources:
           description: 'List of updated resources for the lecture.'
           type: array

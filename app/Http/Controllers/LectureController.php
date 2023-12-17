@@ -129,14 +129,31 @@ class LectureController extends Controller
     }
 
     /**
-     * @OA\Put(
+     * @OA\POST(
      *     path="/api/lectures/{id}",
      *     tags={"lectures"},
      *     summary="Update a lecture",
      *     description="Update the specified lecture in storage",
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         required=true,
+     *         description="ID of lecture to delete",
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Parameter(
+     *        name="_method",
+     *        in="query",
+     *        required=false,
+     *        description="Method to be used",
+     *        @OA\Schema(type="string", default="PUT")
+     *     ),
      *     @OA\RequestBody(
      *         required=true,
-     *         @OA\JsonContent(ref="#/components/schemas/UpdateLectureRequest")
+     *         @OA\MediaType(
+     *             mediaType="multipart/form-data",
+     *             @OA\Schema(ref="#/components/schemas/UpdateLectureRequest")
+     *         )
      *     ),
      *     @OA\Response(
      *         response=200,
@@ -150,10 +167,9 @@ class LectureController extends Controller
      *
      * )
      */
-    public function update(UpdateLectureRequest $request)
+    public function update(UpdateLectureRequest $request, $id)
     {
         try {
-            $id = $request->input('id');
             $lecture = Lecture::find($id);
 
             if (!$lecture) {
@@ -179,6 +195,13 @@ class LectureController extends Controller
 
                 $idsToDelete = array_diff($currentResourceIds, $idsToKeep);
                 LectureResourceModel::destroy($idsToDelete);
+            }
+
+            if ($request->hasFile('video')) {
+                $video = $request->file('video');
+                $videoName = uniqid() . '_' . $video->getClientOriginalName();
+                Storage::disk('public')->put($videoName, file_get_contents($video));
+                PutVideoToS3::dispatch($lecture->id, $videoName, true);
             }
 
             return new LectureResource($lecture);

@@ -9,11 +9,22 @@ use Illuminate\Foundation\Http\FormRequest;
  *     schema="UpdateLectureRequest",
  *     type="object",
  *     title="Update Lecture Request",
- *     @OA\Property(property="id", type="integer", format="int64", description="ID of the lecture."),
  *     @OA\Property(
  *         property="title",
  *         type="string",
  *         description="Title of the lecture."
+ *     ),
+ *     @OA\Property(
+ *         property="video",
+ *         type="string",
+ *         format="binary",
+ *         description="Video file for the lecture in MP4, MOV, or AVI format."
+ *     ),
+ *     @OA\Property(
+ *         property="thumbnail_img",
+ *         type="string",
+ *         format="binary",
+ *         description="Thumbnail image for the lecture in JPEG, PNG, JPG, or GIF format."
  *     ),
  *     @OA\Property(
  *         property="resources",
@@ -58,8 +69,9 @@ class UpdateLectureRequest extends FormRequest
     public function rules()
     {
     return [
-            'id' => 'required|exists:lectures',
             'title' => 'nullable|string|max:255',
+            'video' => 'nullable|file|mimes:mp4,mov,avi|max:102400',
+            'thumbnail_img' => 'nullable|file|mimes:jpeg,png,jpg,gif',
             'resources' => 'nullable|array',
             'resources.*.title' => 'nullable|string|max:255',
             'resources.*.link' => 'nullable|string|max:255',

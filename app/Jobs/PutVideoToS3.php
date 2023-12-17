@@ -49,7 +49,7 @@ class PutVideoToS3 implements ShouldQueue
                 Storage::disk('public')->delete($videoName);
 
                 if ($this->is_update) {
-                    $lecture->video()->delete();
+                    LectureVideo::where('lecture_id', $lecture->id)->delete();
                 }
 
                 LectureVideo::create([
