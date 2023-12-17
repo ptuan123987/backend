@@ -10,6 +10,10 @@ use Illuminate\Foundation\Http\FormRequest;
  *     schema="StoreCourseRequest",
  *     type="object",
  *     title="Store Course Request",
+ *     @OA\Property(
+ *     property="category_ids",
+ *     type="array",
+ *     @OA\Items(type="integer", example="1")),
  *     @OA\Property(property="title", type="string", maxLength=255, description="The title of the course."),
  *     @OA\Property(property="description", type="string", description="The description of the course."),
  *     @OA\Property(property="price", type="number", format="float", description="The price of the course."),
@@ -36,6 +40,7 @@ class StoreCourseRequest extends FormRequest
     public function rules()
     {
         return [
+            'category_ids' => 'sometimes|array',
             'title' => 'sometimes|string|max:255',
             'description' => 'sometimes|string',
             'price' => 'sometimes|numeric',

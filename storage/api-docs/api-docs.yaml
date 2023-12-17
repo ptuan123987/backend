@@ -264,6 +264,131 @@ paths:
       security:
         -
           bearerAuth: []
+  '/api/categories/{categoryId}/topics':
+    get:
+      tags:
+        - Categories
+      summary: 'Get Topics by Category'
+      description: 'Returns all topics under a specific category'
+      operationId: getTopics
+      parameters:
+        -
+          name: categoryId
+          in: path
+          description: 'ID of category to return topics for'
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: 'successful operation'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TopicResource'
+        404:
+          description: 'Category not found'
+      security:
+        -
+          bearerAuth: []
+  '/api/categories/{categoryId}/courses':
+    get:
+      tags:
+        - Categories
+      summary: 'Get Courses by Category'
+      description: 'Returns all courses under a specific category'
+      operationId: getCourses
+      parameters:
+        -
+          name: categoryId
+          in: path
+          description: 'ID of category to return courses for'
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: 'successful operation'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CourseResource'
+        404:
+          description: 'Category not found'
+      security:
+        -
+          bearerAuth: []
+  '/api/categories/{categoryId}/subcategories':
+    get:
+      tags:
+        - Categories
+      summary: 'Get Subcategories by Category'
+      description: 'Returns all subcategories under a specific category'
+      operationId: getSubcategories
+      parameters:
+        -
+          name: categoryId
+          in: path
+          description: 'ID of category to return subcategories for'
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: 'successful operation'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CategoryResource'
+        404:
+          description: 'Category not found'
+      security:
+        -
+          bearerAuth: []
+  '/api/categories/{categoryId}/courses/{courseId}':
+    patch:
+      tags:
+        - Categories
+      summary: 'Attach a Course to a Category'
+      description: 'Attaches an existing course to a specific category'
+      operationId: attachCourse
+      parameters:
+        -
+          name: categoryId
+          in: path
+          description: 'ID of the category to which the course is to be attached'
+          required: true
+          schema:
+            type: integer
+        -
+          name: courseId
+          in: path
+          description: 'ID of the course to attach to the category'
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: 'Course attached successfully'
+          content:
+            application/json:
+              schema:
+                properties:
+                  message:
+                    type: string
+                    example: 'Course attached'
+                type: object
+        404:
+          description: 'Category or Course not found'
+      security:
+        -
+          bearerAuth: []
   /api/auth/reset-password:
     post:
       tags:
@@ -874,6 +999,35 @@ paths:
       security:
         -
           bearerAuth: []
+  '/api/topics/{topicId}/courses':
+    get:
+      tags:
+        - Topics
+      summary: 'Get Courses by Topic'
+      description: 'Returns all courses under a specific topic'
+      operationId: getCoursesByTopic
+      parameters:
+        -
+          name: topicId
+          in: path
+          description: 'ID of the topic to return courses for'
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CourseResource'
+        404:
+          description: 'Topic not found'
+      security:
+        -
+          bearerAuth: []
   /api/user/wishlists:
     get:
       tags:
@@ -1012,6 +1166,11 @@ components:
     StoreCourseRequest:
       title: 'Store Course Request'
       properties:
+        category_ids:
+          type: array
+          items:
+            type: integer
+            example: '1'
         title:
           description: 'The title of the course.'
           type: string
