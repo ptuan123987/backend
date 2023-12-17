@@ -49,7 +49,7 @@ Route::get('login/{social}', [
 ]);
 
 Route::get('callback/{social}', [
-    SocialAccountController::class,'handleProviderCallback'
+    SocialAccountController::class, 'handleProviderCallback'
 ]);
 
 
@@ -58,6 +58,7 @@ Route::group([
 ], function () {
     Route::post('/login', [AuthController::class, 'login']);
     Route::post('/register', [AuthController::class, 'register']);
+
 });
 
 Route::group([

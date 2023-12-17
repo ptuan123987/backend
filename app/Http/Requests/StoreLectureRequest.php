@@ -1,7 +1,9 @@
 <?php
+
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+
 /**
  * @OA\Schema(
  *     schema="StoreLectureRequest",
@@ -11,7 +13,7 @@ use Illuminate\Foundation\Http\FormRequest;
  *     @OA\Property(property="chapter_id", type="integer", format="int64", description="ID of the associated chapter."),
  *     @OA\Property(property="title", type="string", description="Title of the lecture."),
  *     @OA\Property(property="video", type="file", description="video."),
- *     @OA\Property(property="thumbnail_img", type="file", description="Lthumbnail image."),
+ *     @OA\Property(property="thumbnail_img", type="file", description="Thumbnail image."),
  *     @OA\Property(
  *         property="resources",
  *         type="array",

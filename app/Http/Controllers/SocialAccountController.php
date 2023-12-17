@@ -25,7 +25,11 @@ class SocialAccountController extends Controller
             ->first();
 
         if ($account) {
-            return $account->user;
+            $accessToken = JWTAuth::fromUser($account->user);
+            return response()->json([
+                "message" => "Success",
+                "access_token" => $accessToken
+            ]);;
         } else {
             $account = new SocialAccount([
                 'provider_user_id' => $providerUser->getId(),
@@ -48,7 +52,7 @@ class SocialAccountController extends Controller
 
 
             return response()->json([
-                "user" => $user,
+                "message" => "Success",
                 "access_token" => $accessToken
             ]);
         }
