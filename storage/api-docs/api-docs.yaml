@@ -1205,11 +1205,13 @@ components:
           description: 'Title of the lecture.'
           type: string
         video:
-          description: video.
-          type: file
+          description: 'Video file.'
+          type: string
+          format: binary
         thumbnail_img:
-          description: 'Lthumbnail image.'
-          type: file
+          description: 'Thumbnail image.'
+          type: string
+          format: binary
         resources:
           description: 'List of resources for the lecture.'
           type: array

@@ -81,7 +81,12 @@ class LectureController extends Controller
 
             if ($resources) {
                 foreach ($resources as $resourceData) {
-                    $lecture->resources()->save($resourceData);
+                    $resource = new LectureResourceModel([
+                        'title' => $resourceData['title'],
+                        'link' => $resourceData['link'],
+                    ]);
+
+                    $lecture->resources()->save($resource);
                 }
             }
 

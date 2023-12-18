@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "560580b4a6227d6c51b3164a9bae4731",
+    "content-hash": "e20f0729625865761d1b9f57eee8e662",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4177,6 +4177,56 @@
                 "source": "https://github.com/socialiteproviders/manager"
             },
             "time": "2023-08-27T23:46:34+00:00"
+        },
+        {
+            "name": "socialiteproviders/zalo",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Zalo.git",
+                "reference": "39305fff158902838b87900ed533e1738ac681da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Zalo/zipball/39305fff158902838b87900ed533e1738ac681da",
+                "reference": "39305fff158902838b87900ed533e1738ac681da",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0",
+                "socialiteproviders/manager": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Zalo\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tmtung144",
+                    "email": "tmtung144@gmail.com"
+                }
+            ],
+            "description": "Zalo OAuth2 Provider for Laravel Socialite",
+            "keywords": [
+                "laravel",
+                "oauth",
+                "provider",
+                "socialite",
+                "zalo"
+            ],
+            "support": {
+                "docs": "https://socialiteproviders.com/zalo",
+                "issues": "https://github.com/socialiteproviders/providers/issues",
+                "source": "https://github.com/socialiteproviders/providers"
+            },
+            "time": "2022-10-21T23:05:47+00:00"
         },
         {
             "name": "stella-maris/clock",
