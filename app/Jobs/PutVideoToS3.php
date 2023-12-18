@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use FFMpeg;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
@@ -21,7 +22,7 @@ class PutVideoToS3 implements ShouldQueue
     protected $filename;
     protected $is_update;
 
-    public function __construct($lectureId, $filename, $is_update=false)
+    public function __construct($lectureId, $filename, $is_update = false)
     {
         $this->lectureId = $lectureId;
         $this->filename = $filename;
@@ -34,33 +35,56 @@ class PutVideoToS3 implements ShouldQueue
             $lecture = Lecture::find($this->lectureId);
             $videoName = $this->filename;
             if ($lecture && Storage::disk('public')->exists($videoName)) {
-                $video = Storage::disk('public')->get($videoName);
                 $videoPath = Storage::disk('public')->path($videoName);
 
+                // Get video duration using getID3
                 $getID3 = new getID3();
-                $fileContents = file_get_contents($videoPath);
-
                 $fileInfo = $getID3->analyze($videoPath);
                 $durationSeconds = $fileInfo['playtime_seconds'] ?? null;
 
-                $cloudfrontUrl = env('AWS_CLOUDFRONT_ORIGIN');
+                // Create and upload the thumbnail
+                $thumbnailPath = $this->createThumbnail($videoName);
+                Log::alert("message: " . $thumbnailPath);
+                // Upload the video to S3
+                $videoContents = file_get_contents($videoPath);
+                Storage::disk('s3')->put('videos/' . $videoName, $videoContents);
 
-                Storage::disk('s3')->put('videos/' . $videoName, $fileContents);
+                // Delete the local video file after uploading to S3
                 Storage::disk('public')->delete($videoName);
 
+                // Get the CloudFront URL from environment
+                $cloudfrontUrl = env('AWS_CLOUDFRONT_ORIGIN');
+
+                // Check if this is an update to an existing lecture video
                 if ($this->is_update) {
                     LectureVideo::where('lecture_id', $lecture->id)->delete();
                 }
 
+                // Create a new LectureVideo record
                 LectureVideo::create([
                     'lecture_id' => $lecture->id,
                     'url' => $cloudfrontUrl . '/videos/' . $videoName,
-                    'thumbnail_url' => $cloudfrontUrl . '/videos/' . $videoName . '.jpg',
+                    'thumbnail_url' => $cloudfrontUrl . '/videos/thumbnails/' . basename($thumbnailPath),
                     'duration' => $durationSeconds,
                 ]);
             }
         } catch (\Exception $e) {
-            Log::error('Error message: '.$e);
-       }
+            Log::error('Error during video processing: ' . $e->getMessage());
+        }
+    }
+
+    private function createThumbnail($videoName)
+    {
+        $thumbnailName = 'thumbnail-' . time() . '.jpg';
+
+        // Generate a thumbnail at the 1-second mark of the video
+        FFMpeg::fromDisk('public')
+            ->open($videoName)
+            ->getFrameFromSeconds(1)
+            ->export()
+            ->toDisk('s3')
+            ->save('videos/thumbnails/' . $thumbnailName);
+
+        return $thumbnailName;
     }
 }
