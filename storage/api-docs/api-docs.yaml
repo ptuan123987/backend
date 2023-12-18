@@ -9,6 +9,9 @@ servers:
   -
     url: 'http://localhost:8000'
     description: 'API server'
+  -
+    url: 'http://57.181.106.82/'
+    description: 'production server'
 paths:
   /api/admin/login:
     post:

@@ -25,6 +25,10 @@ use Illuminate\Routing\Controller as BaseController;
  *     url="http://localhost:8000",
  *     description="API server"
  * )
+ *  * @OA\Server(
+ *     url="http://57.181.106.82/",
+ *     description="production server"
+ * )
  */
 class Controller extends BaseController
 {
