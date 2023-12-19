@@ -15,6 +15,7 @@
         "laravel/socialite": "^5.11",
         "laravel/tinker": "^2.8",
         "league/flysystem-aws-s3-v3": "^3.22",
+        "pbmedia/laravel-ffmpeg": "^8.3",
         "socialiteproviders/github": "^4.1",
         "socialiteproviders/google": "^4.1",
         "socialiteproviders/zalo": "^5.0",
