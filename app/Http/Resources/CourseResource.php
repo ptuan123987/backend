@@ -33,6 +33,7 @@ class CourseResource extends JsonResource
             'author' => $this->author,
             'categories' => CategoryResource::collection($this->whenLoaded('categories')),
             'reviews' => CourseReviewResource::collection($this->whenLoaded('reviews')),
+            'total_video_duration' => $this->when(isset($this->total_video_duration), $this->total_video_duration),
         ];
     }
 }

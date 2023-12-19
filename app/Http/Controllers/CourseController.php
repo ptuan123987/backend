@@ -8,7 +8,7 @@ use App\Http\Requests\UpdateCourseRequest;
 use App\Http\Resources\CourseResource;
 use App\Http\Resources\CourseReviewResource;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Log;
 
 /**
  * @OA\Tag(
@@ -125,14 +125,29 @@ class CourseController extends Controller
      *     )
      * )
      */
+
+    private function totalVideoDurationAttribute($chapters)
+    {
+        $totalDuration = $chapters->reduce(function ($carry, $chapter) {
+        // Assuming each lecture has one or more associated videos and the 'video_duration' field is on the video model
+            foreach ($chapter->lectures as $lecture) {
+                if (!$lecture->video) {
+                    continue;
+                }
+                $carry += $lecture->video->duration;
+            }
+            return $carry;
+        }, 0);
+    return $totalDuration;
+    }
     public function show($course_id)
     {
-        $course = Course::find($course_id);
+        $course = Course::with('chapters.lectures.video')->find($course_id);
 
         if (!$course) {
             return response()->json(['message' => 'Course not found'], 404);
         }
-
+        $course->total_video_duration = $this->totalVideoDurationAttribute($course->chapters);
         return new CourseResource($course);
     }
 
