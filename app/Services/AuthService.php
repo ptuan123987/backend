@@ -26,7 +26,7 @@ class AuthService
 
     public function register(RegisterRequest $request) {
         $user = $this->userRepository->createUser($request);
-        SendWelcomeEmail::dispatch('Welcome!', $user->email, $user->name);
+        SendWelcomeEmail::dispatch("Welcome!", $user->email, $user->name);
         return $user;
     }
 

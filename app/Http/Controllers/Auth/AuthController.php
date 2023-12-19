@@ -50,7 +50,7 @@ class AuthController extends Controller
      */
     public function login(LoginRequest $request)
     {
-        $request->validated();
+        $request->validated($request->all());
 
         if (!Auth::attempt($request->only('email', 'password'))) {
             return $this->error('', 'Credentials do not match', 401);
@@ -81,7 +81,7 @@ class AuthController extends Controller
     {
 
 
-       $request = $request->validated();
+        $request->validated($request->all());
 
         $response = $this->authService->register($request);
         return $this->created("", "User successfully registered");
