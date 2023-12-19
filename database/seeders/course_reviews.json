@@ -1,153 +1,693 @@
 [
     {
-        "course_id": 26,
-        "rating": 3.5,
-        "content": "This course was very informative and well-structured."
-    },
-    {
-        "course_id": 18,
-        "rating": 2.0,
-        "content": "The content was okay, but the pace was a bit too fast for me."
-    },
-    {
-        "course_id": 9,
-        "rating": 4.0,
-        "content": "Absolutely loved this course! The instructor was fantastic."
-    },
-    {
-        "course_id": 28,
-        "rating": 4.0,
-        "content": "Well-presented material with useful examples."
-    },
-    {
-        "course_id": 16,
-        "rating": 2.5,
-        "content": "The course lacked depth, and the exercises were too simple."
-    },
-    {
-        "course_id": 13,
-        "rating": 4.5,
-        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
-    },
-    {
-        "course_id": 34,
-        "rating": 2.5,
+        "course_id": 1,
+        "rating": 3.0,
         "content": "Clear explanations, but some topics felt rushed."
     },
     {
-        "course_id": 10,
-        "rating": 3.0,
-        "content": "The course covered a wide range of topics, but the material could be more engaging."
+        "course_id": 1,
+        "rating": 5.0,
+        "content": "The course was informative, but some topics felt outdated."
     },
     {
-        "course_id": 23,
+        "course_id": 1,
+        "rating": 3.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 1,
+        "rating": 3.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 1,
+        "rating": 3.5,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 1,
+        "rating": 2.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 1,
+        "rating": 2.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 1,
         "rating": 1.5,
         "content": "Excellent course! Practical exercises made it easy to apply concepts."
     },
     {
-        "course_id": 15,
-        "rating": 4.0,
-        "content": "Good content, but the quizzes were a bit too easy."
-    },
-    {
-        "course_id": 12,
+        "course_id": 1,
         "rating": 3.0,
-        "content": "The course provided a solid foundation. Would recommend to beginners."
-    },
-    {
-        "course_id": 30,
-        "rating": 3.5,
-        "content": "Disappointed with the lack of real-world examples."
-    },
-    {
-        "course_id": 8,
-        "rating": 2.5,
-        "content": "Enjoyed the hands-on projects. Practical approach to learning."
-    },
-    {
-        "course_id": 24,
-        "rating": 1.5,
-        "content": "The instructor was knowledgeable, but the material was not well-organized."
-    },
-    {
-        "course_id": 33,
-        "rating": 4.5,
-        "content": "Outstanding course! Great balance between theory and practical applications."
-    },
-    {
-        "course_id": 21,
-        "rating": 3.0,
-        "content": "The course was informative, but some topics felt outdated."
-    },
-    {
-        "course_id": 11,
-        "rating": 3.5,
-        "content": "Good course for beginners, but it lacks advanced content."
-    },
-    {
-        "course_id": 20,
-        "rating": 4.0,
-        "content": "The instructor's enthusiasm made the course enjoyable."
-    },
-    {
-        "course_id": 36,
-        "rating": 2.5,
-        "content": "The course had potential, but the lack of interactive elements was disappointing."
-    },
-    {
-        "course_id": 25,
-        "rating": 3.5,
-        "content": "Solid content, but the video quality could be improved."
-    },
-    {
-        "course_id": 5,
-        "rating": 4.5,
-        "content": "Thorough and well-structured. I feel confident in my understanding."
-    },
-    {
-        "course_id": 7,
-        "rating": 3.0,
-        "content": "The course was informative, but the assignments were too time-consuming."
-    },
-    {
-        "course_id": 32,
-        "rating": 3.0,
-        "content": "The course content was comprehensive, but the pacing was uneven."
-    },
-    {
-        "course_id": 22,
-        "rating": 4.0,
-        "content": "Engaging and thought-provoking. Highly recommended."
-    },
-    {
-        "course_id": 27,
-        "rating": 2.5,
-        "content": "The course covered the basics well, but I expected more advanced topics."
-    },
-    {
-        "course_id": 29,
-        "rating": 3.5,
-        "content": "Great course for building a solid foundation. Clear explanations."
+        "content": "The course content was relevant and applicable to real-world scenarios."
     },
     {
         "course_id": 1,
         "rating": 4.5,
-        "content": "The real-world examples were invaluable. Practical insights throughout."
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
     },
     {
-        "course_id": 17,
+        "course_id": 1,
+        "rating": 4.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 1,
+        "rating": 2.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 1,
+        "rating": 4.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 1,
+        "rating": 5.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 1,
+        "rating": 2.5,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 1,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 1,
+        "rating": 4.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 1,
+        "rating": 3.0,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 1,
+        "rating": 2.5,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 1,
+        "rating": 2.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 1,
+        "rating": 3.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 1,
+        "rating": 1.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 1,
+        "rating": 3.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 1,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 1,
+        "rating": 3.5,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 1,
+        "rating": 3.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 1,
+        "rating": 4.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 2,
+        "rating": 5.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 2,
+        "rating": 3.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 2,
+        "rating": 3.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 2,
+        "rating": 1.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 2,
+        "rating": 2.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 2,
+        "rating": 5.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 2,
+        "rating": 3.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 2,
+        "rating": 3.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 2,
+        "rating": 4.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 2,
+        "rating": 4.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 2,
+        "rating": 4.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 2,
+        "rating": 2.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 2,
+        "rating": 1.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 2,
+        "rating": 4.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 2,
+        "rating": 3.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 2,
+        "rating": 1.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 2,
+        "rating": 3.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 2,
+        "rating": 5.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 2,
+        "rating": 5.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 2,
+        "rating": 2.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 2,
+        "rating": 1.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 2,
+        "rating": 4.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 2,
+        "rating": 5.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 2,
+        "rating": 5.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 2,
+        "rating": 2.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 2,
+        "rating": 2.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 2,
+        "rating": 3.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 3,
+        "rating": 3.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 3,
+        "rating": 4.0,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 3,
+        "rating": 4.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 3,
+        "rating": 4.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 3,
+        "rating": 1.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 3,
+        "rating": 2.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 3,
+        "rating": 1.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 3,
+        "rating": 3.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 3,
+        "rating": 5.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 3,
+        "rating": 1.0,
+        "content": "The course covered a wide range of topics, but the material could be more engaging."
+    },
+    {
+        "course_id": 3,
+        "rating": 4.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 3,
+        "rating": 3.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 3,
+        "rating": 4.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 3,
+        "rating": 2.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 3,
+        "rating": 5.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 3,
+        "rating": 3.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 3,
+        "rating": 3.5,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 3,
+        "rating": 1.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 3,
+        "rating": 4.0,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 3,
+        "rating": 4.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 3,
+        "rating": 2.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 3,
+        "rating": 1.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 3,
+        "rating": 1.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 3,
+        "rating": 1.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 3,
+        "rating": 5.0,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 3,
+        "rating": 2.0,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 3,
+        "rating": 5.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 4,
+        "rating": 3.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 4,
+        "rating": 3.0,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 4,
+        "rating": 1.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 4,
+        "rating": 4.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 4,
+        "rating": 5.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 4,
+        "rating": 3.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 4,
+        "rating": 5.0,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 4,
+        "rating": 3.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 4,
+        "rating": 3.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 4,
+        "rating": 1.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 4,
+        "rating": 2.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 4,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 4,
+        "rating": 5.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 4,
+        "rating": 5.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 4,
+        "rating": 2.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 4,
+        "rating": 1.0,
+        "content": "The course covered a wide range of topics, but the material could be more engaging."
+    },
+    {
+        "course_id": 4,
+        "rating": 2.5,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 4,
+        "rating": 2.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 4,
+        "rating": 4.5,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 4,
+        "rating": 3.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 4,
+        "rating": 2.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 4,
+        "rating": 1.5,
+        "content": "The course covered a wide range of topics, but the material could be more engaging."
+    },
+    {
+        "course_id": 4,
+        "rating": 4.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 4,
+        "rating": 1.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 4,
+        "rating": 3.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 4,
+        "rating": 2.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 4,
+        "rating": 1.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 5,
+        "rating": 1.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 5,
+        "rating": 1.0,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 5,
         "rating": 4.0,
         "content": "The course content was good, but the assessments were too easy."
     },
     {
-        "course_id": 14,
-        "rating": 3.5,
-        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+        "course_id": 5,
+        "rating": 1.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
     },
     {
-        "course_id": 35,
+        "course_id": 5,
+        "rating": 2.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 5,
         "rating": 3.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 5,
+        "rating": 3.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 5,
+        "rating": 1.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 5,
+        "rating": 3.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 5,
+        "rating": 4.5,
         "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 5,
+        "rating": 3.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 5,
+        "rating": 3.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 5,
+        "rating": 2.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 5,
+        "rating": 1.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 5,
+        "rating": 2.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 5,
+        "rating": 4.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 5,
+        "rating": 3.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 5,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 5,
+        "rating": 2.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 5,
+        "rating": 3.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 5,
+        "rating": 3.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 5,
+        "rating": 4.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 5,
+        "rating": 2.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 5,
+        "rating": 1.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 5,
+        "rating": 2.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 5,
+        "rating": 2.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 5,
+        "rating": 2.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 6,
+        "rating": 1.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 6,
+        "rating": 3.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 6,
+        "rating": 2.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
     },
     {
         "course_id": 6,
@@ -155,73 +695,4168 @@
         "content": "Informative, but the lack of practical examples was a drawback."
     },
     {
-        "course_id": 2,
+        "course_id": 6,
+        "rating": 2.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 6,
+        "rating": 2.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 6,
         "rating": 3.0,
-        "content": "Good course overall, but the video lectures could be more dynamic."
+        "content": "Great course for building a solid foundation. Clear explanations."
     },
     {
-        "course_id": 3,
-        "rating": 4.5,
-        "content": "Exceptional course! In-depth coverage of advanced concepts."
+        "course_id": 6,
+        "rating": 3.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
     },
     {
-        "course_id": 31,
-        "rating": 3.5,
+        "course_id": 6,
+        "rating": 1.0,
         "content": "The course covered the basics well, but I expected more hands-on projects."
     },
     {
-        "course_id": 19,
+        "course_id": 6,
+        "rating": 4.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 6,
+        "rating": 2.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 6,
+        "rating": 5.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 6,
+        "rating": 2.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 6,
+        "rating": 1.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 6,
+        "rating": 3.5,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 6,
+        "rating": 4.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 6,
+        "rating": 1.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 6,
+        "rating": 3.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 6,
+        "rating": 3.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 6,
+        "rating": 4.0,
+        "content": "The course content was relevant and applicable to real-world scenarios."
+    },
+    {
+        "course_id": 6,
+        "rating": 5.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 6,
+        "rating": 2.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 6,
+        "rating": 1.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 6,
+        "rating": 1.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 6,
         "rating": 4.0,
         "content": "Solid foundation for beginners. The instructor was easy to follow."
     },
     {
-        "course_id": 4,
+        "course_id": 6,
         "rating": 4.5,
-        "content": "Practical and insightful. The real-world applications were beneficial."
+        "content": "The content was okay, but the pace was a bit too fast for me."
     },
     {
-        "course_id": 14,
+        "course_id": 6,
+        "rating": 2.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 7,
+        "rating": 1.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 7,
+        "rating": 3.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 7,
+        "rating": 5.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 7,
+        "rating": 2.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 7,
+        "rating": 5.0,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 7,
+        "rating": 3.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 7,
+        "rating": 1.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 7,
+        "rating": 4.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 7,
+        "rating": 2.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 7,
+        "rating": 2.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 7,
+        "rating": 1.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 7,
+        "rating": 4.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 7,
+        "rating": 2.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 7,
+        "rating": 5.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 7,
+        "rating": 2.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 7,
+        "rating": 4.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 7,
+        "rating": 1.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 7,
+        "rating": 2.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 7,
+        "rating": 2.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 7,
+        "rating": 4.0,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 7,
+        "rating": 4.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 7,
+        "rating": 2.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 7,
+        "rating": 1.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 7,
+        "rating": 1.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 7,
+        "rating": 4.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 7,
+        "rating": 1.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 7,
+        "rating": 1.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 8,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 8,
+        "rating": 5.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 8,
         "rating": 3.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 8,
+        "rating": 2.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 8,
+        "rating": 2.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 8,
+        "rating": 1.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 8,
+        "rating": 4.5,
         "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
     },
     {
-        "course_id": 25,
+        "course_id": 8,
+        "rating": 1.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 8,
+        "rating": 4.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 8,
         "rating": 3.5,
-        "content": "Good course, but the material could be more challenging for experienced learners."
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 8,
+        "rating": 2.0,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 8,
+        "rating": 3.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 8,
+        "rating": 1.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 8,
+        "rating": 3.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 8,
+        "rating": 1.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 8,
+        "rating": 2.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 8,
+        "rating": 3.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 8,
+        "rating": 1.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 8,
+        "rating": 4.5,
+        "content": "The course covered a wide range of topics, but the material could be more engaging."
+    },
+    {
+        "course_id": 8,
+        "rating": 2.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 8,
+        "rating": 1.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 8,
+        "rating": 5.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 8,
+        "rating": 4.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 8,
+        "rating": 4.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 8,
+        "rating": 1.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 8,
+        "rating": 1.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 8,
+        "rating": 3.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 9,
+        "rating": 1.5,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 9,
+        "rating": 1.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 9,
+        "rating": 3.5,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 9,
+        "rating": 2.0,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 9,
+        "rating": 5.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 9,
+        "rating": 1.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 9,
+        "rating": 5.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 9,
+        "rating": 3.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 9,
+        "rating": 4.0,
+        "content": "The course content was relevant and applicable to real-world scenarios."
+    },
+    {
+        "course_id": 9,
+        "rating": 3.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 9,
+        "rating": 2.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 9,
+        "rating": 3.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 9,
+        "rating": 2.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 9,
+        "rating": 3.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 9,
+        "rating": 2.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 9,
+        "rating": 1.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 9,
+        "rating": 3.5,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 9,
+        "rating": 2.0,
+        "content": "The instructor was knowledgeable, but the material was not well-organized."
+    },
+    {
+        "course_id": 9,
+        "rating": 2.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
     },
     {
         "course_id": 9,
         "rating": 4.5,
-        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
-    },
-    {
-        "course_id": 33,
-        "rating": 4.0,
         "content": "The course content was good, but the lack of real-world applications was a drawback."
     },
     {
-        "course_id": 26,
-        "rating": 4.0,
-        "content": "Engaging course with practical examples. The instructor was excellent."
+        "course_id": 9,
+        "rating": 2.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
     },
     {
-        "course_id": 5,
+        "course_id": 9,
+        "rating": 5.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 9,
         "rating": 3.5,
-        "content": "The course content was relevant and applicable to real-world scenarios."
+        "content": "The course provided a solid foundation. Would recommend to beginners."
     },
     {
-        "course_id": 36,
+        "course_id": 9,
         "rating": 2.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 9,
+        "rating": 3.5,
         "content": "Informative, but the lack of hands-on projects made it less engaging."
     },
     {
-        "course_id": 20,
+        "course_id": 9,
+        "rating": 3.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 9,
+        "rating": 3.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 10,
         "rating": 3.0,
         "content": "The course provided a solid foundation, but the quizzes were too easy."
     },
     {
-        "course_id": 3,
+        "course_id": 10,
+        "rating": 1.0,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 10,
+        "rating": 2.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 10,
+        "rating": 2.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 10,
+        "rating": 1.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 10,
+        "rating": 1.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 10,
+        "rating": 4.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 10,
+        "rating": 4.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 10,
+        "rating": 5.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 10,
+        "rating": 5.0,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 10,
+        "rating": 2.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 10,
+        "rating": 3.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 10,
+        "rating": 1.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 10,
+        "rating": 2.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 10,
+        "rating": 1.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 10,
+        "rating": 4.0,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 10,
+        "rating": 2.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 10,
+        "rating": 2.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 10,
+        "rating": 5.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 10,
+        "rating": 1.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 10,
+        "rating": 2.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 10,
+        "rating": 3.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 10,
+        "rating": 1.5,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 10,
+        "rating": 4.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 10,
+        "rating": 3.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 10,
+        "rating": 1.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 10,
+        "rating": 4.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 11,
+        "rating": 1.5,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.0,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 11,
+        "rating": 4.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 11,
+        "rating": 2.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 11,
+        "rating": 2.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 11,
+        "rating": 4.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 11,
+        "rating": 4.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 11,
+        "rating": 1.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 11,
+        "rating": 2.5,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 11,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 11,
+        "rating": 1.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 11,
+        "rating": 1.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 11,
+        "rating": 4.0,
+        "content": "The instructor was knowledgeable, but the material was not well-organized."
+    },
+    {
+        "course_id": 11,
+        "rating": 4.5,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 11,
+        "rating": 1.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 11,
+        "rating": 1.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 11,
+        "rating": 4.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 11,
+        "rating": 1.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 11,
+        "rating": 3.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 11,
+        "rating": 1.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 12,
+        "rating": 1.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 12,
+        "rating": 4.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 12,
+        "rating": 3.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 12,
+        "rating": 5.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 12,
+        "rating": 2.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 12,
+        "rating": 1.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 12,
+        "rating": 2.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 12,
+        "rating": 1.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 12,
+        "rating": 2.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 12,
+        "rating": 2.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 12,
+        "rating": 3.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 12,
+        "rating": 3.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 12,
+        "rating": 5.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 12,
+        "rating": 2.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 12,
+        "rating": 5.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 12,
+        "rating": 1.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 12,
+        "rating": 1.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 12,
+        "rating": 1.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 12,
+        "rating": 4.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 12,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 12,
+        "rating": 1.5,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 12,
+        "rating": 4.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 12,
+        "rating": 4.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 12,
+        "rating": 2.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 12,
+        "rating": 3.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 12,
+        "rating": 1.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 12,
+        "rating": 3.0,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 13,
+        "rating": 2.5,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 13,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 13,
+        "rating": 3.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 13,
+        "rating": 1.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 13,
+        "rating": 3.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 13,
+        "rating": 2.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 13,
+        "rating": 3.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 13,
+        "rating": 5.0,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 13,
+        "rating": 4.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 13,
+        "rating": 3.5,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 13,
+        "rating": 5.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 13,
+        "rating": 2.0,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 13,
+        "rating": 1.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 13,
+        "rating": 2.0,
+        "content": "The course content was relevant and applicable to real-world scenarios."
+    },
+    {
+        "course_id": 13,
+        "rating": 2.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 13,
+        "rating": 4.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 13,
+        "rating": 5.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 13,
+        "rating": 2.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 13,
+        "rating": 1.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 13,
+        "rating": 3.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 13,
+        "rating": 4.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 13,
+        "rating": 1.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 13,
+        "rating": 1.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 13,
+        "rating": 2.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 13,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 13,
+        "rating": 4.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 13,
+        "rating": 4.0,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 14,
+        "rating": 5.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 14,
+        "rating": 4.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 14,
+        "rating": 2.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 14,
+        "rating": 2.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 14,
+        "rating": 2.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 14,
+        "rating": 2.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 14,
+        "rating": 1.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 14,
+        "rating": 3.5,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 14,
+        "rating": 3.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 14,
+        "rating": 2.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 14,
+        "rating": 5.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 14,
+        "rating": 4.5,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 14,
+        "rating": 1.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 14,
+        "rating": 1.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 14,
+        "rating": 2.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 14,
+        "rating": 1.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 14,
+        "rating": 4.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 14,
+        "rating": 4.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 14,
+        "rating": 3.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 14,
+        "rating": 2.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 14,
+        "rating": 4.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 14,
+        "rating": 1.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 14,
+        "rating": 4.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 14,
+        "rating": 2.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 14,
+        "rating": 4.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 14,
+        "rating": 3.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 14,
+        "rating": 4.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 15,
+        "rating": 4.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 15,
+        "rating": 2.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 15,
+        "rating": 1.0,
+        "content": "Informative, but the lack of hands-on projects made it less engaging."
+    },
+    {
+        "course_id": 15,
+        "rating": 1.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 15,
+        "rating": 4.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 15,
+        "rating": 3.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 15,
+        "rating": 3.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 15,
+        "rating": 5.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 15,
+        "rating": 1.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 15,
+        "rating": 1.0,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 15,
+        "rating": 1.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 15,
+        "rating": 2.5,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 15,
+        "rating": 2.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 15,
+        "rating": 2.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 15,
+        "rating": 2.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 15,
+        "rating": 4.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 15,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 15,
+        "rating": 4.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 15,
+        "rating": 2.5,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 15,
+        "rating": 1.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 15,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 15,
+        "rating": 5.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 15,
+        "rating": 5.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 15,
+        "rating": 1.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 15,
+        "rating": 4.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 15,
+        "rating": 4.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 15,
+        "rating": 4.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 16,
+        "rating": 1.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 16,
+        "rating": 4.5,
+        "content": "The course content was relevant and applicable to real-world scenarios."
+    },
+    {
+        "course_id": 16,
+        "rating": 2.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 16,
+        "rating": 5.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 16,
+        "rating": 2.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 16,
+        "rating": 1.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 16,
+        "rating": 2.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 16,
+        "rating": 2.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 16,
+        "rating": 2.0,
+        "content": "The course covered a wide range of topics, but the material could be more engaging."
+    },
+    {
+        "course_id": 16,
+        "rating": 1.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 16,
+        "rating": 4.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 16,
+        "rating": 2.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 16,
+        "rating": 1.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 16,
+        "rating": 4.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 16,
+        "rating": 2.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.5,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 16,
+        "rating": 3.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 16,
+        "rating": 2.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 16,
+        "rating": 4.0,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 16,
+        "rating": 1.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 17,
+        "rating": 2.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 17,
+        "rating": 4.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 17,
+        "rating": 1.0,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 17,
+        "rating": 1.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 17,
+        "rating": 4.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 17,
+        "rating": 2.5,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 17,
+        "rating": 2.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 17,
+        "rating": 1.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 17,
+        "rating": 2.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 17,
+        "rating": 4.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 17,
+        "rating": 1.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 17,
+        "rating": 5.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 17,
+        "rating": 4.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 17,
+        "rating": 3.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 17,
+        "rating": 2.0,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 17,
+        "rating": 2.5,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 17,
+        "rating": 3.5,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 17,
+        "rating": 3.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 17,
+        "rating": 1.5,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 17,
+        "rating": 1.5,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 17,
+        "rating": 4.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 17,
+        "rating": 5.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 17,
+        "rating": 4.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 17,
+        "rating": 3.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 17,
+        "rating": 4.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 17,
+        "rating": 4.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 17,
+        "rating": 1.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 18,
+        "rating": 3.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 18,
+        "rating": 3.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 18,
+        "rating": 2.0,
+        "content": "The instructor was knowledgeable, but the material was not well-organized."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.0,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 18,
+        "rating": 3.5,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 18,
+        "rating": 1.0,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 18,
+        "rating": 2.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 18,
+        "rating": 2.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 18,
+        "rating": 1.5,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 18,
+        "rating": 5.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 18,
+        "rating": 1.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 18,
+        "rating": 2.0,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 18,
+        "rating": 1.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 18,
+        "rating": 5.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 18,
+        "rating": 1.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 18,
+        "rating": 5.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 18,
+        "rating": 1.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 18,
+        "rating": 3.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 18,
+        "rating": 4.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 18,
+        "rating": 3.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 19,
+        "rating": 3.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 19,
+        "rating": 2.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 19,
+        "rating": 4.5,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 19,
+        "rating": 2.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 19,
+        "rating": 5.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 19,
+        "rating": 2.5,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 19,
+        "rating": 4.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 19,
+        "rating": 1.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 19,
+        "rating": 3.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 19,
+        "rating": 5.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 19,
+        "rating": 1.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 19,
+        "rating": 3.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 19,
+        "rating": 5.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 19,
+        "rating": 3.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 19,
+        "rating": 2.0,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 19,
+        "rating": 4.5,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 19,
+        "rating": 3.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 19,
+        "rating": 2.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 19,
+        "rating": 2.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 19,
+        "rating": 2.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 19,
+        "rating": 5.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 19,
+        "rating": 1.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 19,
+        "rating": 2.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 19,
+        "rating": 4.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 19,
+        "rating": 3.5,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 19,
+        "rating": 4.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 19,
+        "rating": 4.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 20,
+        "rating": 3.5,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 20,
+        "rating": 3.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 20,
+        "rating": 1.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 20,
+        "rating": 5.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 20,
+        "rating": 4.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 20,
+        "rating": 3.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 20,
+        "rating": 1.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 20,
+        "rating": 4.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 20,
+        "rating": 4.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 20,
+        "rating": 3.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 20,
+        "rating": 3.0,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 20,
+        "rating": 4.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.0,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 20,
+        "rating": 4.0,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 20,
+        "rating": 5.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 20,
+        "rating": 3.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 20,
+        "rating": 5.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 20,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 20,
+        "rating": 4.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 20,
+        "rating": 1.0,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 21,
+        "rating": 4.5,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 21,
+        "rating": 2.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 21,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 21,
+        "rating": 2.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 21,
+        "rating": 2.5,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 21,
+        "rating": 1.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 21,
+        "rating": 3.5,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 21,
+        "rating": 2.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 21,
+        "rating": 4.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 21,
+        "rating": 2.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 21,
+        "rating": 2.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 21,
+        "rating": 1.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 21,
+        "rating": 1.5,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 21,
+        "rating": 3.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 21,
+        "rating": 3.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 21,
+        "rating": 5.0,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 21,
+        "rating": 3.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 21,
+        "rating": 2.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 21,
+        "rating": 1.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 21,
+        "rating": 1.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 21,
+        "rating": 1.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 21,
+        "rating": 3.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 21,
+        "rating": 5.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 21,
+        "rating": 3.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 21,
+        "rating": 3.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 21,
+        "rating": 4.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 21,
+        "rating": 2.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 22,
+        "rating": 5.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 22,
+        "rating": 5.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 22,
+        "rating": 2.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 22,
+        "rating": 3.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 22,
+        "rating": 1.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 22,
+        "rating": 4.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 22,
+        "rating": 3.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 22,
+        "rating": 2.5,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 22,
+        "rating": 4.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 22,
+        "rating": 1.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 22,
+        "rating": 5.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 22,
+        "rating": 5.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 22,
+        "rating": 4.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 22,
+        "rating": 2.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 22,
+        "rating": 3.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 22,
+        "rating": 2.0,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 22,
+        "rating": 1.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 22,
+        "rating": 1.5,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 22,
+        "rating": 3.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 22,
+        "rating": 4.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 22,
+        "rating": 4.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 22,
+        "rating": 4.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 22,
+        "rating": 2.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 22,
+        "rating": 1.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 22,
+        "rating": 3.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 22,
+        "rating": 4.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 22,
+        "rating": 2.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 23,
+        "rating": 1.5,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 23,
+        "rating": 3.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 23,
+        "rating": 3.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 23,
+        "rating": 4.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 23,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 23,
+        "rating": 4.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 23,
+        "rating": 3.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 23,
+        "rating": 5.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 23,
+        "rating": 3.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 23,
+        "rating": 3.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 23,
+        "rating": 1.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 23,
+        "rating": 1.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 23,
+        "rating": 3.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 23,
+        "rating": 1.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 23,
+        "rating": 1.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 23,
+        "rating": 3.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 23,
+        "rating": 3.0,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.5,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 23,
+        "rating": 2.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 24,
+        "rating": 4.5,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 24,
+        "rating": 1.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 24,
+        "rating": 2.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 24,
+        "rating": 5.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 24,
+        "rating": 2.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 24,
+        "rating": 2.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 24,
+        "rating": 2.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 24,
+        "rating": 4.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 24,
+        "rating": 2.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 24,
+        "rating": 1.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 24,
+        "rating": 3.0,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 24,
+        "rating": 1.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 24,
+        "rating": 4.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 24,
+        "rating": 2.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 24,
+        "rating": 4.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 24,
+        "rating": 4.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 24,
+        "rating": 5.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 24,
+        "rating": 1.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 24,
+        "rating": 3.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 24,
+        "rating": 1.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 24,
+        "rating": 3.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 24,
+        "rating": 1.5,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 24,
+        "rating": 5.0,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 24,
+        "rating": 4.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 24,
+        "rating": 1.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 24,
+        "rating": 3.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 24,
+        "rating": 4.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 25,
+        "rating": 1.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 25,
         "rating": 4.5,
         "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 25,
+        "rating": 3.0,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 25,
+        "rating": 3.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 25,
+        "rating": 4.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 25,
+        "rating": 1.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 25,
+        "rating": 3.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 25,
+        "rating": 2.5,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 25,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 25,
+        "rating": 2.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 25,
+        "rating": 4.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 25,
+        "rating": 2.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 25,
+        "rating": 2.5,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 25,
+        "rating": 2.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 25,
+        "rating": 5.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 25,
+        "rating": 4.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 25,
+        "rating": 1.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 25,
+        "rating": 5.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 25,
+        "rating": 1.5,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 25,
+        "rating": 5.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 25,
+        "rating": 2.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 25,
+        "rating": 2.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 25,
+        "rating": 4.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 25,
+        "rating": 4.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 25,
+        "rating": 4.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 25,
+        "rating": 1.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 25,
+        "rating": 4.0,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 26,
+        "rating": 4.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 26,
+        "rating": 2.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 26,
+        "rating": 1.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 26,
+        "rating": 2.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 26,
+        "rating": 2.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 26,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 26,
+        "rating": 5.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 26,
+        "rating": 2.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 26,
+        "rating": 3.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 26,
+        "rating": 4.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 26,
+        "rating": 5.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 26,
+        "rating": 3.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 26,
+        "rating": 1.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 26,
+        "rating": 4.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 26,
+        "rating": 1.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 26,
+        "rating": 3.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 26,
+        "rating": 3.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 26,
+        "rating": 1.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 26,
+        "rating": 1.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 26,
+        "rating": 3.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 26,
+        "rating": 5.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 26,
+        "rating": 1.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 26,
+        "rating": 2.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 26,
+        "rating": 3.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 26,
+        "rating": 5.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 26,
+        "rating": 4.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 26,
+        "rating": 4.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 27,
+        "rating": 5.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 27,
+        "rating": 3.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 27,
+        "rating": 2.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 27,
+        "rating": 3.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 27,
+        "rating": 2.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 27,
+        "rating": 3.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 27,
+        "rating": 2.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 27,
+        "rating": 1.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 27,
+        "rating": 3.0,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 27,
+        "rating": 1.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 27,
+        "rating": 3.0,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 27,
+        "rating": 2.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 27,
+        "rating": 3.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 27,
+        "rating": 4.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 27,
+        "rating": 3.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 27,
+        "rating": 1.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 27,
+        "rating": 2.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 27,
+        "rating": 5.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 27,
+        "rating": 1.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 27,
+        "rating": 1.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 27,
+        "rating": 3.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 27,
+        "rating": 4.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 27,
+        "rating": 4.5,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 27,
+        "rating": 2.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 27,
+        "rating": 5.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 27,
+        "rating": 4.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 27,
+        "rating": 2.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 28,
+        "rating": 4.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 28,
+        "rating": 4.5,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 28,
+        "rating": 5.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 28,
+        "rating": 3.5,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 28,
+        "rating": 3.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 28,
+        "rating": 5.0,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.0,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 28,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 28,
+        "rating": 5.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 28,
+        "rating": 1.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.0,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 28,
+        "rating": 1.5,
+        "content": "The content was okay, but the pace was a bit too fast for me."
+    },
+    {
+        "course_id": 28,
+        "rating": 4.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 28,
+        "rating": 1.5,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 28,
+        "rating": 1.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 28,
+        "rating": 3.0,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 28,
+        "rating": 2.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 28,
+        "rating": 1.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 28,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 28,
+        "rating": 3.5,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 29,
+        "rating": 3.0,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.0,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.5,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 29,
+        "rating": 1.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 29,
+        "rating": 3.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 29,
+        "rating": 3.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 29,
+        "rating": 1.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 29,
+        "rating": 1.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 29,
+        "rating": 5.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 29,
+        "rating": 5.0,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 29,
+        "rating": 3.5,
+        "content": "The course content was relevant and applicable to real-world scenarios."
+    },
+    {
+        "course_id": 29,
+        "rating": 1.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 29,
+        "rating": 2.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 29,
+        "rating": 1.0,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 29,
+        "rating": 1.0,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 29,
+        "rating": 5.0,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 29,
+        "rating": 1.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 29,
+        "rating": 4.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 29,
+        "rating": 2.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 29,
+        "rating": 2.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 30,
+        "rating": 5.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 30,
+        "rating": 2.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 30,
+        "rating": 5.0,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 30,
+        "rating": 4.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 30,
+        "rating": 4.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 30,
+        "rating": 3.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 30,
+        "rating": 5.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 30,
+        "rating": 2.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 30,
+        "rating": 5.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 30,
+        "rating": 4.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 30,
+        "rating": 3.0,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 30,
+        "rating": 3.0,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 30,
+        "rating": 4.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 30,
+        "rating": 5.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 30,
+        "rating": 1.5,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 30,
+        "rating": 5.0,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 30,
+        "rating": 1.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 30,
+        "rating": 5.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 30,
+        "rating": 4.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 30,
+        "rating": 2.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 30,
+        "rating": 3.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 30,
+        "rating": 4.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 30,
+        "rating": 3.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 30,
+        "rating": 3.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 30,
+        "rating": 1.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 30,
+        "rating": 1.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 30,
+        "rating": 2.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 31,
+        "rating": 2.5,
+        "content": "The course was informative, but the assignments were too time-consuming."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 31,
+        "rating": 3.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 31,
+        "rating": 3.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 31,
+        "rating": 1.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 31,
+        "rating": 3.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.5,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 31,
+        "rating": 2.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 31,
+        "rating": 1.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 31,
+        "rating": 3.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 31,
+        "rating": 3.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 31,
+        "rating": 3.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.0,
+        "content": "The instructor was knowledgeable, but the material was not well-organized."
+    },
+    {
+        "course_id": 31,
+        "rating": 2.5,
+        "content": "The instructor was knowledgeable, but the material was not well-organized."
+    },
+    {
+        "course_id": 31,
+        "rating": 2.5,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 31,
+        "rating": 1.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 31,
+        "rating": 3.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 31,
+        "rating": 2.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 31,
+        "rating": 2.5,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 31,
+        "rating": 1.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 31,
+        "rating": 4.0,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 31,
+        "rating": 3.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts."
+    },
+    {
+        "course_id": 32,
+        "rating": 4.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 32,
+        "rating": 1.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 32,
+        "rating": 5.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 32,
+        "rating": 2.0,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 32,
+        "rating": 2.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 32,
+        "rating": 4.5,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 32,
+        "rating": 1.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 32,
+        "rating": 5.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 32,
+        "rating": 1.0,
+        "content": "Solid foundation for beginners. The instructor was easy to follow."
+    },
+    {
+        "course_id": 32,
+        "rating": 4.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 32,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 32,
+        "rating": 3.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 32,
+        "rating": 1.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 32,
+        "rating": 3.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 32,
+        "rating": 2.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 32,
+        "rating": 5.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 32,
+        "rating": 1.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 32,
+        "rating": 5.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 32,
+        "rating": 2.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 32,
+        "rating": 3.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 32,
+        "rating": 1.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 32,
+        "rating": 4.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 32,
+        "rating": 2.5,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 32,
+        "rating": 5.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 32,
+        "rating": 3.0,
+        "content": "The course covered a wide range of topics, but the material could be more engaging."
+    },
+    {
+        "course_id": 32,
+        "rating": 5.0,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 32,
+        "rating": 4.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 33,
+        "rating": 4.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 33,
+        "rating": 2.5,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 33,
+        "rating": 2.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 33,
+        "rating": 5.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 33,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 33,
+        "rating": 2.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 33,
+        "rating": 5.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 33,
+        "rating": 2.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 33,
+        "rating": 3.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 33,
+        "rating": 5.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 33,
+        "rating": 3.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 33,
+        "rating": 2.0,
+        "content": "The instructor was knowledgeable, but the material was not well-organized."
+    },
+    {
+        "course_id": 33,
+        "rating": 1.0,
+        "content": "The course content was relevant and applicable to real-world scenarios."
+    },
+    {
+        "course_id": 33,
+        "rating": 2.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 33,
+        "rating": 5.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 33,
+        "rating": 4.5,
+        "content": "The course covered the basics well, but I expected more hands-on projects."
+    },
+    {
+        "course_id": 33,
+        "rating": 1.0,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 33,
+        "rating": 1.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 33,
+        "rating": 4.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 33,
+        "rating": 3.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 33,
+        "rating": 3.5,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 33,
+        "rating": 4.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 33,
+        "rating": 1.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 33,
+        "rating": 2.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 33,
+        "rating": 4.5,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 33,
+        "rating": 3.5,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 33,
+        "rating": 4.0,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 34,
+        "rating": 5.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 34,
+        "rating": 3.0,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.5,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.0,
+        "content": "Challenging but rewarding. Great for those looking to deepen their knowledge."
+    },
+    {
+        "course_id": 34,
+        "rating": 3.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.5,
+        "content": "Disappointed with the lack of real-world examples."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.0,
+        "content": "The course content was good, but the assessments were too easy."
+    },
+    {
+        "course_id": 34,
+        "rating": 2.5,
+        "content": "Great course for building a solid foundation. Clear explanations."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.5,
+        "content": "Exceptional course! In-depth coverage of advanced concepts with practical insights."
+    },
+    {
+        "course_id": 34,
+        "rating": 1.0,
+        "content": "Thorough coverage of advanced topics. Practical exercises were enlightening."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.0,
+        "content": "The course lacked depth, and the exercises were too simple."
+    },
+    {
+        "course_id": 34,
+        "rating": 2.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 34,
+        "rating": 1.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 34,
+        "rating": 1.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 34,
+        "rating": 2.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 34,
+        "rating": 2.0,
+        "content": "The instructor's enthusiasm made the course enjoyable."
+    },
+    {
+        "course_id": 34,
+        "rating": 1.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 34,
+        "rating": 3.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 34,
+        "rating": 1.5,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 34,
+        "rating": 4.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 34,
+        "rating": 2.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 34,
+        "rating": 1.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 34,
+        "rating": 2.5,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 34,
+        "rating": 2.5,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 34,
+        "rating": 3.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 35,
+        "rating": 5.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 35,
+        "rating": 5.0,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 35,
+        "rating": 1.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 35,
+        "rating": 1.5,
+        "content": "Good course for beginners, but it lacks advanced content."
+    },
+    {
+        "course_id": 35,
+        "rating": 2.5,
+        "content": "Informative, but the lack of hands-on projects made it less engaging."
+    },
+    {
+        "course_id": 35,
+        "rating": 4.5,
+        "content": "The course content was relevant and up-to-date. Worth the investment."
+    },
+    {
+        "course_id": 35,
+        "rating": 2.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 35,
+        "rating": 3.0,
+        "content": "Practical and insightful. The real-world applications were beneficial."
+    },
+    {
+        "course_id": 35,
+        "rating": 4.5,
+        "content": "The course had potential, but the lack of interactive elements was disappointing."
+    },
+    {
+        "course_id": 35,
+        "rating": 4.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 35,
+        "rating": 3.0,
+        "content": "Well-presented material with useful examples."
+    },
+    {
+        "course_id": 35,
+        "rating": 2.5,
+        "content": "The course content was relevant and applicable to real-world scenarios."
+    },
+    {
+        "course_id": 35,
+        "rating": 3.0,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 35,
+        "rating": 4.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 35,
+        "rating": 2.5,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 35,
+        "rating": 1.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 35,
+        "rating": 2.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 35,
+        "rating": 1.0,
+        "content": "Solid content, but the video quality could be improved."
+    },
+    {
+        "course_id": 35,
+        "rating": 5.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
+    },
+    {
+        "course_id": 35,
+        "rating": 2.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 35,
+        "rating": 5.0,
+        "content": "Informative, but the lack of quizzes made it challenging to assess my understanding."
+    },
+    {
+        "course_id": 35,
+        "rating": 2.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 35,
+        "rating": 5.0,
+        "content": "The course content was good, but the lack of real-world applications was a drawback."
+    },
+    {
+        "course_id": 35,
+        "rating": 1.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 35,
+        "rating": 1.0,
+        "content": "The course was informative, but some topics felt outdated."
+    },
+    {
+        "course_id": 35,
+        "rating": 3.0,
+        "content": "The course provided a solid foundation. Would recommend to beginners."
+    },
+    {
+        "course_id": 35,
+        "rating": 1.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 36,
+        "rating": 4.5,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 36,
+        "rating": 1.5,
+        "content": "The real-world examples were invaluable. Practical insights throughout."
+    },
+    {
+        "course_id": 36,
+        "rating": 1.5,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.5,
+        "content": "Engaging and thought-provoking. Highly recommended."
+    },
+    {
+        "course_id": 36,
+        "rating": 3.5,
+        "content": "Excellent course! Practical exercises made it easy to apply concepts."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.5,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 36,
+        "rating": 4.5,
+        "content": "The course covered the basics well, but I expected more advanced topics."
+    },
+    {
+        "course_id": 36,
+        "rating": 5.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 36,
+        "rating": 3.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 36,
+        "rating": 5.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 36,
+        "rating": 1.0,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.0,
+        "content": "Absolutely loved this course! The instructor was fantastic."
+    },
+    {
+        "course_id": 36,
+        "rating": 1.0,
+        "content": "Good course, but the material could be more challenging for experienced learners."
+    },
+    {
+        "course_id": 36,
+        "rating": 3.5,
+        "content": "Enjoyed the hands-on projects. Practical approach to learning."
+    },
+    {
+        "course_id": 36,
+        "rating": 3.0,
+        "content": "Informative, but the lack of practical examples was a drawback."
+    },
+    {
+        "course_id": 36,
+        "rating": 4.5,
+        "content": "Clear explanations, but some topics felt rushed."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.0,
+        "content": "Good course overall, but the video lectures could be more dynamic."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 36,
+        "rating": 3.0,
+        "content": "Informative, but the lack of hands-on projects made it less engaging."
+    },
+    {
+        "course_id": 36,
+        "rating": 3.0,
+        "content": "This course was very informative and well-structured."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.0,
+        "content": "Engaging course with practical examples. The instructor was excellent."
+    },
+    {
+        "course_id": 36,
+        "rating": 1.0,
+        "content": "Enjoyed the interactive elements. Kept me engaged throughout."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.5,
+        "content": "The course provided a solid foundation, but the quizzes were too easy."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.0,
+        "content": "Good content, but the quizzes were a bit too easy."
+    },
+    {
+        "course_id": 36,
+        "rating": 3.0,
+        "content": "Outstanding course! Great balance between theory and practical applications."
+    },
+    {
+        "course_id": 36,
+        "rating": 2.5,
+        "content": "The course content was relevant and applicable to real-world scenarios."
+    },
+    {
+        "course_id": 36,
+        "rating": 3.0,
+        "content": "The course content was comprehensive, but the pacing was uneven."
     }
 ]
