@@ -1,0 +1,364 @@
+[
+    {
+        "category_ids": [
+            1
+        ],
+        "title": "Web Development Bootcamp",
+        "description": "Comprehensive course covering HTML, CSS, and JavaScript.",
+        "price": 49.99,
+        "author": "John Doe"
+    },
+    {
+        "category_ids": [
+            4,
+            5
+        ],
+        "title": "Python for Beginners",
+        "description": "Learn Python programming from scratch.",
+        "price": 29.99,
+        "author": "Jane Smith"
+    },
+    {
+        "category_ids": [
+            7,
+            8,
+            9
+        ],
+        "title": "ReactJs Mastery",
+        "description": "Master ReactJs with hands-on projects.",
+        "price": 39.99,
+        "author": "Sam Johnson"
+    },
+    {
+        "category_ids": [
+            10
+        ],
+        "title": "Mobile App Development with React Native",
+        "description": "Build mobile apps using React Native.",
+        "price": 44.99,
+        "author": "Emily White"
+    },
+    {
+        "category_ids": [
+            13,
+            14
+        ],
+        "title": "Machine Learning Fundamentals",
+        "description": "Introduction to machine learning concepts.",
+        "price": 54.99,
+        "author": "Michael Brown"
+    },
+    {
+        "category_ids": [
+            16,
+            17,
+            18
+        ],
+        "title": "Unity Game Development",
+        "description": "Create games using the Unity game engine.",
+        "price": 59.99,
+        "author": "Alex Turner"
+    },
+    {
+        "category_ids": [
+            19
+        ],
+        "title": "Entrepreneurship 101",
+        "description": "Learn the essentials of starting a business.",
+        "price": 29.99,
+        "author": "David Miller"
+    },
+    {
+        "category_ids": [
+            22,
+            1
+        ],
+        "title": "Financial Planning for Success",
+        "description": "Plan your finances for a secure future.",
+        "price": 34.99,
+        "author": "Sophie Davis"
+    },
+    {
+        "category_ids": [
+            3,
+            4,
+            5
+        ],
+        "title": "Digital Marketing Essentials",
+        "description": "Master SEO, Social Media, and Content Marketing.",
+        "price": 39.99,
+        "author": "Chris Anderson"
+    },
+    {
+        "category_ids": [
+            6,
+            7
+        ],
+        "title": "Photography Basics: Capturing Moments",
+        "description": "Master camera settings, composition, and lighting.",
+        "price": 49.99,
+        "author": "Emma Turner"
+    },
+    {
+        "category_ids": [
+            10
+        ],
+        "title": "Fitness Training for Beginners",
+        "description": "Get started with cardio, strength training, and yoga.",
+        "price": 24.99,
+        "author": "Olivia Martin"
+    },
+    {
+        "category_ids": [
+            13,
+            14,
+            15
+        ],
+        "title": "Healthy Eating Habits",
+        "description": "Learn the fundamentals of maintaining a healthy diet.",
+        "price": 19.99,
+        "author": "Daniel White"
+    },
+    {
+        "category_ids": [
+            16,
+            17
+        ],
+        "title": "Music Theory: Understanding Notes and Scales",
+        "description": "Learn the basics of music theory.",
+        "price": 29.99,
+        "author": "Eva Green"
+    },
+    {
+        "category_ids": [
+            20,
+            21,
+            22
+        ],
+        "title": "Guitar Techniques for Beginners",
+        "description": "Master the basics of playing the guitar.",
+        "price": 34.99,
+        "author": "Mark Robinson"
+    },
+    {
+        "category_ids": [
+            1,
+            2
+        ],
+        "title": "Recording and Mixing: Music Production",
+        "description": "Learn the art of recording and mixing music.",
+        "price": 49.99,
+        "author": "Laura Thompson"
+    },
+    {
+        "category_ids": [
+            3
+        ],
+        "title": "Advanced Python Programming",
+        "description": "Take your Python skills to the next level.",
+        "price": 44.99,
+        "author": "Robert Harris"
+    },
+    {
+        "category_ids": [
+            6,
+            7,
+            8
+        ],
+        "title": "VueJs: Building Interactive Web Apps",
+        "description": "Create dynamic web applications with VueJs.",
+        "price": 39.99,
+        "author": "Grace Lee"
+    },
+    {
+        "category_ids": [
+            10
+        ],
+        "title": "IOS Development: App Development for Apple Devices",
+        "description": "Build apps for iOS devices.",
+        "price": 54.99,
+        "author": "Matthew Turner"
+    },
+    {
+        "category_ids": [
+            13,
+            14,
+            15
+        ],
+        "title": "Unreal Engine Game Development",
+        "description": "Develop games using the Unreal Engine.",
+        "price": 59.99,
+        "author": "Anna Carter"
+    },
+    {
+        "category_ids": [
+            16,
+            17
+        ],
+        "title": "SEO Mastery: Rank Your Website on Search Engines",
+        "description": "Optimize your website for search engines.",
+        "price": 29.99,
+        "author": "Carlos Rodriguez"
+    },
+    {
+        "category_ids": [
+            20,
+            21,
+            22
+        ],
+        "title": "Presentation Skills: Speak with Confidence",
+        "description": "Enhance your presentation and public speaking skills.",
+        "price": 34.99,
+        "author": "Sophia Turner"
+    },
+    {
+        "category_ids": [
+            3
+        ],
+        "title": "Meal Planning for Busy Lives",
+        "description": "Plan healthy meals in a busy schedule.",
+        "price": 49.99,
+        "author": "Laura Thompson"
+    },
+    {
+        "category_ids": [
+            6,
+            7
+        ],
+        "title": "Deep Learning Fundamentals",
+        "description": "Introduction to deep learning concepts.",
+        "price": 44.99,
+        "author": "Robert Harris"
+    },
+    {
+        "category_ids": [
+            10
+        ],
+        "title": "Social Media Advertising Strategies",
+        "description": "Create effective social media advertising campaigns.",
+        "price": 39.99,
+        "author": "Grace Lee"
+    },
+    {
+        "category_ids": [
+            13,
+            14,
+            15
+        ],
+        "title": "Portrait Photography Techniques",
+        "description": "Master the art of capturing stunning portraits.",
+        "price": 54.99,
+        "author": "Matthew Turner"
+    },
+    {
+        "category_ids": [
+            16,
+            17
+        ],
+        "title": "Personal Finance Management",
+        "description": "Learn to manage personal finances effectively.",
+        "price": 59.99,
+        "author": "Anna Carter"
+    },
+    {
+        "category_ids": [
+            1,
+            2
+        ],
+        "title": "Content Marketing Strategies for Success",
+        "description": "Develop effective content marketing strategies.",
+        "price": 29.99,
+        "author": "Carlos Rodriguez"
+    },
+    {
+        "category_ids": [
+            3
+        ],
+        "title": "Advanced Photography: Lighting Techniques",
+        "description": "Master advanced lighting techniques in photography.",
+        "price": 34.99,
+        "author": "Sophia Turner"
+    },
+    {
+        "category_ids": [
+            6,
+            7,
+            8
+        ],
+        "title": "Cardio Workouts for a Healthy Heart",
+        "description": "Get fit with effective cardio workouts.",
+        "price": 19.99,
+        "author": "Daniel White"
+    },
+    {
+        "category_ids": [
+            10
+        ],
+        "title": "Online Advertising: Strategies for Success",
+        "description": "Create impactful online advertising campaigns.",
+        "price": 29.99,
+        "author": "Eva Green"
+    },
+    {
+        "category_ids": [
+            13,
+            14,
+            15
+        ],
+        "title": "Product Management Essentials",
+        "description": "Master the essentials of product management.",
+        "price": 34.99,
+        "author": "Mark Robinson"
+    },
+    {
+        "category_ids": [
+            16,
+            17
+        ],
+        "title": "Healthy Eating: Nutrition for Well-being",
+        "description": "Understand the importance of nutrition for a healthy life.",
+        "price": 49.99,
+        "author": "Laura Thompson"
+    },
+    {
+        "category_ids": [
+            20,
+            21,
+            22
+        ],
+        "title": "Advanced Music Composition Techniques",
+        "description": "Explore advanced techniques in music composition.",
+        "price": 44.99,
+        "author": "Robert Harris"
+    },
+    {
+        "category_ids": [
+            1,
+            2
+        ],
+        "title": "Piano Techniques for Beginners",
+        "description": "Learn the basics of playing the piano.",
+        "price": 39.99,
+        "author": "Grace Lee"
+    },
+    {
+        "category_ids": [
+            3
+        ],
+        "title": "Mixing and Mastering: Music Production",
+        "description": "Learn the art of mixing and mastering music.",
+        "price": 54.99,
+        "author": "Matthew Turner"
+    },
+    {
+        "category_ids": [
+            6,
+            7,
+            8
+        ],
+        "title": "Advanced Python Data Science",
+        "description": "Explore advanced data science concepts using Python.",
+        "price": 59.99,
+        "author": "Anna Carter"
+    }
+]
