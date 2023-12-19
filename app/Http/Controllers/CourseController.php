@@ -6,6 +6,7 @@ use App\Models\Course;
 use App\Http\Requests\StoreCourseRequest;
 use App\Http\Requests\UpdateCourseRequest;
 use App\Http\Resources\CourseResource;
+use App\Http\Resources\CourseReviewResource;
 use Illuminate\Http\Request;
 
 
@@ -19,7 +20,7 @@ class CourseController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+        $this->middleware('jwt.admin', ['except' => ['index','show','get_reviews', 'get_chapters']]);
     }
     /**
      * Display a paginated listing of courses.
@@ -217,5 +218,102 @@ class CourseController extends Controller
 
         $course->delete();
         return response()->json(['message' => 'Course deleted'], 204);
+    }
+
+    /**
+     * Display a listing of reviews for the specified course.
+     *
+     * @OA\Get(
+     *     path="/api/courses/{course_id}/reviews",
+     *     summary="Display a listing of reviews for the specified course",
+     *     tags={"Courses"},
+     *     @OA\Parameter(
+     *         name="course_id",
+     *         in="path",
+     *         description="ID of the course",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Parameter(
+     *         name="pageNum",
+     *         in="query",
+     *         description="Page number",
+     *         required=false,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Parameter(
+     *         name="pageSize",
+     *         in="query",
+     *         description="Number of items per page",
+     *         required=false,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/CourseReviewResource")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Course not found"
+     *     )
+     * )
+     */
+    public function get_reviews($course_id, $pageNum = 1, $pageSize = 10)
+    {
+        $course = Course::find($course_id);
+
+        if (!$course) {
+            return response()->json(['message' => 'Course not found'], 404);
+        }
+
+        $reviews = $course->reviews()->with('user')->paginate($pageSize, ['*'], 'page', $pageNum);
+
+        return CourseReviewResource::collection($reviews);
+    }
+
+
+    /**
+     * Display a listing of chapters for the specified course.
+     *
+     * @OA\Get(
+     *     path="/api/courses/{course_id}/chapters",
+     *     summary="Display a listing of chapters for the specified course",
+     *     tags={"Courses"},
+     *     @OA\Parameter(
+     *         name="course_id",
+     *         in="path",
+     *         description="ID of the course",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/ChapterResource")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Course not found"
+     *     ),
+     * )
+     */
+    public function get_chapters($course_id)
+    {
+        $course = Course::find($course_id);
+
+        if (!$course) {
+            return response()->json(['message' => 'Course not found'], 404);
+        }
+
+        $chapters = $course->chapters()->with('lectures')->get();
+
+        return ChapterResource::collection($chapters);
     }
 }
