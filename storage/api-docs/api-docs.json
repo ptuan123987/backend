@@ -1809,14 +1809,12 @@
                         "type": "string"
                     },
                     "video": {
-                        "description": "Video file.",
-                        "type": "string",
-                        "format": "binary"
+                        "description": "video.",
+                        "type": "file"
                     },
                     "thumbnail_img": {
                         "description": "Thumbnail image.",
-                        "type": "string",
-                        "format": "binary"
+                        "type": "file"
                     },
                     "resources": {
                         "description": "List of resources for the lecture.",

@@ -8,10 +8,12 @@ use App\Http\Requests\RegisterRequest;
 use App\Http\Requests\PasswordRequest;
 use App\Http\Resources\UserResource;
 use App\Jobs\SendEmailRegistration;
+use App\Mail\SendWelcomeMail;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Repositories\UserRepository;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Tymon\JWTAuth\Facades\JWTAuth;
 class AuthService
 {
@@ -24,7 +26,6 @@ class AuthService
 
     public function register(RegisterRequest $request) {
         $user = $this->userRepository->createUser($request);
-
         SendWelcomeEmail::dispatch('Welcome!', $user->email, $user->name);
         return $user;
     }

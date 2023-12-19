@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Http\Requests\PasswordRequest;
+use App\Models\User;
 use App\Traits\HttpResponses;
 use App\Services\AuthService;
 use Illuminate\Support\Facades\Auth;
@@ -49,7 +50,7 @@ class AuthController extends Controller
      */
     public function login(LoginRequest $request)
     {
-        $request->validated($request->all());
+        $request->validated();
 
         if (!Auth::attempt($request->only('email', 'password'))) {
             return $this->error('', 'Credentials do not match', 401);
@@ -78,7 +79,9 @@ class AuthController extends Controller
      */
     public function register(RegisterRequest $request)
     {
-        $request->validated($request->all());
+
+
+       $request = $request->validated();
 
         $response = $this->authService->register($request);
         return $this->created("", "User successfully registered");

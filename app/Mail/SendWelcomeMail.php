@@ -35,8 +35,9 @@ class SendWelcomeMail extends Mailable
      */
     public function build()
     {  // customer_mail is the name of template
-        return $this->subject($this->title) ->view('customer_mail')>with([
-            'email' => $this->email
+        return $this->subject($this->title)->markdown('customer_mail')->with([
+            'email' => $this->email,
+            'name' => $this->name,
         ]);
     }
 }
