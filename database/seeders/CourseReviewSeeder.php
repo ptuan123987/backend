@@ -5,6 +5,7 @@ use Illuminate\Database\Seeder;
 use App\Models\CourseReview;
 use App\Models\User;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\DB;
 
 class CourseReviewSeeder extends Seeder
 {
@@ -15,6 +16,9 @@ class CourseReviewSeeder extends Seeder
      */
     public function run()
     {
+        // Truncate the course_reviews table
+        DB::table('course_reviews')->truncate();
+
         // Assuming you have users in your database
         $userIds = User::pluck('id')->toArray();
 
