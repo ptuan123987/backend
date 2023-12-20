@@ -82,6 +82,7 @@ Route::group([
     Route::post('/change-password', [AuthController::class, 'changePassWord']);
     Route::apiResource('/wishlists', WishlistController::class);
     Route::apiResource('/course-reviews', CourseReviewController::class);
+    Route::put('/edit-profile',[AuthController::class,'editProfile']);
 });
 
 

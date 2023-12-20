@@ -225,6 +225,53 @@
                 ]
             }
         },
+        "/api/user/edit-profile": {
+            "put": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "Edit profile",
+                "description": "Edit the profile of the authenticated user",
+                "operationId": "d43b3a677ddd110891c4229eb7978325",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "display_name": {
+                                        "type": "string",
+                                        "example": "New Display Name"
+                                    },
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "newemail@example.com"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "User profile updated successfully"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
         "/api/categories": {
             "get": {
                 "tags": [
@@ -978,7 +1025,7 @@
                 ],
                 "summary": "Display the specified course",
                 "description": "Display the specified course.",
-                "operationId": "f507f69de30e73b038b9d68c035cbc4f",
+                "operationId": "e60bc21136ac1e1be61ca244ec552eae",
                 "parameters": [
                     {
                         "name": "course_id",
@@ -1963,6 +2010,15 @@
                 "required": [
                     "old_password",
                     "new_password"
+                ],
+                "type": "object"
+            },
+            "ProfileRequest": {
+                "title": "Edit Profile request",
+                "description": "Profile change request body data",
+                "required": [
+                    "display_name",
+                    "email"
                 ],
                 "type": "object"
             },
