@@ -26,7 +26,7 @@ use Illuminate\Routing\Controller as BaseController;
  *     description="API server"
  * )
  *  * @OA\Server(
- *     url="http://57.181.106.82/",
+ *     url="https://api-study.salyr.online",
  *     description="production server"
  * )
  */

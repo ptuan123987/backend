@@ -6,11 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Http\Requests\PasswordRequest;
+use App\Http\Requests\ProfileRequest;
 use App\Models\User;
 use App\Traits\HttpResponses;
 use App\Services\AuthService;
 use Illuminate\Support\Facades\Auth;
 use OpenApi\Annotations as OA;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 /**
  * @OA\Tag(
@@ -140,6 +142,42 @@ class AuthController extends Controller
     {
         $response = $this->authService->changePassword($request);
         return $this->created("", "User successfully changed password");
+    }
+    /**
+     * @OA\Put(
+     *     path="/api/user/edit-profile",
+     *     tags={"auth"},
+     *     summary="Edit profile",
+     *     description="Edit the profile of the authenticated user",
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             @OA\Property(property="display_name", type="string", example="New Display Name"),
+     *             @OA\Property(property="email", type="string", format="email", example="newemail@example.com"),
+     *         ),
+     *     ),
+     *     @OA\Response(response="200", description="User profile updated successfully"),
+     *     @OA\Response(response="401", description="Unauthorized"),
+     *     @OA\Response(response="422", description="Unprocessable Entity"),
+     *     security={{"bearerAuth":{}}} )
+     */
+    public function editProfile(ProfileRequest $request)
+    {
+        $request = $request->validated();
+
+        $user = JWTAuth::parseToken()->authenticate();
+        $userId = $user->id;
+
+        $updated = User::where('id', $userId)->update([
+            'display_name' => $request['display_name'],
+            'email' => $request['email'],
+        ]);
+
+        if ($updated) {
+            return $this->success("", 'User profile updated successfully');
+        } else {
+            return $this->error("", 'Error updating profile');
+        }
     }
 
 
