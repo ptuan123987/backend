@@ -69,7 +69,9 @@ class PutVideoToS3 implements ShouldQueue
                 ]);
             }
         } catch (\Exception $e) {
-            Log::error('Error during video processing: ' . $e->getMessage());
+            Log::error('Error during video processing: ' . $e->getMessage(), [
+                'exception' => $e
+            ]);
         }
     }
 
