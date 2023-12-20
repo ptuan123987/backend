@@ -70,7 +70,7 @@ class UpdateLectureRequest extends FormRequest
     {
     return [
             'title' => 'nullable|string|max:255',
-            'video' => 'nullable|file|mimes:mp4,mov,avi|max:102400',
+            'video' => 'nullable|file|mimes:mp4,mov,avi|max:1048576',
             'thumbnail_img' => 'nullable|file|mimes:jpeg,png,jpg,gif',
             'resources' => 'nullable|array',
             'resources.*.title' => 'nullable|string|max:255',
