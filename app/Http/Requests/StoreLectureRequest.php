@@ -50,7 +50,7 @@ class StoreLectureRequest extends FormRequest
         return [
             'chapter_id' => 'required|exists:chapters,id',
             'title' => 'required|string|max:255',
-            'video' => 'required|file|mimes:mp4,mov,avi|max:102400',
+            'video' => 'required|file|mimes:mp4,mov,avi|max:1024000',
             'thumbnail_img' => 'nullable|file|mimes:jpeg,png,jpg,gif',
             'resources' => 'nullable|array',
             'resources.*.title' => 'required|string|max:255',
