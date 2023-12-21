@@ -14,7 +14,6 @@ class LectureSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('lectures')->truncate();
         $jsonData = file_get_contents(database_path('seeders/lectures.json'));
 
         $data = json_decode($jsonData, true);
