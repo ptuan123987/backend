@@ -41,7 +41,7 @@ class StoreCourseRequest extends FormRequest
     public function rules()
     {
         return [
-            'category_ids' => 'sometimes|string',
+            'category_ids' => 'sometimes|array',
             'title' => 'sometimes|string|max:255',
             'description' => 'sometimes|string',
             'price' => 'sometimes|numeric',
