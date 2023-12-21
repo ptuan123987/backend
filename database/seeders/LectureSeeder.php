@@ -19,8 +19,8 @@ class LectureSeeder extends Seeder
         $data = json_decode($jsonData, true);
 
         $lecture_ids = [];
-        $video_thumbnail ="https://cdn.study.salyr.online/videos/65844bb54f26e_fire_background_loop2_videvo2.mov";
-        $video_url = "https://cdn.study.salyr.online/videos/thumbnails/thumbnail-1703168951.jpg";
+        $video_thumbnail = "https://cdn.study.salyr.online/videos/thumbnails/thumbnail-1703168951.jpg";
+        $video_url = "https://cdn.study.salyr.online/videos/65844bb54f26e_fire_background_loop2_videvo2.mov";
         $video_duration =13.28;
         $chapter_ids = DB::table('chapters')->pluck('id')->toArray();
         foreach ($data as $index =>$item) {
