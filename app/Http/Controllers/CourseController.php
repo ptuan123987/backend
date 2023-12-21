@@ -10,6 +10,8 @@ use App\Http\Resources\CourseResource;
 use App\Http\Resources\CourseReviewResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
+use App\Jobs\PutImageToS3;
 
 /**
  * @OA\Tag(
@@ -74,8 +76,10 @@ class CourseController extends Controller
      *     tags={"Courses"},
      *     @OA\RequestBody(
      *         required=true,
-     *         @OA\JsonContent(ref="#/components/schemas/StoreCourseRequest")
-     *     ),
+     *         @OA\MediaType(
+     *              mediaType="multipart/form-data",
+     *              @OA\Schema(ref="#/components/schemas/StoreCourseRequest")
+     *     )),
      *     @OA\Response(
      *         response=201,
      *         description="Course created successfully",
@@ -96,6 +100,13 @@ class CourseController extends Controller
 
         if ($course) {
             $course->categories()->sync($categoryIds);
+        }
+
+        if ($request->hasFile('thumbnail_image')) {
+            $file = $request->file('thumbnail_image');
+            $filename = uniqid() . $file->getClientOriginalName();
+            Storage::disk('public')->put($filename, file_get_contents($file));
+            PutImageToS3::dispatch($course->id, $filename);
         }
 
         return new CourseResource($course);
@@ -155,7 +166,7 @@ class CourseController extends Controller
     /**
      * Update the specified course in storage.
      *
-     * @OA\Put(
+     * @OA\Post(
      *     path="/api/courses/{course_id}",
      *     summary="Update the specified course",
      *     tags={"Courses"},
@@ -166,10 +177,19 @@ class CourseController extends Controller
      *         required=true,
      *         @OA\Schema(type="integer")
      *     ),
+     *     @OA\Parameter(
+     *        name="_method",
+     *        in="query",
+     *        required=false,
+     *        description="Method to be used",
+     *        @OA\Schema(type="string", default="PUT")
+     *     ),
      *     @OA\RequestBody(
      *         required=true,
-     *         @OA\JsonContent(ref="#/components/schemas/UpdateCourseRequest")
-     *     ),
+     *         @OA\MediaType(
+     *              mediaType="multipart/form-data",
+     *              @OA\Schema(ref="#/components/schemas/UpdateCourseRequest")
+     *     )),
      *     @OA\Response(
      *         response=200,
      *         description="Course updated successfully",
@@ -179,8 +199,7 @@ class CourseController extends Controller
      *         response=404,
      *         description="Course not found"
      *     ),
-     *  security={{"bearerAuth":{}}} )
-     *
+     *  security={{"bearerAuth":{}}}
      * )
      */
     public function update(UpdateCourseRequest $request, $course_id)
@@ -193,6 +212,13 @@ class CourseController extends Controller
 
         $validatedData = $request->validated();
         $course->update($validatedData);
+
+        if ($request->hasFile('thumbnail_image')) {
+            $file = $request->file('thumbnail_image');
+            $filename = uniqid() . $file->getClientOriginalName();
+            Storage::disk('public')->put($filename, file_get_contents($file));
+            PutImageToS3::dispatch($course->id, $filename);
+        }
 
         return new CourseResource($course);
     }

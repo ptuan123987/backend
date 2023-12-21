@@ -12,6 +12,7 @@ use Illuminate\Foundation\Http\FormRequest;
  *     @OA\Property(property="description", type="string", description="The updated description of the course."),
  *     @OA\Property(property="price", type="number", format="float", description="The updated price of the course."),
  *     @OA\Property(property="author", type="string", maxLength=255, description="The updated author of the course."),
+ *     @OA\Property(property="thumbnail_image", type="file", description="Thumbnail image."),
  * )
  */
 class UpdateCourseRequest extends FormRequest
@@ -34,10 +35,11 @@ class UpdateCourseRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'sometimes|string|max:255',
-            'description' => 'sometimes|string',
-            'price' => 'sometimes|numeric',
-            'author' => 'sometimes|string|max:255',
+            'title' => 'sometimes|required|string|max:255',
+            'description' => 'sometimes|required|string',
+            'price' => 'sometimes|required|numeric',
+            'author' => 'sometimes|required|string|max:255',
+            'thumbnail_image' => 'sometimes|required|image|max:10240',
         ];
     }
 
