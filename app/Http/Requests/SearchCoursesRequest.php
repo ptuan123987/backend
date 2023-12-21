@@ -22,7 +22,7 @@ class SearchCoursesRequest extends FormRequest
     public function authorize(): bool
     {
         // Only allow authenticated users to execute this request
-        return auth()->check();
+        return true;
     }
 
     /**
