@@ -13,6 +13,7 @@ use App\Http\Controllers\SocialAccountController;
 use App\Http\Controllers\TopicController;
 use App\Http\Controllers\CourseReviewController;
 use App\Http\Controllers\WishlistController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +48,7 @@ Route::get('/categories/{id}/topics', [CategoryController::class, 'getTopics']);
 Route::get('/categories/{id}/courses', [CategoryController::class, 'getCourses']);
 Route::get('/courses/{id}/reviews', [CourseController::class, 'get_reviews']);
 Route::get('/courses/{id}/chapters', [CourseController::class, 'get_chapters']);
+Route::get('/search/courses', [SearchController::class, 'search_courses']);
 
 Route::get('login/{social}', [
     SocialAccountController::class, 'redirectToProvider'
