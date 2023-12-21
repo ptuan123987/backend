@@ -16,9 +16,6 @@ class CourseReviewSeeder extends Seeder
      */
     public function run()
     {
-        // Truncate the course_reviews table
-        DB::table('course_reviews')->truncate();
-
         // Assuming you have users in your database
         $userIds = User::pluck('id')->toArray();
 
