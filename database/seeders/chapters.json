@@ -1,0 +1,634 @@
+[
+    {
+        "course_id": 26,
+        "title": "Introduction to the Course"
+    },
+    {
+        "course_id": 18,
+        "title": "Fundamentals of Programming"
+    },
+    {
+        "course_id": 9,
+        "title": "Advanced Data Structures"
+    },
+    {
+        "course_id": 28,
+        "title": "Database Design Principles"
+    },
+    {
+        "course_id": 16,
+        "title": "Web Development Basics"
+    },
+    {
+        "course_id": 13,
+        "title": "Machine Learning Fundamentals"
+    },
+    {
+        "course_id": 34,
+        "title": "Algorithms and Complexity"
+    },
+    {
+        "course_id": 10,
+        "title": "User Interface Design"
+    },
+    {
+        "course_id": 23,
+        "title": "Networking Essentials"
+    },
+    {
+        "course_id": 15,
+        "title": "Cybersecurity Fundamentals"
+    },
+    {
+        "course_id": 12,
+        "title": "Software Architecture Principles"
+    },
+    {
+        "course_id": 30,
+        "title": "Introduction to Artificial Intelligence"
+    },
+    {
+        "course_id": 8,
+        "title": "Mobile App Development Basics"
+    },
+    {
+        "course_id": 24,
+        "title": "Project Management for IT"
+    },
+    {
+        "course_id": 33,
+        "title": "Data Science Techniques"
+    },
+    {
+        "course_id": 21,
+        "title": "Cloud Computing Fundamentals"
+    },
+    {
+        "course_id": 11,
+        "title": "Blockchain Technology Overview"
+    },
+    {
+        "course_id": 20,
+        "title": "Game Development Foundations"
+    },
+    {
+        "course_id": 36,
+        "title": "Virtual Reality Essentials"
+    },
+    {
+        "course_id": 25,
+        "title": "Augmented Reality Concepts"
+    },
+    {
+        "course_id": 5,
+        "title": "E-commerce Strategies"
+    },
+    {
+        "course_id": 7,
+        "title": "Digital Marketing Fundamentals"
+    },
+    {
+        "course_id": 32,
+        "title": "Big Data Analytics Principles"
+    },
+    {
+        "course_id": 22,
+        "title": "Internet of Things (IoT) Basics"
+    },
+    {
+        "course_id": 27,
+        "title": "DevOps Practices and Tools"
+    },
+    {
+        "course_id": 29,
+        "title": "Software Testing Techniques"
+    },
+    {
+        "course_id": 1,
+        "title": "Introduction to Programming Languages"
+    },
+    {
+        "course_id": 17,
+        "title": "Software Development Best Practices"
+    },
+    {
+        "course_id": 14,
+        "title": "Artificial Neural Networks Explained"
+    },
+    {
+        "course_id": 35,
+        "title": "Computer Vision Applications"
+    },
+    {
+        "course_id": 6,
+        "title": "Data Warehousing Fundamentals"
+    },
+    {
+        "course_id": 2,
+        "title": "Web Security Protocols"
+    },
+    {
+        "course_id": 3,
+        "title": "Advanced Machine Learning Models"
+    },
+    {
+        "course_id": 31,
+        "title": "Web Development Frameworks"
+    },
+    {
+        "course_id": 19,
+        "title": "Operating System Concepts"
+    },
+    {
+        "course_id": 4,
+        "title": "Introduction to Quantum Computing"
+    },
+    {
+        "course_id": 14,
+        "title": "Natural Language Processing Techniques"
+    },
+    {
+        "course_id": 25,
+        "title": "Computer Graphics Fundamentals"
+    },
+    {
+        "course_id": 9,
+        "title": "Ethical Hacking Principles"
+    },
+    {
+        "course_id": 33,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "course_id": 26,
+        "title": "Introduction to Robotics"
+    },
+    {
+        "course_id": 5,
+        "title": "Network Security Strategies"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile Game Development Basics"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Security Best Practices"
+    },
+    {
+        "course_id": 3,
+        "title": "Deep Learning Foundations"
+    },
+    {
+        "course_id": 30,
+        "title": "AI-powered Chatbots Development"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux System Administration"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Cryptography Concepts"
+    },
+    {
+        "course_id": 14,
+        "title": "Speech Recognition Techniques"
+    },
+    {
+        "course_id": 25,
+        "title": "Computer Networks Protocols"
+    },
+    {
+        "course_id": 9,
+        "title": "Penetration Testing Strategies"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Storage Solutions"
+    },
+    {
+        "course_id": 26,
+        "title": "Human-Computer Interaction Basics"
+    },
+    {
+        "course_id": 5,
+        "title": "Social Media Marketing Strategies"
+    },
+    {
+        "course_id": 36,
+        "title": "Unity Game Development Foundations"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Service Models"
+    },
+    {
+        "course_id": 3,
+        "title": "Reinforcement Learning Concepts"
+    },
+    {
+        "course_id": 30,
+        "title": "Neural Networks Applications"
+    },
+    {
+        "course_id": 19,
+        "title": "Shell Scripting Basics"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Machine Learning"
+    },
+    {
+        "course_id": 14,
+        "title": "Sentiment Analysis Techniques"
+    },
+    {
+        "course_id": 25,
+        "title": "Wireless Networking Fundamentals"
+    },
+    {
+        "course_id": 9,
+        "title": "Incident Response Procedures"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Processing Frameworks"
+    },
+    {
+        "course_id": 26,
+        "title": "Computer Vision Algorithms"
+    },
+    {
+        "course_id": 5,
+        "title": "Content Marketing Strategies"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile App Monetization Strategies"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Deployment Models"
+    },
+    {
+        "course_id": 3,
+        "title": "Natural Language Generation Techniques"
+    },
+    {
+        "course_id": 30,
+        "title": "Speech Synthesis Concepts"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux Command Line Basics"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Computing Algorithms"
+    },
+    {
+        "course_id": 14,
+        "title": "Computer Graphics Rendering Techniques"
+    },
+    {
+        "course_id": 25,
+        "title": "Network Security Protocols"
+    },
+    {
+        "course_id": 9,
+        "title": "Digital Forensics Principles"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Analytics Tools"
+    },
+    {
+        "course_id": 26,
+        "title": "Human-Centered Design Principles"
+    },
+    {
+        "course_id": 5,
+        "title": "Influencer Marketing Strategies"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile App Security Best Practices"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Cost Management"
+    },
+    {
+        "course_id": 3,
+        "title": "Machine Learning Model Deployment"
+    },
+    {
+        "course_id": 30,
+        "title": "Natural Language Understanding Techniques"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux System Security"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Cryptography Applications"
+    },
+    {
+        "course_id": 14,
+        "title": "Computer Vision Applications in Healthcare"
+    },
+    {
+        "course_id": 25,
+        "title": "Wireless Networking Security"
+    },
+    {
+        "course_id": 9,
+        "title": "Cybersecurity Incident Response"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Analytics Techniques"
+    },
+    {
+        "course_id": 26,
+        "title": "User Experience Design Fundamentals"
+    },
+    {
+        "course_id": 5,
+        "title": "Video Marketing Strategies"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile App User Engagement Strategies"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Disaster Recovery"
+    },
+    {
+        "course_id": 3,
+        "title": "Reinforcement Learning Applications"
+    },
+    {
+        "course_id": 30,
+        "title": "Neural Networks in Business"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux Shell Scripting Advanced"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Machine Learning Applications"
+    },
+    {
+        "course_id": 14,
+        "title": "Sentiment Analysis Applications"
+    },
+    {
+        "course_id": 25,
+        "title": "Network Security Best Practices"
+    },
+    {
+        "course_id": 9,
+        "title": "Digital Forensics Techniques"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Analytics Case Studies"
+    },
+    {
+        "course_id": 26,
+        "title": "Human-Centered Design Applications"
+    },
+    {
+        "course_id": 5,
+        "title": "Content Marketing Campaigns"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile App Security Case Studies"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Optimization Strategies"
+    },
+    {
+        "course_id": 3,
+        "title": "Machine Learning Model Deployment Strategies"
+    },
+    {
+        "course_id": 30,
+        "title": "Natural Language Understanding Applications"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux System Security Advanced"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Cryptography Advanced Applications"
+    },
+    {
+        "course_id": 14,
+        "title": "Computer Vision Applications in Robotics"
+    },
+    {
+        "course_id": 25,
+        "title": "Wireless Networking Security Strategies"
+    },
+    {
+        "course_id": 9,
+        "title": "Cybersecurity Incident Response Strategies"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Analytics Techniques and Tools"
+    },
+    {
+        "course_id": 26,
+        "title": "User Experience Design Advanced Techniques"
+    },
+    {
+        "course_id": 5,
+        "title": "Video Marketing Campaigns"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile App User Engagement Case Studies"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Disaster Recovery Strategies"
+    },
+    {
+        "course_id": 3,
+        "title": "Reinforcement Learning Applications in Robotics"
+    },
+    {
+        "course_id": 30,
+        "title": "Neural Networks in Business Applications"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux Shell Scripting Advanced Techniques"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Machine Learning Advanced Applications"
+    },
+    {
+        "course_id": 14,
+        "title": "Sentiment Analysis Advanced Techniques"
+    },
+    {
+        "course_id": 25,
+        "title": "Network Security Best Practices and Strategies"
+    },
+    {
+        "course_id": 9,
+        "title": "Digital Forensics Advanced Techniques"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Analytics Case Studies and Applications"
+    },
+    {
+        "course_id": 26,
+        "title": "User Experience Design Advanced Applications"
+    },
+    {
+        "course_id": 5,
+        "title": "Video Marketing Advanced Strategies"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile App User Engagement Advanced Case Studies"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Disaster Recovery Advanced Strategies"
+    },
+    {
+        "course_id": 3,
+        "title": "Reinforcement Learning Applications in Robotics and Automation"
+    },
+    {
+        "course_id": 30,
+        "title": "Neural Networks in Business Applications and Insights"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux Shell Scripting Advanced Techniques and Script Development"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Machine Learning Advanced Applications in Quantum Computing"
+    },
+    {
+        "course_id": 14,
+        "title": "Sentiment Analysis Advanced Techniques and Industry Applications"
+    },
+    {
+        "course_id": 25,
+        "title": "Network Security Best Practices and Strategies for Enterprises"
+    },
+    {
+        "course_id": 9,
+        "title": "Digital Forensics Advanced Techniques and Cybersecurity Investigations"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Analytics Case Studies and Applications in Various Industries"
+    },
+    {
+        "course_id": 26,
+        "title": "User Experience Design Advanced Applications and Human-Centered Design"
+    },
+    {
+        "course_id": 5,
+        "title": "Video Marketing Advanced Strategies and Content Creation"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile App User Engagement Advanced Case Studies and Retention Strategies"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Disaster Recovery Advanced Strategies and Business Continuity"
+    },
+    {
+        "course_id": 3,
+        "title": "Reinforcement Learning Applications in Robotics and Automation"
+    },
+    {
+        "course_id": 30,
+        "title": "Neural Networks in Business Applications and Insights"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux Shell Scripting Advanced Techniques and Script Development"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Machine Learning Advanced Applications in Quantum Computing"
+    },
+    {
+        "course_id": 14,
+        "title": "Sentiment Analysis Advanced Techniques and Industry Applications"
+    },
+    {
+        "course_id": 25,
+        "title": "Network Security Best Practices and Strategies for Enterprises"
+    },
+    {
+        "course_id": 9,
+        "title": "Digital Forensics Advanced Techniques and Cybersecurity Investigations"
+    },
+    {
+        "course_id": 33,
+        "title": "Big Data Analytics Case Studies and Applications in Various Industries"
+    },
+    {
+        "course_id": 26,
+        "title": "User Experience Design Advanced Applications and Human-Centered Design"
+    },
+    {
+        "course_id": 5,
+        "title": "Video Marketing Advanced Strategies and Content Creation"
+    },
+    {
+        "course_id": 36,
+        "title": "Mobile App User Engagement Advanced Case Studies and Retention Strategies"
+    },
+    {
+        "course_id": 20,
+        "title": "Cloud Computing Disaster Recovery Advanced Strategies and Business Continuity"
+    },
+    {
+        "course_id": 3,
+        "title": "Reinforcement Learning Applications in Robotics and Automation"
+    },
+    {
+        "course_id": 30,
+        "title": "Neural Networks in Business Applications and Insights"
+    },
+    {
+        "course_id": 19,
+        "title": "Linux Shell Scripting Advanced Techniques and Script Development"
+    },
+    {
+        "course_id": 4,
+        "title": "Quantum Machine Learning Advanced Applications in Quantum Computing"
+    },
+    {
+        "course_id": 14,
+        "title": "Sentiment Analysis Advanced Techniques and Industry Applications"
+    },
+    {
+        "course_id": 25,
+        "title": "Network Security Best Practices and Strategies for Enterprises"
+    }
+]
