@@ -29,4 +29,19 @@ class Course extends Model
     {
         return $this->hasMany(Enrollment::class, 'course_id');
     }
+
+    /**
+     * Scope a query to only include courses of a given author or with a specific title.
+     *
+     * @param Builder $query
+     * @param string $term
+     * @return Builder
+     */
+    public function scopeSearch($query, $term)
+    {
+        return $query->where(function ($query) use ($term) {
+            $query->where('title', 'LIKE', "%{$term}%")
+                  ->orWhere('author', 'LIKE', "%{$term}%");
+        });
+    }
 }

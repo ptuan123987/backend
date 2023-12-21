@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
 use App\Http\Resources\CategoryResource;
 use App\Http\Resources\CourseReviewResource;
-
+use App\Http\Resources\ChapterResource;
 
 /**
  * @OA\Schema(
@@ -31,8 +31,8 @@ class CourseResource extends JsonResource
             'description' => $this->description,
             'price' => $this->price,
             'author' => $this->author,
-            'categories' => CategoryResource::collection($this->whenLoaded('categories')),
             'reviews' => CourseReviewResource::collection($this->whenLoaded('reviews')),
+            'chapters' => ChapterResource::collection($this->whenLoaded('chapters')),
             'total_video_duration' => $this->when(isset($this->total_video_duration), $this->total_video_duration),
         ];
     }
