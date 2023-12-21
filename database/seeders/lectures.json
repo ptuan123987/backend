@@ -1,0 +1,4510 @@
+[
+    {
+        "chapter_id": 1,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 1,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 1,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 1,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 1,
+        "title": "Entrepreneurship: From Idea to Execution"
+    },
+    {
+        "chapter_id": 1,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 1,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 2,
+        "title": "Anthropology: Unraveling Human Culture"
+    },
+    {
+        "chapter_id": 2,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 2,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 2,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 2,
+        "title": "Machine Learning: Unleashing the Power of Data"
+    },
+    {
+        "chapter_id": 2,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 2,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 3,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 3,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 3,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 3,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 3,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 3,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 3,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 4,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 4,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 4,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 4,
+        "title": "Computer Science: Algorithms and Data Structures"
+    },
+    {
+        "chapter_id": 4,
+        "title": "Understanding Organizational Behavior"
+    },
+    {
+        "chapter_id": 4,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 4,
+        "title": "Medical Ethics: Balancing Care and Justice"
+    },
+    {
+        "chapter_id": 5,
+        "title": "Medical Ethics: Balancing Care and Justice"
+    },
+    {
+        "chapter_id": 5,
+        "title": "Database Management: Organizing Information Effectively"
+    },
+    {
+        "chapter_id": 5,
+        "title": "Understanding Organizational Behavior"
+    },
+    {
+        "chapter_id": 5,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 5,
+        "title": "Cybersecurity Best Practices"
+    },
+    {
+        "chapter_id": 5,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 5,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 6,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 6,
+        "title": "Climate Change: Causes, Impacts, and Solutions"
+    },
+    {
+        "chapter_id": 6,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 6,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 6,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 6,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 6,
+        "title": "Medical Ethics: Balancing Care and Justice"
+    },
+    {
+        "chapter_id": 7,
+        "title": "Climate Change: Causes, Impacts, and Solutions"
+    },
+    {
+        "chapter_id": 7,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 7,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 7,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 7,
+        "title": "Counseling and Therapy: A Holistic Approach"
+    },
+    {
+        "chapter_id": 7,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 7,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 8,
+        "title": "Human-Computer Interaction: Designing User Experiences"
+    },
+    {
+        "chapter_id": 8,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 8,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 8,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 8,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 8,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 8,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 9,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 9,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 9,
+        "title": "Materials Science: Designing the Future"
+    },
+    {
+        "chapter_id": 9,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 9,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 9,
+        "title": "Biomedical Engineering: Innovations in Healthcare"
+    },
+    {
+        "chapter_id": 9,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 10,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 10,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 10,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 10,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 10,
+        "title": "Kinesiology: The Science of Human Movement"
+    },
+    {
+        "chapter_id": 10,
+        "title": "Electrical Engineering: Powering the Modern World"
+    },
+    {
+        "chapter_id": 10,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 11,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 11,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 11,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 11,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 11,
+        "title": "Environmental Science: A Global Perspective"
+    },
+    {
+        "chapter_id": 11,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 11,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 12,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 12,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 12,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 12,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 12,
+        "title": "Project Management Essentials"
+    },
+    {
+        "chapter_id": 12,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 12,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 13,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 13,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 13,
+        "title": "Corporate Finance Fundamentals"
+    },
+    {
+        "chapter_id": 13,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 13,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 13,
+        "title": "Creative Writing: Unleashing Your Imagination"
+    },
+    {
+        "chapter_id": 13,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 14,
+        "title": "Animal Science: Understanding Our Furry and Feathered Friends"
+    },
+    {
+        "chapter_id": 14,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 14,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 14,
+        "title": "Database Management: Organizing Information Effectively"
+    },
+    {
+        "chapter_id": 14,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 14,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 14,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 15,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 15,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 15,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 15,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 15,
+        "title": "Project Management Essentials"
+    },
+    {
+        "chapter_id": 15,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 15,
+        "title": "Sports Science: Understanding Athletic Performance"
+    },
+    {
+        "chapter_id": 16,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 16,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 16,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 16,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 16,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 16,
+        "title": "Social Work: Making a Difference"
+    },
+    {
+        "chapter_id": 16,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 17,
+        "title": "Mining Engineering: Extracting Earth's Resources"
+    },
+    {
+        "chapter_id": 17,
+        "title": "Meteorology: Predicting the Weather"
+    },
+    {
+        "chapter_id": 17,
+        "title": "Visual Arts: A Journey Through Time"
+    },
+    {
+        "chapter_id": 17,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 17,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 17,
+        "title": "Artificial Intelligence in Healthcare"
+    },
+    {
+        "chapter_id": 17,
+        "title": "Corporate Finance Fundamentals"
+    },
+    {
+        "chapter_id": 18,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 18,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 18,
+        "title": "Mechanical Engineering: From Gears to Gadgets"
+    },
+    {
+        "chapter_id": 18,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 18,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 18,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 18,
+        "title": "Oceanography: Delving into the Deep Blue"
+    },
+    {
+        "chapter_id": 19,
+        "title": "Human-Computer Interaction: Designing User Experiences"
+    },
+    {
+        "chapter_id": 19,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 19,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 19,
+        "title": "Artificial Intelligence: From Theory to Applications"
+    },
+    {
+        "chapter_id": 19,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 19,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 19,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 20,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 20,
+        "title": "Human-Computer Interaction"
+    },
+    {
+        "chapter_id": 20,
+        "title": "Marketing Strategies for the Digital Age"
+    },
+    {
+        "chapter_id": 20,
+        "title": "Oceanography: Delving into the Deep Blue"
+    },
+    {
+        "chapter_id": 20,
+        "title": "Visual Arts: Exploring Different Mediums"
+    },
+    {
+        "chapter_id": 20,
+        "title": "Public Health: Promoting Well-Being"
+    },
+    {
+        "chapter_id": 20,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 21,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 21,
+        "title": "Political Science: Understanding Governance"
+    },
+    {
+        "chapter_id": 21,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 21,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 21,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 21,
+        "title": "Veterinary Science: Care of Animals"
+    },
+    {
+        "chapter_id": 21,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 22,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 22,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 22,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 22,
+        "title": "Marketing Strategies for the Digital Age"
+    },
+    {
+        "chapter_id": 22,
+        "title": "Bioinformatics: Where Biology Meets Technology"
+    },
+    {
+        "chapter_id": 22,
+        "title": "Political Science: Understanding Governance"
+    },
+    {
+        "chapter_id": 22,
+        "title": "Creative Writing: Unleashing Your Imagination"
+    },
+    {
+        "chapter_id": 23,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 23,
+        "title": "Space Exploration Innovations"
+    },
+    {
+        "chapter_id": 23,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 23,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 23,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 23,
+        "title": "Philosophy: The Quest for Wisdom"
+    },
+    {
+        "chapter_id": 23,
+        "title": "Materials Science: Designing the Future"
+    },
+    {
+        "chapter_id": 24,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 24,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 24,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 24,
+        "title": "Creative Writing: Unleashing Your Imagination"
+    },
+    {
+        "chapter_id": 24,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 24,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 24,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 25,
+        "title": "Philosophy: The Quest for Wisdom"
+    },
+    {
+        "chapter_id": 25,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 25,
+        "title": "Astrophysics: Probing the Mysteries of the Cosmos"
+    },
+    {
+        "chapter_id": 25,
+        "title": "Environmental Science: Balancing Ecology and Human Impact"
+    },
+    {
+        "chapter_id": 25,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 25,
+        "title": "Philosophy: The Quest for Wisdom"
+    },
+    {
+        "chapter_id": 25,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 26,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 26,
+        "title": "Pharmacology: The Study of Drugs"
+    },
+    {
+        "chapter_id": 26,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 26,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 26,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 26,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 26,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 27,
+        "title": "Database Management: Organizing Information Effectively"
+    },
+    {
+        "chapter_id": 27,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 27,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 27,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 27,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 27,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 27,
+        "title": "Networks and Security: Safeguarding the Virtual Realm"
+    },
+    {
+        "chapter_id": 28,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 28,
+        "title": "Human-Computer Interaction"
+    },
+    {
+        "chapter_id": 28,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 28,
+        "title": "Gender Studies: Exploring Identity and Equality"
+    },
+    {
+        "chapter_id": 28,
+        "title": "Political Science: Understanding Governance"
+    },
+    {
+        "chapter_id": 28,
+        "title": "Human-Computer Interaction: Designing User Experiences"
+    },
+    {
+        "chapter_id": 28,
+        "title": "Mechanical Engineering: From Gears to Gadgets"
+    },
+    {
+        "chapter_id": 29,
+        "title": "Nutrition and Wellness: The Science of Healthy Living"
+    },
+    {
+        "chapter_id": 29,
+        "title": "Mathematics: From Algebra to Calculus"
+    },
+    {
+        "chapter_id": 29,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 29,
+        "title": "Web Development Fundamentals"
+    },
+    {
+        "chapter_id": 29,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 29,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 29,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 30,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 30,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 30,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 30,
+        "title": "Environmental Science: A Global Perspective"
+    },
+    {
+        "chapter_id": 30,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 30,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 30,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 31,
+        "title": "Political Science: Understanding Governance"
+    },
+    {
+        "chapter_id": 31,
+        "title": "Sports Science: Understanding Athletic Performance"
+    },
+    {
+        "chapter_id": 31,
+        "title": "Environmental Science: Balancing Ecology and Human Impact"
+    },
+    {
+        "chapter_id": 31,
+        "title": "Theater and Performance Arts: From Script to Stage"
+    },
+    {
+        "chapter_id": 31,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 31,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 31,
+        "title": "Criminology: Understanding Crime and Deviance"
+    },
+    {
+        "chapter_id": 32,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 32,
+        "title": "Web Development: Building the Online World"
+    },
+    {
+        "chapter_id": 32,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 32,
+        "title": "Materials Science: Designing the Future"
+    },
+    {
+        "chapter_id": 32,
+        "title": "Criminology: Understanding Crime and Deviance"
+    },
+    {
+        "chapter_id": 32,
+        "title": "Animal Science: Understanding Our Furry and Feathered Friends"
+    },
+    {
+        "chapter_id": 32,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 33,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 33,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 33,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 33,
+        "title": "Sports Science: Understanding Athletic Performance"
+    },
+    {
+        "chapter_id": 33,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 33,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 33,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 34,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 34,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 34,
+        "title": "Database Management: Organizing Information Effectively"
+    },
+    {
+        "chapter_id": 34,
+        "title": "Forestry: Sustaining Forests for Future Generations"
+    },
+    {
+        "chapter_id": 34,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 34,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 34,
+        "title": "Internet of Things: Connecting the Physical and Digital Worlds"
+    },
+    {
+        "chapter_id": 35,
+        "title": "Machine Learning Applications"
+    },
+    {
+        "chapter_id": 35,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 35,
+        "title": "Creative Writing: Unleashing Your Imagination"
+    },
+    {
+        "chapter_id": 35,
+        "title": "Meteorology: Predicting the Weather"
+    },
+    {
+        "chapter_id": 35,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 35,
+        "title": "Machine Learning: Unleashing the Power of Data"
+    },
+    {
+        "chapter_id": 35,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 36,
+        "title": "Bioinformatics: Where Biology Meets Technology"
+    },
+    {
+        "chapter_id": 36,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 36,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 36,
+        "title": "Philosophy: Ethical Theories and Moral Dilemmas"
+    },
+    {
+        "chapter_id": 36,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 36,
+        "title": "Criminology: Understanding Crime and Deviance"
+    },
+    {
+        "chapter_id": 36,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 37,
+        "title": "Entrepreneurship: From Idea to Execution"
+    },
+    {
+        "chapter_id": 37,
+        "title": "Meteorology: The Dynamics of the Atmosphere"
+    },
+    {
+        "chapter_id": 37,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 37,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 37,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 37,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 37,
+        "title": "Entrepreneurship: From Idea to Execution"
+    },
+    {
+        "chapter_id": 38,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 38,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 38,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 38,
+        "title": "Computer Graphics: Creating Visual Realities"
+    },
+    {
+        "chapter_id": 38,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 38,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 38,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 39,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 39,
+        "title": "Criminology: Understanding Crime and Deviance"
+    },
+    {
+        "chapter_id": 39,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 39,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 39,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 39,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 39,
+        "title": "Theater and Performance Arts: From Script to Stage"
+    },
+    {
+        "chapter_id": 40,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 40,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 40,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 40,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 40,
+        "title": "Climate Change: Causes, Impacts, and Solutions"
+    },
+    {
+        "chapter_id": 40,
+        "title": "Theater and Performance Arts: From Script to Stage"
+    },
+    {
+        "chapter_id": 40,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 41,
+        "title": "Biology: The Science of Life"
+    },
+    {
+        "chapter_id": 41,
+        "title": "Accounting for Decision Making"
+    },
+    {
+        "chapter_id": 41,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 41,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 41,
+        "title": "Animal Science: Understanding Our Furry and Feathered Friends"
+    },
+    {
+        "chapter_id": 41,
+        "title": "Dentistry: Oral Health and Beyond"
+    },
+    {
+        "chapter_id": 41,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 42,
+        "title": "Materials Science: Designing the Future"
+    },
+    {
+        "chapter_id": 42,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 42,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 42,
+        "title": "Horticulture: Growing Plants for a Sustainable Future"
+    },
+    {
+        "chapter_id": 42,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 42,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 42,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 43,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 43,
+        "title": "Project Management Essentials"
+    },
+    {
+        "chapter_id": 43,
+        "title": "Accounting for Decision Making"
+    },
+    {
+        "chapter_id": 43,
+        "title": "History: From Ancient Civilizations to Modern Times"
+    },
+    {
+        "chapter_id": 43,
+        "title": "Genetics: Unraveling the Code of Life"
+    },
+    {
+        "chapter_id": 43,
+        "title": "Social Work: Making a Difference"
+    },
+    {
+        "chapter_id": 43,
+        "title": "Animal Science: Understanding Our Furry and Feathered Friends"
+    },
+    {
+        "chapter_id": 44,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 44,
+        "title": "Space Exploration: Journey to the Final Frontier"
+    },
+    {
+        "chapter_id": 44,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 44,
+        "title": "Human-Computer Interaction"
+    },
+    {
+        "chapter_id": 44,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 44,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 44,
+        "title": "Ethics: Philosophy of Right and Wrong"
+    },
+    {
+        "chapter_id": 45,
+        "title": "Database Management: Organizing Information Effectively"
+    },
+    {
+        "chapter_id": 45,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 45,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 45,
+        "title": "Social Work: Making a Difference"
+    },
+    {
+        "chapter_id": 45,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 45,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 45,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 46,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 46,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 46,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 46,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 46,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 46,
+        "title": "Understanding Organizational Behavior"
+    },
+    {
+        "chapter_id": 46,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 47,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 47,
+        "title": "Accounting for Decision Making"
+    },
+    {
+        "chapter_id": 47,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 47,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 47,
+        "title": "Marketing Strategies for the Digital Age"
+    },
+    {
+        "chapter_id": 47,
+        "title": "Biology: The Science of Life"
+    },
+    {
+        "chapter_id": 47,
+        "title": "Environmental Sustainability Strategies"
+    },
+    {
+        "chapter_id": 48,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 48,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 48,
+        "title": "Artificial Intelligence: From Theory to Applications"
+    },
+    {
+        "chapter_id": 48,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 48,
+        "title": "Visual Arts: A Journey Through Time"
+    },
+    {
+        "chapter_id": 48,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 48,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 49,
+        "title": "Human-Computer Interaction"
+    },
+    {
+        "chapter_id": 49,
+        "title": "Entrepreneurship: From Idea to Execution"
+    },
+    {
+        "chapter_id": 49,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 49,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 49,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 49,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 49,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 50,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 50,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 50,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 50,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 50,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 50,
+        "title": "Chemistry: Elements and Compounds"
+    },
+    {
+        "chapter_id": 50,
+        "title": "History: From Ancient Civilizations to Modern Times"
+    },
+    {
+        "chapter_id": 51,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 51,
+        "title": "Machine Learning Applications"
+    },
+    {
+        "chapter_id": 51,
+        "title": "Human-Computer Interaction"
+    },
+    {
+        "chapter_id": 51,
+        "title": "Nutrition and Wellness: The Science of Healthy Living"
+    },
+    {
+        "chapter_id": 51,
+        "title": "Mechanical Engineering: From Gears to Gadgets"
+    },
+    {
+        "chapter_id": 51,
+        "title": "Renewable Energy: Towards a Sustainable Future"
+    },
+    {
+        "chapter_id": 51,
+        "title": "Mechanical Engineering: From Gears to Gadgets"
+    },
+    {
+        "chapter_id": 52,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 52,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 52,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 52,
+        "title": "History: From Ancient Civilizations to Modern Times"
+    },
+    {
+        "chapter_id": 52,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 52,
+        "title": "Oceanography: Delving into the Deep Blue"
+    },
+    {
+        "chapter_id": 52,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 53,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 53,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 53,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 53,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 53,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 53,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 53,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 54,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 54,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 54,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 54,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 54,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 54,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 54,
+        "title": "Meteorology: The Dynamics of the Atmosphere"
+    },
+    {
+        "chapter_id": 55,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 55,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 55,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 55,
+        "title": "Renewable Energy: Towards a Sustainable Future"
+    },
+    {
+        "chapter_id": 55,
+        "title": "Environmental Sustainability Strategies"
+    },
+    {
+        "chapter_id": 55,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 55,
+        "title": "Gender Studies: Exploring Identity and Equality"
+    },
+    {
+        "chapter_id": 56,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 56,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 56,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 56,
+        "title": "Space Exploration: Journey to the Final Frontier"
+    },
+    {
+        "chapter_id": 56,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 56,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 56,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 57,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 57,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 57,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 57,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 57,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 57,
+        "title": "Environmental Science: Balancing Ecology and Human Impact"
+    },
+    {
+        "chapter_id": 57,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 58,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 58,
+        "title": "Gender Studies: Exploring Identity and Equality"
+    },
+    {
+        "chapter_id": 58,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 58,
+        "title": "Animal Science: Understanding Our Furry and Feathered Friends"
+    },
+    {
+        "chapter_id": 58,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 58,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 58,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 59,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 59,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 59,
+        "title": "Social Media Analytics"
+    },
+    {
+        "chapter_id": 59,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 59,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 59,
+        "title": "Space Exploration: Journey to the Final Frontier"
+    },
+    {
+        "chapter_id": 59,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 60,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 60,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 60,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 60,
+        "title": "Machine Learning: Unleashing the Power of Data"
+    },
+    {
+        "chapter_id": 60,
+        "title": "Social Media Analytics"
+    },
+    {
+        "chapter_id": 60,
+        "title": "Visual Arts: Exploring Different Mediums"
+    },
+    {
+        "chapter_id": 60,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 61,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 61,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 61,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 61,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 61,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 61,
+        "title": "Sports Science: Understanding Athletic Performance"
+    },
+    {
+        "chapter_id": 61,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 62,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 62,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 62,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 62,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 62,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 62,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 62,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 63,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 63,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 63,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 63,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 63,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 63,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 63,
+        "title": "Gender Studies: Exploring Identity and Equality"
+    },
+    {
+        "chapter_id": 64,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 64,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 64,
+        "title": "Biology: The Science of Life"
+    },
+    {
+        "chapter_id": 64,
+        "title": "Electrical Engineering: Powering the Modern World"
+    },
+    {
+        "chapter_id": 64,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 64,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 64,
+        "title": "Artificial Intelligence: From Theory to Applications"
+    },
+    {
+        "chapter_id": 65,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 65,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 65,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 65,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 65,
+        "title": "Corporate Finance Fundamentals"
+    },
+    {
+        "chapter_id": 65,
+        "title": "Ethics: Philosophy of Right and Wrong"
+    },
+    {
+        "chapter_id": 65,
+        "title": "Chemistry: Elements and Compounds"
+    },
+    {
+        "chapter_id": 66,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 66,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 66,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 66,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 66,
+        "title": "Web Development: Building the Online World"
+    },
+    {
+        "chapter_id": 66,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 66,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 67,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 67,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 67,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 67,
+        "title": "Social Work: Making a Difference"
+    },
+    {
+        "chapter_id": 67,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 67,
+        "title": "Web Development Fundamentals"
+    },
+    {
+        "chapter_id": 67,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 68,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 68,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 68,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 68,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 68,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 68,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 68,
+        "title": "Pharmacology: The Study of Drugs"
+    },
+    {
+        "chapter_id": 69,
+        "title": "Philosophy: The Quest for Wisdom"
+    },
+    {
+        "chapter_id": 69,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 69,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 69,
+        "title": "Meteorology: Predicting the Weather"
+    },
+    {
+        "chapter_id": 69,
+        "title": "Oceanography: Delving into the Deep Blue"
+    },
+    {
+        "chapter_id": 69,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 69,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 70,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 70,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 70,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 70,
+        "title": "Electrical Engineering: Powering the Modern World"
+    },
+    {
+        "chapter_id": 70,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 70,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 70,
+        "title": "Public Health: Promoting Well-Being"
+    },
+    {
+        "chapter_id": 71,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 71,
+        "title": "Counseling and Therapy: A Holistic Approach"
+    },
+    {
+        "chapter_id": 71,
+        "title": "Accounting for Decision Making"
+    },
+    {
+        "chapter_id": 71,
+        "title": "Counseling and Therapy: A Holistic Approach"
+    },
+    {
+        "chapter_id": 71,
+        "title": "Human-Computer Interaction"
+    },
+    {
+        "chapter_id": 71,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 71,
+        "title": "Social Work: Making a Difference"
+    },
+    {
+        "chapter_id": 72,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 72,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 72,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 72,
+        "title": "Forestry: Sustaining Forests for Future Generations"
+    },
+    {
+        "chapter_id": 72,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 72,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 72,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 73,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 73,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 73,
+        "title": "Counseling and Therapy: A Holistic Approach"
+    },
+    {
+        "chapter_id": 73,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 73,
+        "title": "Electrical Engineering: Powering the Modern World"
+    },
+    {
+        "chapter_id": 73,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 73,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 74,
+        "title": "Materials Science: Designing the Future"
+    },
+    {
+        "chapter_id": 74,
+        "title": "Mobile App Development: Shaping the Future of Connectivity"
+    },
+    {
+        "chapter_id": 74,
+        "title": "Geographic Information Systems: Mapping the World"
+    },
+    {
+        "chapter_id": 74,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 74,
+        "title": "Artificial Intelligence in Healthcare"
+    },
+    {
+        "chapter_id": 74,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 74,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 75,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 75,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 75,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 75,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 75,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 75,
+        "title": "Exploring Astrophysics"
+    },
+    {
+        "chapter_id": 75,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 76,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 76,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 76,
+        "title": "Understanding Organizational Behavior"
+    },
+    {
+        "chapter_id": 76,
+        "title": "Medical Ethics: Balancing Care and Justice"
+    },
+    {
+        "chapter_id": 76,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 76,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 76,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 77,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 77,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 77,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 77,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 77,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 77,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 77,
+        "title": "Nursing: Caring for the Health of Individuals"
+    },
+    {
+        "chapter_id": 78,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 78,
+        "title": "Forestry: Sustaining Forests for Future Generations"
+    },
+    {
+        "chapter_id": 78,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 78,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 78,
+        "title": "Artificial Intelligence: From Theory to Applications"
+    },
+    {
+        "chapter_id": 78,
+        "title": "Mechanical Engineering: From Gears to Gadgets"
+    },
+    {
+        "chapter_id": 78,
+        "title": "Sports Science: Understanding Athletic Performance"
+    },
+    {
+        "chapter_id": 79,
+        "title": "Forestry: Sustaining Forests for Future Generations"
+    },
+    {
+        "chapter_id": 79,
+        "title": "Visual Arts: A Journey Through Time"
+    },
+    {
+        "chapter_id": 79,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 79,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 79,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 79,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 79,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 80,
+        "title": "Kinesiology: The Science of Human Movement"
+    },
+    {
+        "chapter_id": 80,
+        "title": "Neuroscience: Understanding the Brain and Nervous System"
+    },
+    {
+        "chapter_id": 80,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 80,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 80,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 80,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 80,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 81,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 81,
+        "title": "Accounting for Decision Making"
+    },
+    {
+        "chapter_id": 81,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 81,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 81,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 81,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 81,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 82,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 82,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 82,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 82,
+        "title": "Materials Science: Designing the Future"
+    },
+    {
+        "chapter_id": 82,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 82,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 82,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 83,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 83,
+        "title": "Climate Change: Causes, Impacts, and Solutions"
+    },
+    {
+        "chapter_id": 83,
+        "title": "Understanding Organizational Behavior"
+    },
+    {
+        "chapter_id": 83,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 83,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 83,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 83,
+        "title": "Anthropology: Unraveling Human Culture"
+    },
+    {
+        "chapter_id": 84,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 84,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 84,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 84,
+        "title": "Internet of Things: Connecting the Physical and Digital Worlds"
+    },
+    {
+        "chapter_id": 84,
+        "title": "History: From Ancient Civilizations to Modern Times"
+    },
+    {
+        "chapter_id": 84,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 84,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 85,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 85,
+        "title": "Machine Learning: Unleashing the Power of Data"
+    },
+    {
+        "chapter_id": 85,
+        "title": "Accounting for Decision Making"
+    },
+    {
+        "chapter_id": 85,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 85,
+        "title": "Human-Computer Interaction: Designing User Experiences"
+    },
+    {
+        "chapter_id": 85,
+        "title": "Meteorology: Predicting the Weather"
+    },
+    {
+        "chapter_id": 85,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 86,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 86,
+        "title": "Astronautics: Ventures Beyond Earth's Atmosphere"
+    },
+    {
+        "chapter_id": 86,
+        "title": "Space Exploration: Journey to the Final Frontier"
+    },
+    {
+        "chapter_id": 86,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 86,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 86,
+        "title": "Environmental Sustainability Strategies"
+    },
+    {
+        "chapter_id": 86,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 87,
+        "title": "Psychiatry: Bridging the Mind-Body Connection"
+    },
+    {
+        "chapter_id": 87,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 87,
+        "title": "Visual Arts: A Journey Through Time"
+    },
+    {
+        "chapter_id": 87,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 87,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 87,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 87,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 88,
+        "title": "Exploring Astrophysics"
+    },
+    {
+        "chapter_id": 88,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 88,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 88,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 88,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 88,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 88,
+        "title": "Sports Science: Understanding Athletic Performance"
+    },
+    {
+        "chapter_id": 89,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 89,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 89,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 89,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 89,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 89,
+        "title": "Biology: The Science of Life"
+    },
+    {
+        "chapter_id": 89,
+        "title": "Criminology: Understanding Crime and Deviance"
+    },
+    {
+        "chapter_id": 90,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 90,
+        "title": "Artificial Intelligence: From Theory to Applications"
+    },
+    {
+        "chapter_id": 90,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 90,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 90,
+        "title": "Nursing: Caring for the Health of Individuals"
+    },
+    {
+        "chapter_id": 90,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 90,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 91,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 91,
+        "title": "Public Health: Promoting Well-Being"
+    },
+    {
+        "chapter_id": 91,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 91,
+        "title": "Game Design Principles"
+    },
+    {
+        "chapter_id": 91,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 91,
+        "title": "Criminology: Understanding Crime and Deviance"
+    },
+    {
+        "chapter_id": 91,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 92,
+        "title": "Dentistry: Oral Health and Beyond"
+    },
+    {
+        "chapter_id": 92,
+        "title": "Exploring Astrophysics"
+    },
+    {
+        "chapter_id": 92,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 92,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 92,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 92,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 92,
+        "title": "Internet of Things: Connecting the Physical and Digital Worlds"
+    },
+    {
+        "chapter_id": 93,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 93,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 93,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 93,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 93,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 93,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 93,
+        "title": "Genetics: Unraveling the Code of Life"
+    },
+    {
+        "chapter_id": 94,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 94,
+        "title": "Space Exploration: Journey to the Final Frontier"
+    },
+    {
+        "chapter_id": 94,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 94,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 94,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 94,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 94,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 95,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 95,
+        "title": "Horticulture: Growing Plants for a Sustainable Future"
+    },
+    {
+        "chapter_id": 95,
+        "title": "Exploring World Religions"
+    },
+    {
+        "chapter_id": 95,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 95,
+        "title": "Renewable Energy: Towards a Sustainable Future"
+    },
+    {
+        "chapter_id": 95,
+        "title": "Game Design Principles"
+    },
+    {
+        "chapter_id": 95,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 96,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 96,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 96,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 96,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 96,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 96,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 96,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 97,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 97,
+        "title": "Bioinformatics: Where Biology Meets Technology"
+    },
+    {
+        "chapter_id": 97,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 97,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 97,
+        "title": "Machine Learning: Unleashing the Power of Data"
+    },
+    {
+        "chapter_id": 97,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 97,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 98,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 98,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 98,
+        "title": "Environmental Science: Balancing Ecology and Human Impact"
+    },
+    {
+        "chapter_id": 98,
+        "title": "Digital Photography: Capturing Moments in Pixels"
+    },
+    {
+        "chapter_id": 98,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 98,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 98,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 99,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 99,
+        "title": "Political Science: Understanding Governance"
+    },
+    {
+        "chapter_id": 99,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 99,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 99,
+        "title": "Renewable Energy: Towards a Sustainable Future"
+    },
+    {
+        "chapter_id": 99,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 99,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 100,
+        "title": "Bioinformatics: Where Biology Meets Technology"
+    },
+    {
+        "chapter_id": 100,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 100,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 100,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 100,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 100,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 100,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 101,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 101,
+        "title": "Biology: The Science of Life"
+    },
+    {
+        "chapter_id": 101,
+        "title": "Environmental Science: Balancing Ecology and Human Impact"
+    },
+    {
+        "chapter_id": 101,
+        "title": "Corporate Finance Fundamentals"
+    },
+    {
+        "chapter_id": 101,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 101,
+        "title": "Human-Computer Interaction"
+    },
+    {
+        "chapter_id": 101,
+        "title": "Philosophy: Ethical Theories and Moral Dilemmas"
+    },
+    {
+        "chapter_id": 102,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 102,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 102,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 102,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 102,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 102,
+        "title": "Artificial Intelligence: From Theory to Applications"
+    },
+    {
+        "chapter_id": 102,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 103,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 103,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 103,
+        "title": "Web Development Fundamentals"
+    },
+    {
+        "chapter_id": 103,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 103,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 103,
+        "title": "Environmental Science: A Global Perspective"
+    },
+    {
+        "chapter_id": 103,
+        "title": "Counseling and Therapy: A Holistic Approach"
+    },
+    {
+        "chapter_id": 104,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 104,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 104,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 104,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 104,
+        "title": "Geographic Information Systems: Mapping Earth's Features"
+    },
+    {
+        "chapter_id": 104,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 104,
+        "title": "Artificial Intelligence: From Theory to Applications"
+    },
+    {
+        "chapter_id": 105,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 105,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 105,
+        "title": "Philosophy: Ethical Theories and Moral Dilemmas"
+    },
+    {
+        "chapter_id": 105,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 105,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 105,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 105,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 106,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 106,
+        "title": "Psychiatry: Bridging the Mind-Body Connection"
+    },
+    {
+        "chapter_id": 106,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 106,
+        "title": "Gender Studies: Exploring Identity and Equality"
+    },
+    {
+        "chapter_id": 106,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 106,
+        "title": "Social Media Analytics"
+    },
+    {
+        "chapter_id": 106,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 107,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 107,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 107,
+        "title": "Entrepreneurship: From Idea to Execution"
+    },
+    {
+        "chapter_id": 107,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 107,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 107,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 107,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 108,
+        "title": "Creative Writing: Unleashing Your Imagination"
+    },
+    {
+        "chapter_id": 108,
+        "title": "Medical Ethics: Balancing Care and Justice"
+    },
+    {
+        "chapter_id": 108,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 108,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 108,
+        "title": "Environmental Science: Balancing Ecology and Human Impact"
+    },
+    {
+        "chapter_id": 108,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 108,
+        "title": "Artificial Intelligence in Healthcare"
+    },
+    {
+        "chapter_id": 109,
+        "title": "Medical Ethics: Balancing Care and Justice"
+    },
+    {
+        "chapter_id": 109,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 109,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 109,
+        "title": "Immunology: Defending the Body Against Invaders"
+    },
+    {
+        "chapter_id": 109,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 109,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 109,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 110,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 110,
+        "title": "Database Management: Organizing Information Effectively"
+    },
+    {
+        "chapter_id": 110,
+        "title": "Climate Change: Causes, Impacts, and Solutions"
+    },
+    {
+        "chapter_id": 110,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 110,
+        "title": "Criminology: Understanding Crime and Deviance"
+    },
+    {
+        "chapter_id": 110,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 110,
+        "title": "Machine Learning: Unleashing the Power of Data"
+    },
+    {
+        "chapter_id": 111,
+        "title": "Internet of Things: Connecting the Physical and Digital Worlds"
+    },
+    {
+        "chapter_id": 111,
+        "title": "Animal Science: Understanding Our Furry and Feathered Friends"
+    },
+    {
+        "chapter_id": 111,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 111,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 111,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 111,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 111,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 112,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 112,
+        "title": "Exploring Astrophysics"
+    },
+    {
+        "chapter_id": 112,
+        "title": "Forestry: Sustaining Forests for Future Generations"
+    },
+    {
+        "chapter_id": 112,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 112,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 112,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 112,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 113,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 113,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 113,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 113,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 113,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 113,
+        "title": "Meteorology: The Dynamics of the Atmosphere"
+    },
+    {
+        "chapter_id": 113,
+        "title": "Electrical Engineering: Powering the Modern World"
+    },
+    {
+        "chapter_id": 114,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 114,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 114,
+        "title": "Database Management: Organizing Information Effectively"
+    },
+    {
+        "chapter_id": 114,
+        "title": "Networks and Security: Safeguarding the Virtual Realm"
+    },
+    {
+        "chapter_id": 114,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 114,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 114,
+        "title": "Pharmacology: The Study of Drugs"
+    },
+    {
+        "chapter_id": 115,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 115,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 115,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 115,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 115,
+        "title": "Film Studies: Cinematic Masterpieces"
+    },
+    {
+        "chapter_id": 115,
+        "title": "Political Science: Understanding Governance"
+    },
+    {
+        "chapter_id": 115,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 116,
+        "title": "Entrepreneurship: From Idea to Execution"
+    },
+    {
+        "chapter_id": 116,
+        "title": "Networks and Security: Safeguarding the Virtual Realm"
+    },
+    {
+        "chapter_id": 116,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 116,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 116,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 116,
+        "title": "Cryptocurrency and Blockchain Technologies"
+    },
+    {
+        "chapter_id": 116,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 117,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 117,
+        "title": "Chemistry: Elements and Compounds"
+    },
+    {
+        "chapter_id": 117,
+        "title": "Web Development: Building the Online World"
+    },
+    {
+        "chapter_id": 117,
+        "title": "Web Development Fundamentals"
+    },
+    {
+        "chapter_id": 117,
+        "title": "Renewable Energy: Towards a Sustainable Future"
+    },
+    {
+        "chapter_id": 117,
+        "title": "Biology: The Science of Life"
+    },
+    {
+        "chapter_id": 117,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 118,
+        "title": "Petroleum Engineering: Fueling the World"
+    },
+    {
+        "chapter_id": 118,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 118,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 118,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 118,
+        "title": "Exploring Astrophysics"
+    },
+    {
+        "chapter_id": 118,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 118,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 119,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 119,
+        "title": "Environmental Geology: Earth's Dynamic Surface"
+    },
+    {
+        "chapter_id": 119,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 119,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 119,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 119,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 119,
+        "title": "Neuroscience: Understanding the Brain and Nervous System"
+    },
+    {
+        "chapter_id": 120,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 120,
+        "title": "Environmental Sustainability Strategies"
+    },
+    {
+        "chapter_id": 120,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 120,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 120,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 120,
+        "title": "Medical Ethics: Balancing Care and Justice"
+    },
+    {
+        "chapter_id": 120,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 121,
+        "title": "Bioinformatics: Where Biology Meets Technology"
+    },
+    {
+        "chapter_id": 121,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 121,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 121,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 121,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 121,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 121,
+        "title": "Theater and Performance Arts: From Script to Stage"
+    },
+    {
+        "chapter_id": 122,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 122,
+        "title": "Petroleum Engineering: Fueling the World"
+    },
+    {
+        "chapter_id": 122,
+        "title": "Database Management: Organizing Information Effectively"
+    },
+    {
+        "chapter_id": 122,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 122,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 122,
+        "title": "Creative Writing: Unleashing Your Imagination"
+    },
+    {
+        "chapter_id": 122,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 123,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 123,
+        "title": "Literature: Masterpieces Across Cultures"
+    },
+    {
+        "chapter_id": 123,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 123,
+        "title": "Cybersecurity Best Practices"
+    },
+    {
+        "chapter_id": 123,
+        "title": "Meteorology: The Dynamics of the Atmosphere"
+    },
+    {
+        "chapter_id": 123,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 123,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 124,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 124,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 124,
+        "title": "Entrepreneurship: From Idea to Execution"
+    },
+    {
+        "chapter_id": 124,
+        "title": "Astronomy: Discovering the Universe"
+    },
+    {
+        "chapter_id": 124,
+        "title": "Film Studies: Cinematic Masterpieces"
+    },
+    {
+        "chapter_id": 124,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 124,
+        "title": "Social Work: Making a Difference"
+    },
+    {
+        "chapter_id": 125,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 125,
+        "title": "Creative Writing: Unleashing Your Imagination"
+    },
+    {
+        "chapter_id": 125,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 125,
+        "title": "Machine Learning Applications"
+    },
+    {
+        "chapter_id": 125,
+        "title": "Web Development Fundamentals"
+    },
+    {
+        "chapter_id": 125,
+        "title": "Meteorology: The Dynamics of the Atmosphere"
+    },
+    {
+        "chapter_id": 125,
+        "title": "Climate Change: Causes, Impacts, and Solutions"
+    },
+    {
+        "chapter_id": 126,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 126,
+        "title": "Criminology: Understanding Crime and Deviance"
+    },
+    {
+        "chapter_id": 126,
+        "title": "Climate Change: Causes, Impacts, and Solutions"
+    },
+    {
+        "chapter_id": 126,
+        "title": "Veterinary Science: Care of Animals"
+    },
+    {
+        "chapter_id": 126,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 126,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 126,
+        "title": "Space Exploration Innovations"
+    },
+    {
+        "chapter_id": 127,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 127,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 127,
+        "title": "Climate Change: Causes, Impacts, and Solutions"
+    },
+    {
+        "chapter_id": 127,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 127,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 127,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 127,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 128,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 128,
+        "title": "Anthropology: Insights into Human Evolution"
+    },
+    {
+        "chapter_id": 128,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 128,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 128,
+        "title": "Forestry: Sustaining Forests for Future Generations"
+    },
+    {
+        "chapter_id": 128,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 128,
+        "title": "History: From Ancient Civilizations to Modern Times"
+    },
+    {
+        "chapter_id": 129,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 129,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 129,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 129,
+        "title": "Film Studies: Cinematic Masterpieces"
+    },
+    {
+        "chapter_id": 129,
+        "title": "Machine Learning: Unleashing the Power of Data"
+    },
+    {
+        "chapter_id": 129,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 129,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 130,
+        "title": "Space Exploration Innovations"
+    },
+    {
+        "chapter_id": 130,
+        "title": "Mathematics: From Algebra to Calculus"
+    },
+    {
+        "chapter_id": 130,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 130,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 130,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 130,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 130,
+        "title": "Human-Computer Interaction"
+    },
+    {
+        "chapter_id": 131,
+        "title": "Materials Science: Designing the Future"
+    },
+    {
+        "chapter_id": 131,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 131,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 131,
+        "title": "Electrical Engineering: Powering the Modern World"
+    },
+    {
+        "chapter_id": 131,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 131,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 131,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 132,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 132,
+        "title": "Meteorology: Predicting the Weather"
+    },
+    {
+        "chapter_id": 132,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 132,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 132,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 132,
+        "title": "Human-Computer Interaction: Designing User Experiences"
+    },
+    {
+        "chapter_id": 132,
+        "title": "Veterinary Science: Care of Animals"
+    },
+    {
+        "chapter_id": 133,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 133,
+        "title": "Philosophy: The Quest for Wisdom"
+    },
+    {
+        "chapter_id": 133,
+        "title": "Renewable Energy: Towards a Sustainable Future"
+    },
+    {
+        "chapter_id": 133,
+        "title": "Occupational Therapy: Enhancing Everyday Life"
+    },
+    {
+        "chapter_id": 133,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 133,
+        "title": "Music: Appreciation and Composition"
+    },
+    {
+        "chapter_id": 133,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 134,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 134,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 134,
+        "title": "Kinesiology: The Science of Human Movement"
+    },
+    {
+        "chapter_id": 134,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 134,
+        "title": "Political Science: Understanding Governance"
+    },
+    {
+        "chapter_id": 134,
+        "title": "Neuroscience: Understanding the Brain and Nervous System"
+    },
+    {
+        "chapter_id": 134,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 135,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 135,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 135,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 135,
+        "title": "Data Visualization Techniques"
+    },
+    {
+        "chapter_id": 135,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 135,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 135,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 136,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 136,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 136,
+        "title": "Computer Science: Algorithms and Data Structures"
+    },
+    {
+        "chapter_id": 136,
+        "title": "Philosophy: Ethical Theories and Moral Dilemmas"
+    },
+    {
+        "chapter_id": 136,
+        "title": "Human-Computer Interaction: Designing User Experiences"
+    },
+    {
+        "chapter_id": 136,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 136,
+        "title": "Project Management Essentials"
+    },
+    {
+        "chapter_id": 137,
+        "title": "Animal Science: Understanding Our Furry and Feathered Friends"
+    },
+    {
+        "chapter_id": 137,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 137,
+        "title": "Kinesiology: The Science of Human Movement"
+    },
+    {
+        "chapter_id": 137,
+        "title": "Project Management Essentials"
+    },
+    {
+        "chapter_id": 137,
+        "title": "Nanotechnology: Small Science, Big Impact"
+    },
+    {
+        "chapter_id": 137,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 137,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 138,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 138,
+        "title": "Medical Ethics: Balancing Care and Justice"
+    },
+    {
+        "chapter_id": 138,
+        "title": "Introduction to Sociology"
+    },
+    {
+        "chapter_id": 138,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 138,
+        "title": "Renewable Energy: Towards a Sustainable Future"
+    },
+    {
+        "chapter_id": 138,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 138,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 139,
+        "title": "Sports Science: Understanding Athletic Performance"
+    },
+    {
+        "chapter_id": 139,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 139,
+        "title": "Environmental Engineering: Designing for Sustainability"
+    },
+    {
+        "chapter_id": 139,
+        "title": "Machine Learning Applications"
+    },
+    {
+        "chapter_id": 139,
+        "title": "Genetics: Unraveling the Code of Life"
+    },
+    {
+        "chapter_id": 139,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 139,
+        "title": "Understanding Organizational Behavior"
+    },
+    {
+        "chapter_id": 140,
+        "title": "Neuroscience: Understanding the Brain and Nervous System"
+    },
+    {
+        "chapter_id": 140,
+        "title": "Geographic Information Systems: Mapping the World"
+    },
+    {
+        "chapter_id": 140,
+        "title": "Space Exploration: Journey to the Final Frontier"
+    },
+    {
+        "chapter_id": 140,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 140,
+        "title": "Pharmacology: The Study of Drugs"
+    },
+    {
+        "chapter_id": 140,
+        "title": "Literature: Classics and Modern Works"
+    },
+    {
+        "chapter_id": 140,
+        "title": "Agricultural Science: Feeding a Growing Population"
+    },
+    {
+        "chapter_id": 141,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 141,
+        "title": "Machine Learning: Unleashing the Power of Data"
+    },
+    {
+        "chapter_id": 141,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 141,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 141,
+        "title": "Renewable Energy Solutions"
+    },
+    {
+        "chapter_id": 141,
+        "title": "Green Architecture: Building for a Better Tomorrow"
+    },
+    {
+        "chapter_id": 141,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 142,
+        "title": "Sustainable Business Practices"
+    },
+    {
+        "chapter_id": 142,
+        "title": "Public Health: Promoting Well-Being"
+    },
+    {
+        "chapter_id": 142,
+        "title": "Statistics: Unlocking the World of Data"
+    },
+    {
+        "chapter_id": 142,
+        "title": "Cloud Computing: Harnessing the Power of Remote Servers"
+    },
+    {
+        "chapter_id": 142,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 142,
+        "title": "Innovation in Technology and Business"
+    },
+    {
+        "chapter_id": 142,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 143,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 143,
+        "title": "Horticulture: Growing Plants for a Sustainable Future"
+    },
+    {
+        "chapter_id": 143,
+        "title": "Understanding Organizational Behavior"
+    },
+    {
+        "chapter_id": 143,
+        "title": "Mechanical Engineering: From Gears to Gadgets"
+    },
+    {
+        "chapter_id": 143,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 143,
+        "title": "Ethics: Philosophy of Right and Wrong"
+    },
+    {
+        "chapter_id": 143,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 144,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 144,
+        "title": "Oceanography: Delving into the Deep Blue"
+    },
+    {
+        "chapter_id": 144,
+        "title": "Meteorology: Predicting the Weather"
+    },
+    {
+        "chapter_id": 144,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 144,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 144,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 144,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 145,
+        "title": "Social Media Analytics"
+    },
+    {
+        "chapter_id": 145,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 145,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 145,
+        "title": "Horticulture: Growing Plants for a Sustainable Future"
+    },
+    {
+        "chapter_id": 145,
+        "title": "Mechanical Engineering: From Gears to Gadgets"
+    },
+    {
+        "chapter_id": 145,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 145,
+        "title": "Food Science: From Farm to Fork"
+    },
+    {
+        "chapter_id": 146,
+        "title": "Social Media Analytics"
+    },
+    {
+        "chapter_id": 146,
+        "title": "Dentistry: Oral Health and Beyond"
+    },
+    {
+        "chapter_id": 146,
+        "title": "Space Exploration: Journey to the Final Frontier"
+    },
+    {
+        "chapter_id": 146,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 146,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 146,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 146,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 147,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 147,
+        "title": "Space Exploration Innovations"
+    },
+    {
+        "chapter_id": 147,
+        "title": "Environmental Policy: Navigating Sustainability"
+    },
+    {
+        "chapter_id": 147,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 147,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 147,
+        "title": "Meteorology: Predicting the Weather"
+    },
+    {
+        "chapter_id": 147,
+        "title": "Mechanical Engineering: From Gears to Gadgets"
+    },
+    {
+        "chapter_id": 148,
+        "title": "Psychiatry: Bridging the Mind-Body Connection"
+    },
+    {
+        "chapter_id": 148,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 148,
+        "title": "Veterinary Science: Care of Animals"
+    },
+    {
+        "chapter_id": 148,
+        "title": "Introduction to Quantum Mechanics"
+    },
+    {
+        "chapter_id": 148,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 148,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 148,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 149,
+        "title": "Human-Computer Interaction: Designing User Experiences"
+    },
+    {
+        "chapter_id": 149,
+        "title": "Project Management Essentials"
+    },
+    {
+        "chapter_id": 149,
+        "title": "Biotechnology: Shaping the Future of Medicine"
+    },
+    {
+        "chapter_id": 149,
+        "title": "Sustainable Development: Balancing People and Planet"
+    },
+    {
+        "chapter_id": 149,
+        "title": "Computer Graphics: Creating Visual Realities"
+    },
+    {
+        "chapter_id": 149,
+        "title": "Accounting for Decision Making"
+    },
+    {
+        "chapter_id": 149,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 150,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 150,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 150,
+        "title": "Visual Arts: A Journey Through Time"
+    },
+    {
+        "chapter_id": 150,
+        "title": "Mining Engineering: Extracting Earth's Resources"
+    },
+    {
+        "chapter_id": 150,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 150,
+        "title": "Dance: Movement and Expression"
+    },
+    {
+        "chapter_id": 150,
+        "title": "Space Exploration Innovations"
+    },
+    {
+        "chapter_id": 151,
+        "title": "Software Engineering: Crafting Digital Solutions"
+    },
+    {
+        "chapter_id": 151,
+        "title": "Oceanography: Exploring Earth's Oceans"
+    },
+    {
+        "chapter_id": 151,
+        "title": "Financial Analysis and Modeling"
+    },
+    {
+        "chapter_id": 151,
+        "title": "Entrepreneurship: From Idea to Execution"
+    },
+    {
+        "chapter_id": 151,
+        "title": "Ecotourism: Exploring Nature Responsibly"
+    },
+    {
+        "chapter_id": 151,
+        "title": "Artificial Intelligence: From Theory to Applications"
+    },
+    {
+        "chapter_id": 151,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 152,
+        "title": "Film Production: Bringing Stories to Life"
+    },
+    {
+        "chapter_id": 152,
+        "title": "Internet of Things: Connecting the Physical and Digital Worlds"
+    },
+    {
+        "chapter_id": 152,
+        "title": "Music Appreciation: From Beethoven to Rock"
+    },
+    {
+        "chapter_id": 152,
+        "title": "Exercise Physiology: Unlocking Human Potential"
+    },
+    {
+        "chapter_id": 152,
+        "title": "Space Exploration Innovations"
+    },
+    {
+        "chapter_id": 152,
+        "title": "Physical Therapy: Restoring Function and Mobility"
+    },
+    {
+        "chapter_id": 152,
+        "title": "Machine Learning Applications"
+    },
+    {
+        "chapter_id": 153,
+        "title": "Neuroscience: Understanding the Brain and Nervous System"
+    },
+    {
+        "chapter_id": 153,
+        "title": "Theater and Performance Arts: From Script to Stage"
+    },
+    {
+        "chapter_id": 153,
+        "title": "Neuroscience Advances"
+    },
+    {
+        "chapter_id": 153,
+        "title": "Renewable Energy: Towards a Sustainable Future"
+    },
+    {
+        "chapter_id": 153,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 153,
+        "title": "Public Health: Promoting Well-Being"
+    },
+    {
+        "chapter_id": 153,
+        "title": "Political Science: Understanding Governance"
+    },
+    {
+        "chapter_id": 154,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 154,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 154,
+        "title": "Horticulture: Growing Plants for a Sustainable Future"
+    },
+    {
+        "chapter_id": 154,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 154,
+        "title": "Physics: The Fundamental Laws of Nature"
+    },
+    {
+        "chapter_id": 154,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 154,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 155,
+        "title": "Social Media Analytics"
+    },
+    {
+        "chapter_id": 155,
+        "title": "Oceanography: Delving into the Deep Blue"
+    },
+    {
+        "chapter_id": 155,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 155,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 155,
+        "title": "Psychology: Exploring the Human Mind"
+    },
+    {
+        "chapter_id": 155,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 155,
+        "title": "Electrical Engineering: Powering the Modern World"
+    },
+    {
+        "chapter_id": 156,
+        "title": "Planetary Science: Exploring Our Solar System"
+    },
+    {
+        "chapter_id": 156,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 156,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 156,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 156,
+        "title": "Programming with Python"
+    },
+    {
+        "chapter_id": 156,
+        "title": "Geology: Journey into Earth's Past"
+    },
+    {
+        "chapter_id": 156,
+        "title": "Nursing: Caring for the Health of Individuals"
+    },
+    {
+        "chapter_id": 157,
+        "title": "Globalization and International Business"
+    },
+    {
+        "chapter_id": 157,
+        "title": "Fundamentals of Organic Chemistry"
+    },
+    {
+        "chapter_id": 157,
+        "title": "Aeronautical Engineering: Designing Flight"
+    },
+    {
+        "chapter_id": 157,
+        "title": "History of Ancient Civilizations"
+    },
+    {
+        "chapter_id": 157,
+        "title": "Cosmology: Understanding the Universe's Origins"
+    },
+    {
+        "chapter_id": 157,
+        "title": "Introduction to Economics"
+    },
+    {
+        "chapter_id": 157,
+        "title": "Political Science: The Dynamics of Power"
+    },
+    {
+        "chapter_id": 158,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 158,
+        "title": "Nursing: Caring for the Health of Individuals"
+    },
+    {
+        "chapter_id": 158,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 158,
+        "title": "Materials Science: Designing the Future"
+    },
+    {
+        "chapter_id": 158,
+        "title": "Media and Journalism: Navigating the Information Age"
+    },
+    {
+        "chapter_id": 158,
+        "title": "Sustainable Urban Planning: Designing Livable Cities"
+    },
+    {
+        "chapter_id": 158,
+        "title": "Environmental Science: Balancing Ecology and Human Impact"
+    },
+    {
+        "chapter_id": 159,
+        "title": "Marine Biology: Life Beneath the Waves"
+    },
+    {
+        "chapter_id": 159,
+        "title": "Understanding Psychology"
+    },
+    {
+        "chapter_id": 159,
+        "title": "Art and Technology Fusion"
+    },
+    {
+        "chapter_id": 159,
+        "title": "Quantum Computing: The Future of Information Processing"
+    },
+    {
+        "chapter_id": 159,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 159,
+        "title": "Sociology: Understanding Human Society"
+    },
+    {
+        "chapter_id": 159,
+        "title": "Robotics: Designing Intelligent Machines"
+    },
+    {
+        "chapter_id": 160,
+        "title": "Internet of Things: Connecting the Physical and Digital Worlds"
+    },
+    {
+        "chapter_id": 160,
+        "title": "Environmental Science: Balancing Ecology and Human Impact"
+    },
+    {
+        "chapter_id": 160,
+        "title": "Remote Sensing: Monitoring Earth from Above"
+    },
+    {
+        "chapter_id": 160,
+        "title": "Civil Engineering: Building the Infrastructure of Tomorrow"
+    },
+    {
+        "chapter_id": 160,
+        "title": "Communication Studies: The Art of Expression"
+    },
+    {
+        "chapter_id": 160,
+        "title": "Environmental Science: A Global Perspective"
+    },
+    {
+        "chapter_id": 160,
+        "title": "Animal Science: Understanding Our Furry and Feathered Friends"
+    },
+    {
+        "chapter_id": 161,
+        "title": "Leadership and Management Principles"
+    },
+    {
+        "chapter_id": 161,
+        "title": "Religious Studies: Understanding Beliefs and Practices"
+    },
+    {
+        "chapter_id": 161,
+        "title": "Conservation Biology: Preserving Biodiversity"
+    },
+    {
+        "chapter_id": 161,
+        "title": "Visual Arts: A Journey Through Time"
+    },
+    {
+        "chapter_id": 161,
+        "title": "Information Technology: Navigating the Digital Landscape"
+    },
+    {
+        "chapter_id": 161,
+        "title": "Data Science: Extracting Insights from Big Data"
+    },
+    {
+        "chapter_id": 161,
+        "title": "Media and Journalism: Navigating the Information Age"
+    }
+]
