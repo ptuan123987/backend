@@ -102,7 +102,7 @@ Route::group([
     'middleware' => ['api', 'jwt.admin']
 ], function () {
     Route::apiResource('/courses', CourseController::class)->except(['index', 'show']);
-    Route::apiResource('/categories', CategoryController::class)->except(['index', 'show']);
+    Route::apiResource('/categories', CategoryController::class)->except(['index', 'show','getTopics','getCourses']);
     Route::patch('/categories/{id}/courses/{courseId}', [CategoryController::class, 'attachCourse']);
     Route::apiResource('/topics', TopicController::class)->except(['index', 'show']);
     Route::apiResource('/lectures', LectureController::class)->except(['index', 'show']);

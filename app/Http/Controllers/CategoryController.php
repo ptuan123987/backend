@@ -21,7 +21,7 @@ class CategoryController extends Controller
 
     public function __construct()
     {
-        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+        $this->middleware('jwt.admin', ['except' => ['index','show','getTopics','getCourses']]);
     }
     /**
      * Get a list of categories
@@ -219,8 +219,7 @@ class CategoryController extends Controller
      *     @OA\Response(
      *         response=404,
      *         description="Category not found"
-     *     ),
-     *     security={{"bearerAuth":{}}} )
+     *     )
      * )
      */
     public function getTopics($id)
@@ -261,8 +260,7 @@ class CategoryController extends Controller
      *     @OA\Response(
      *         response=404,
      *         description="Category not found"
-     *     ),
-     *     security={{"bearerAuth":{}}} )
+     *     )
      * )
      */
     public function getCourses($id)
@@ -353,7 +351,8 @@ class CategoryController extends Controller
      *         response=404,
      *         description="Category or Course not found"
      *     ),
-     *     security={{"bearerAuth":{}}}
+     *      security={{"bearerAuth":{}}} )
+     * )
      * )
      */
     public function attachCourse($id, $courseId)
