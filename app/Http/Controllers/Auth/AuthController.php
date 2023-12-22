@@ -123,7 +123,7 @@ class AuthController extends Controller
 
     /**
      * @OA\Post(
-     *     path="api/user/change-password",
+     *     path="/api/user/change-password",
      *     tags={"auth"},
      *     summary="Change password",
      *     description="Change the password of the authenticated user",

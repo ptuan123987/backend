@@ -46,6 +46,7 @@ Route::get('/chapters/{id}', [ChapterController::class, 'show']);
 Route::get('/topics/{id}/courses', [TopicController::class, 'getCourses']);
 Route::get('/categories/{id}/topics', [CategoryController::class, 'getTopics']);
 Route::get('/categories/{id}/courses', [CategoryController::class, 'getCourses']);
+Route::get('/categories/{id}/subcategories',[CategoryController::class,'getSubcategories']);
 Route::get('/courses/{id}/reviews', [CourseController::class, 'get_reviews']);
 Route::get('/courses/{id}/chapters', [CourseController::class, 'get_chapters']);
 Route::get('/search/courses', [SearchController::class, 'search_courses']);
@@ -102,7 +103,7 @@ Route::group([
     'middleware' => ['api', 'jwt.admin']
 ], function () {
     Route::apiResource('/courses', CourseController::class)->except(['index', 'show']);
-    Route::apiResource('/categories', CategoryController::class)->except(['index', 'show']);
+    Route::apiResource('/categories', CategoryController::class)->except(['index', 'show','getTopics','getCourses','getSubcategories']);
     Route::patch('/categories/{id}/courses/{courseId}', [CategoryController::class, 'attachCourse']);
     Route::apiResource('/topics', TopicController::class)->except(['index', 'show']);
     Route::apiResource('/lectures', LectureController::class)->except(['index', 'show']);

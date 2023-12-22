@@ -10,7 +10,7 @@ servers:
     url: 'http://localhost:8000'
     description: 'API server'
   -
-    url: 'http://57.181.106.82/'
+    url: 'https://api-study.salyr.online'
     description: 'production server'
 paths:
   /api/admin/login:
@@ -123,13 +123,13 @@ paths:
       security:
         -
           bearerAuth: []
-  api/user/change-password:
+  /api/user/change-password:
     post:
       tags:
         - auth
       summary: 'Change password'
       description: 'Change the password of the authenticated user'
-      operationId: 12d15e471b32c4894e298f169f73d805
+      operationId: cbd676312bb8cb851ac1e7b5ac864423
       requestBody:
         required: true
         content:
@@ -324,9 +324,6 @@ paths:
                   $ref: '#/components/schemas/TopicResource'
         404:
           description: 'Category not found'
-      security:
-        -
-          bearerAuth: []
   '/api/categories/{categoryId}/courses':
     get:
       tags:
@@ -353,9 +350,6 @@ paths:
                   $ref: '#/components/schemas/CourseResource'
         404:
           description: 'Category not found'
-      security:
-        -
-          bearerAuth: []
   '/api/categories/{categoryId}/subcategories':
     get:
       tags:
@@ -659,7 +653,7 @@ paths:
       requestBody:
         required: true
         content:
-          application/json:
+          multipart/form-data:
             schema:
               $ref: '#/components/schemas/StoreCourseRequest'
       responses:
@@ -695,12 +689,12 @@ paths:
                 $ref: '#/components/schemas/CourseResource'
         404:
           description: 'Course not found'
-    put:
+    post:
       tags:
         - Courses
       summary: 'Update the specified course'
       description: 'Update the specified course in storage.'
-      operationId: 5ac71575dd6a7d9268ffe6235c535e64
+      operationId: 3cef984cfe9942b9eafb4096512ad771
       parameters:
         -
           name: course_id
@@ -709,10 +703,18 @@ paths:
           required: true
           schema:
             type: integer
+        -
+          name: _method
+          in: query
+          description: 'Method to be used'
+          required: false
+          schema:
+            type: string
+            default: PUT
       requestBody:
         required: true
         content:
-          application/json:
+          multipart/form-data:
             schema:
               $ref: '#/components/schemas/UpdateCourseRequest'
       responses:
@@ -1057,6 +1059,53 @@ paths:
                     type: string
                     example: "Email doesn't found on our database"
                 type: object
+  /api/search/courses:
+    get:
+      tags:
+        - Search
+      summary: 'Search courses'
+      description: 'Search for courses with a search term, page number and size.'
+      operationId: searchCourses
+      parameters:
+        -
+          name: searchTerm
+          in: query
+          description: 'The term to search for'
+          required: true
+          schema:
+            type: string
+        -
+          name: page_num
+          in: query
+          description: 'The number of the page to retrieve'
+          required: false
+          schema:
+            type: integer
+            format: int32
+        -
+          name: page_size
+          in: query
+          description: 'The size of the page (number of items per page)'
+          required: false
+          schema:
+            type: integer
+            format: int32
+      responses:
+        200:
+          description: 'Successful operation'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CourseResource'
+        401:
+          description: Unauthorized
+        400:
+          description: 'Bad Request'
+      security:
+        -
+          bearerAuth: []
   /api/topics:
     get:
       tags:
@@ -1351,6 +1400,24 @@ components:
         - email
         - password
       type: object
+    SearchCoursesRequest:
+      title: 'Search Request'
+      description: 'Search request body data'
+      required:
+        - searchTerm
+      properties:
+        searchTerm:
+          description: 'The term to search for'
+          type: string
+        page_num:
+          description: 'The number of the page to retrieve'
+          type: integer
+          format: int32
+        page_size:
+          description: 'The size of the page (number of items per page)'
+          type: integer
+          format: int32
+      type: object
     StoreChapterRequest:
       title: 'Store Chapter Request'
       description: 'Store Chapter Request body data'
@@ -1388,6 +1455,9 @@ components:
           description: 'The author of the course.'
           type: string
           maxLength: 255
+        thumbnail_image:
+          description: 'Thumbnail image.'
+          type: file
       type: object
     StoreLectureRequest:
       title: 'Store Lecture Request'
@@ -1473,6 +1543,9 @@ components:
           description: 'The updated author of the course.'
           type: string
           maxLength: 255
+        thumbnail_image:
+          description: 'Thumbnail image.'
+          type: file
       type: object
     UpdateLectureRequest:
       title: 'Update Lecture Request'
@@ -1792,6 +1865,9 @@ tags:
     description: 'Operations about lectures'
   -
     name: 'Password Reset'
+  -
+    name: Search
+    description: 'Operations about search'
   -
     name: Topics
     description: 'Endpoints for managing topics'
