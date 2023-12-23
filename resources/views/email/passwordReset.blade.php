@@ -2,7 +2,7 @@
 # Introduction
 If you forgots password, Let's touch button below !
 
-@component('mail::button', ['url' => 'http://localhost:3000/response-password-reset?token='.$token])
+@component('mail::button', ['url' => 'https://study.salyr.online/response-password-reset?token='.$token])
 Reset Password Link
 @endcomponent
 
