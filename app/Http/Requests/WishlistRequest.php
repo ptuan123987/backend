@@ -10,8 +10,8 @@ use Illuminate\Foundation\Http\FormRequest;
  *     schema="WishlistRequest",
  *     type="object",
  *     title="Wishlist Request",
- *     required={"course_name"},
- *     @OA\Property(property="course_name", type="string", description="Name of the course in the wishlist."),
+ *     required={"course_id"},
+ *     @OA\Property(property="course_id", type="string", description="id of the course in the wishlist."),
  * )
  */
 class WishlistRequest extends FormRequest
@@ -32,7 +32,7 @@ class WishlistRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'course_name' => 'string|required'
+            'course_id' => 'required|integer'
         ];
     }
 }

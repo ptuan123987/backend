@@ -86,7 +86,7 @@ class WishlistController extends Controller
     {
         $request = $request->validated();
 
-        $course = Course::firstOrCreate(['title' => $request['course_name']]);
+        $course = Course::findOrFail($request->course_id);
 
         $user = JWTAuth::parseToken()->authenticate();
 
