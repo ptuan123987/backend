@@ -84,17 +84,17 @@ class WishlistController extends Controller
      */
     public function store(WishlistRequest $request)
     {
-        $request = $request->validated();
+        $requestData = $request->validated();
 
-        $course = Course::findOrFail($request->course_id);
+        $course = Course::findOrFail($requestData['course_id']);
 
         $user = JWTAuth::parseToken()->authenticate();
 
         $wishlistItem = Wishlist::create([
             'course_id' => $course->id,
             'user_id' => $user->id,
-
         ]);
+
         return response()->json([
             'message' => 'Add course to wishlist successfully'
         ], 201);

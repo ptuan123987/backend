@@ -32,7 +32,7 @@ class WishlistRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'course_id' => 'required|integer'
+            'course_id' => 'required|integer',
         ];
     }
 }
