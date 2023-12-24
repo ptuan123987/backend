@@ -11,7 +11,7 @@ use Illuminate\Foundation\Http\FormRequest;
  *     type="object",
  *     title="Wishlist Request",
  *     required={"course_id"},
- *     @OA\Property(property="course_id", type="string", description="id of the course in the wishlist."),
+ *     @OA\Property(property="course_id", type="integer", description="id of the course in the wishlist."),
  * )
  */
 class WishlistRequest extends FormRequest
