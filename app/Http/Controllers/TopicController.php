@@ -21,7 +21,7 @@ class TopicController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+        $this->middleware('jwt.admin', ['except' => ['index','show','getCourses']]);
     }
     /**
      * Display a listing of topics.
