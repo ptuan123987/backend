@@ -14,4 +14,8 @@ class Topic extends Model
     {
         return $this->belongsToMany(Category::class, 'topic_category', 'topic_id', 'category_id');
     }
+    public function courses()
+    {
+        return $this->hasMany(Course::class);
+    }
 }
