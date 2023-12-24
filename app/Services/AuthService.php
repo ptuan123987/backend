@@ -45,6 +45,20 @@ class AuthService
         ];
 
     }
+    public function loginAdmin(LoginRequest $request) {
+        $user = Auth::user();
+
+        // access_token lives 60'
+        $accessToken = JWTAuth::fromUser($user);
+        //refresh_token lives  20160'
+        $refreshToken = JWTAuth::fromUser($user, ['exp' => config('jwt.refresh_ttl')]);
+
+        return [
+            'admin_token' => $accessToken,
+            'refresh_token' => $refreshToken,
+        ];
+
+    }
 
     public function changePassword(PasswordRequest $request) {
         $request->validated($request->all());

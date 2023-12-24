@@ -51,7 +51,7 @@ class AdminController extends Controller
         if (!Auth::attempt($request->only('email', 'password'))) {
             return $this->error('', 'Credentials do not match', 401);
         }
-        $response = $this->authService->login($request);
+        $response = $this->authService->loginAdmin($request);
         return $this->success($response);
     }
 }
