@@ -16,8 +16,9 @@ class JwtAdminMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        try {
+        try { 
             $user = JWTAuth::parseToken()->authenticate();
+           
         } catch (\Tymon\JWTAuth\Exceptions\JWTException $e) {
             return response()->json(['message' => 'Unauthorized'], 401);
         }
