@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/user/choose-marital-status', [UserController::class, 'chooseMaritalStatus']);
+Route::post('/user/update-marital-status', [UserController::class, 'updateMaritalStatus'])->name('updateMaritalStatus');

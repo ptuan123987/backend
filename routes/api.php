@@ -12,6 +12,7 @@ use App\Http\Controllers\PasswordResetController;
 use App\Http\Controllers\SocialAccountController;
 use App\Http\Controllers\TopicController;
 use App\Http\Controllers\CourseReviewController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\SearchController;
 use Illuminate\Http\Request;
@@ -35,7 +36,6 @@ Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/topics', [TopicController::class, 'index']);
 Route::get('/lectures', [LectureController::class, 'index']);
 Route::get('/chapters', [ChapterController::class, 'index']);
-
 
 Route::get('/courses/{id}', [CourseController::class, 'show']);
 Route::get('/categories/{id}', [CategoryController::class, 'show']);
@@ -109,3 +109,8 @@ Route::group([
     Route::apiResource('/lectures', LectureController::class)->except(['index', 'show']);
     Route::apiResource('/chapters', ChapterController::class)->except(['index', 'show']);
 });
+
+// write Route delete category
+
+Route::get('/user/marital-status', [UserController::class, 'getMaritalStatus']);
+Route::post('/user/marital-status', [UserController::class, 'updateMaritalStatus']);
