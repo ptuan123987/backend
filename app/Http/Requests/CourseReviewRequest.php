@@ -44,7 +44,7 @@ class CourseReviewRequest extends FormRequest
         return [
             'course_id' => 'required|exists:courses,id',
             'rating' => [
-                'required',
+                'nullable',
                 'numeric',
                 function ($attribute, $value, $fail) {
                     if (!in_array($value, [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5])) {
@@ -52,7 +52,8 @@ class CourseReviewRequest extends FormRequest
                     }
                 },
             ],
-            'content' => 'required|string|max:1000',  // adjust string validation as needed
+            'content' => 'required|string|max:1000',
+            'parent_comment_id' => 'nullable|exists:course_reviews,id',
         ];
     }
 }

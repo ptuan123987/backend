@@ -9,6 +9,7 @@ use App\Http\Requests\PasswordRequest;
 use App\Http\Resources\UserResource;
 use App\Jobs\SendEmailRegistration;
 use App\Mail\SendWelcomeMail;
+use App\Models\LoginRecords;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Repositories\UserRepository;
@@ -34,11 +35,13 @@ class AuthService
     public function login(LoginRequest $request) {
         $user = Auth::user();
 
-        // access_token lives 60'
-        $accessToken = JWTAuth::fromUser($user);
-        //refresh_token lives  20160'
-        $refreshToken = JWTAuth::fromUser($user, ['exp' => config('jwt.refresh_ttl')]);
+        LoginRecords::createOrFirst([
+            'user_id' => $user->id,
+            'login_time' => now(),
+        ]);
 
+        $accessToken = JWTAuth::fromUser($user);
+        $refreshToken = JWTAuth::fromUser($user, ['exp' => config('jwt.refresh_ttl')]);
         return [
             'access_token' => $accessToken,
             'refresh_token' => $refreshToken,
@@ -48,6 +51,10 @@ class AuthService
     public function loginAdmin(LoginRequest $request) {
         $user = Auth::user();
 
+        LoginRecords::createOrFirst([
+            'user_id' => $user->id,
+            'login_time' => now(),
+        ]);
         // access_token lives 60'
         $accessToken = JWTAuth::fromUser($user);
         //refresh_token lives  20160'

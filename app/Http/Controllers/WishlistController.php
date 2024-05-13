@@ -11,6 +11,7 @@ use App\Models\Course;
 use App\Models\Wishlist;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Log;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 
@@ -100,6 +101,19 @@ class WishlistController extends Controller
         ], 201);
     }
 
+    public function checkCourseInWishlist($id) {
+        $user = JWTAuth::parseToken()->authenticate();
+
+        $wishlistItem = Wishlist::where('course_id', $id)
+            ->where('user_id', $user->id)
+            ->exists();
+        Log::info($user->id);
+        if ($wishlistItem) {
+            return response()->json(['is_in_wishlist' => true],200);
+        } else {
+            return response()->json(['is_in_wishlist' => false]);
+        }
+    }
     /**
      * @OA\Delete(
      *     path="/api/user/wishlists/{id}",
@@ -125,7 +139,7 @@ class WishlistController extends Controller
 
         if ($user) {
             try {
-                $wishlist = Wishlist::findOrFail($id);
+                $wishlist = Wishlist::where("course_id",$id)->first();
                 $wishlist->delete();
 
                 return response()->json([

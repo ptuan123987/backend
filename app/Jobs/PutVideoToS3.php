@@ -79,7 +79,6 @@ class PutVideoToS3 implements ShouldQueue
     {
         $thumbnailName = 'thumbnail-' . time() . '.jpg';
 
-        // Generate a thumbnail at the 1-second mark of the video
         FFMpeg::fromDisk('public')
             ->open($videoName)
             ->getFrameFromSeconds(1)

@@ -44,4 +44,5 @@ class Course extends Model
                   ->orWhere('author', 'LIKE', "%{$term}%");
         });
     }
+
 }

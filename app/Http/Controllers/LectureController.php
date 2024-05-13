@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Resources\LectureResource;
 use App\Http\Requests\StoreLectureRequest;
 use App\Http\Requests\UpdateLectureRequest;
+use App\Jobs\PutImageToS3;
 use App\Jobs\PutVideoToS3;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
@@ -97,13 +98,13 @@ class LectureController extends Controller
             Storage::disk('public')->put($videoName, file_get_contents($video));
             PutVideoToS3::dispatch($lecture->id, $videoName);
 
-            return new LectureResource($lecture);
+            return response()->json(['message' => 'created lecture successful',
+                                        'id' => $lecture->id,], 201);
         } catch (\Exception $e) {
             DB::rollBack();
             return response()->json(['error' => $e->getMessage()], 500);
         }
     }
-
     /**
      * @OA\Get(
      *     path="/api/lectures/{id}",
@@ -209,7 +210,8 @@ class LectureController extends Controller
                 PutVideoToS3::dispatch($lecture->id, $videoName, true);
             }
 
-            return new LectureResource($lecture);
+            return response()->json(['message' => 'updated lecture successfully',
+                                    'id' => $lecture->id,], 200);
         } catch (\Exception $e) {
             return response()->json(['error' => $e->getMessage()], 500);
         }

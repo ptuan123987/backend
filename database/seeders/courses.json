@@ -5,7 +5,7 @@
         ],
         "title": "Web Development Bootcamp",
         "description": "Comprehensive course covering HTML, CSS, and JavaScript.",
-        "price": 49.99,
+        "price": 499000,
         "author": "John Doe"
     },
     {
@@ -15,7 +15,7 @@
         ],
         "title": "Python for Beginners",
         "description": "Learn Python programming from scratch.",
-        "price": 29.99,
+        "price": 299000,
         "author": "Jane Smith"
     },
     {
@@ -26,7 +26,7 @@
         ],
         "title": "ReactJs Mastery",
         "description": "Master ReactJs with hands-on projects.",
-        "price": 39.99,
+        "price": 399000,
         "author": "Sam Johnson"
     },
     {
@@ -35,7 +35,7 @@
         ],
         "title": "Mobile App Development with React Native",
         "description": "Build mobile apps using React Native.",
-        "price": 44.99,
+        "price": 449000,
         "author": "Emily White"
     },
     {
@@ -45,7 +45,7 @@
         ],
         "title": "Machine Learning Fundamentals",
         "description": "Introduction to machine learning concepts.",
-        "price": 54.99,
+        "price": 549000,
         "author": "Michael Brown"
     },
     {
@@ -56,7 +56,7 @@
         ],
         "title": "Unity Game Development",
         "description": "Create games using the Unity game engine.",
-        "price": 59.99,
+        "price": 599000,
         "author": "Alex Turner"
     },
     {
@@ -65,7 +65,7 @@
         ],
         "title": "Entrepreneurship 101",
         "description": "Learn the essentials of starting a business.",
-        "price": 29.99,
+        "price": 299000,
         "author": "David Miller"
     },
     {
@@ -75,7 +75,7 @@
         ],
         "title": "Financial Planning for Success",
         "description": "Plan your finances for a secure future.",
-        "price": 34.99,
+        "price": 349000,
         "author": "Sophie Davis"
     },
     {
@@ -86,7 +86,7 @@
         ],
         "title": "Digital Marketing Essentials",
         "description": "Master SEO, Social Media, and Content Marketing.",
-        "price": 39.99,
+        "price": 399000,
         "author": "Chris Anderson"
     },
     {
@@ -96,7 +96,7 @@
         ],
         "title": "Photography Basics: Capturing Moments",
         "description": "Master camera settings, composition, and lighting.",
-        "price": 49.99,
+        "price": 499000,
         "author": "Emma Turner"
     },
     {
@@ -105,7 +105,7 @@
         ],
         "title": "Fitness Training for Beginners",
         "description": "Get started with cardio, strength training, and yoga.",
-        "price": 24.99,
+        "price": 249000,
         "author": "Olivia Martin"
     },
     {
@@ -116,7 +116,7 @@
         ],
         "title": "Healthy Eating Habits",
         "description": "Learn the fundamentals of maintaining a healthy diet.",
-        "price": 19.99,
+        "price": 199000,
         "author": "Daniel White"
     },
     {
@@ -126,7 +126,7 @@
         ],
         "title": "Music Theory: Understanding Notes and Scales",
         "description": "Learn the basics of music theory.",
-        "price": 29.99,
+        "price": 299000,
         "author": "Eva Green"
     },
     {
@@ -137,7 +137,7 @@
         ],
         "title": "Guitar Techniques for Beginners",
         "description": "Master the basics of playing the guitar.",
-        "price": 34.99,
+        "price": 349000,
         "author": "Mark Robinson"
     },
     {
@@ -147,7 +147,7 @@
         ],
         "title": "Recording and Mixing: Music Production",
         "description": "Learn the art of recording and mixing music.",
-        "price": 49.99,
+        "price": 499000,
         "author": "Laura Thompson"
     },
     {
@@ -156,7 +156,7 @@
         ],
         "title": "Advanced Python Programming",
         "description": "Take your Python skills to the next level.",
-        "price": 44.99,
+        "price": 449000,
         "author": "Robert Harris"
     },
     {
@@ -167,7 +167,7 @@
         ],
         "title": "VueJs: Building Interactive Web Apps",
         "description": "Create dynamic web applications with VueJs.",
-        "price": 39.99,
+        "price": 399000,
         "author": "Grace Lee"
     },
     {
@@ -176,7 +176,7 @@
         ],
         "title": "IOS Development: App Development for Apple Devices",
         "description": "Build apps for iOS devices.",
-        "price": 54.99,
+        "price": 549000,
         "author": "Matthew Turner"
     },
     {
@@ -187,7 +187,7 @@
         ],
         "title": "Unreal Engine Game Development",
         "description": "Develop games using the Unreal Engine.",
-        "price": 59.99,
+        "price": 599000,
         "author": "Anna Carter"
     },
     {
@@ -197,7 +197,7 @@
         ],
         "title": "SEO Mastery: Rank Your Website on Search Engines",
         "description": "Optimize your website for search engines.",
-        "price": 29.99,
+        "price": 299000,
         "author": "Carlos Rodriguez"
     },
     {
@@ -208,7 +208,7 @@
         ],
         "title": "Presentation Skills: Speak with Confidence",
         "description": "Enhance your presentation and public speaking skills.",
-        "price": 34.99,
+        "price": 349000,
         "author": "Sophia Turner"
     },
     {
@@ -217,7 +217,7 @@
         ],
         "title": "Meal Planning for Busy Lives",
         "description": "Plan healthy meals in a busy schedule.",
-        "price": 49.99,
+        "price": 499000,
         "author": "Laura Thompson"
     },
     {
@@ -227,7 +227,7 @@
         ],
         "title": "Deep Learning Fundamentals",
         "description": "Introduction to deep learning concepts.",
-        "price": 44.99,
+        "price": 449000,
         "author": "Robert Harris"
     },
     {
@@ -236,7 +236,7 @@
         ],
         "title": "Social Media Advertising Strategies",
         "description": "Create effective social media advertising campaigns.",
-        "price": 39.99,
+        "price": 399000,
         "author": "Grace Lee"
     },
     {
@@ -247,7 +247,7 @@
         ],
         "title": "Portrait Photography Techniques",
         "description": "Master the art of capturing stunning portraits.",
-        "price": 54.99,
+        "price": 549000,
         "author": "Matthew Turner"
     },
     {
@@ -257,7 +257,7 @@
         ],
         "title": "Personal Finance Management",
         "description": "Learn to manage personal finances effectively.",
-        "price": 59.99,
+        "price": 599000,
         "author": "Anna Carter"
     },
     {
@@ -267,7 +267,7 @@
         ],
         "title": "Content Marketing Strategies for Success",
         "description": "Develop effective content marketing strategies.",
-        "price": 29.99,
+        "price": 299000,
         "author": "Carlos Rodriguez"
     },
     {
@@ -276,7 +276,7 @@
         ],
         "title": "Advanced Photography: Lighting Techniques",
         "description": "Master advanced lighting techniques in photography.",
-        "price": 34.99,
+        "price": 349000,
         "author": "Sophia Turner"
     },
     {
@@ -287,7 +287,7 @@
         ],
         "title": "Cardio Workouts for a Healthy Heart",
         "description": "Get fit with effective cardio workouts.",
-        "price": 19.99,
+        "price": 199000,
         "author": "Daniel White"
     },
     {
@@ -296,7 +296,7 @@
         ],
         "title": "Online Advertising: Strategies for Success",
         "description": "Create impactful online advertising campaigns.",
-        "price": 29.99,
+        "price": 299000,
         "author": "Eva Green"
     },
     {
@@ -307,7 +307,7 @@
         ],
         "title": "Product Management Essentials",
         "description": "Master the essentials of product management.",
-        "price": 34.99,
+        "price": 349000,
         "author": "Mark Robinson"
     },
     {
@@ -317,7 +317,7 @@
         ],
         "title": "Healthy Eating: Nutrition for Well-being",
         "description": "Understand the importance of nutrition for a healthy life.",
-        "price": 49.99,
+        "price": 499000,
         "author": "Laura Thompson"
     },
     {
@@ -328,7 +328,7 @@
         ],
         "title": "Advanced Music Composition Techniques",
         "description": "Explore advanced techniques in music composition.",
-        "price": 44.99,
+        "price": 449000,
         "author": "Robert Harris"
     },
     {
@@ -338,7 +338,7 @@
         ],
         "title": "Piano Techniques for Beginners",
         "description": "Learn the basics of playing the piano.",
-        "price": 39.99,
+        "price": 399000,
         "author": "Grace Lee"
     },
     {
@@ -347,7 +347,7 @@
         ],
         "title": "Mixing and Mastering: Music Production",
         "description": "Learn the art of mixing and mastering music.",
-        "price": 54.99,
+        "price": 549000,
         "author": "Matthew Turner"
     },
     {
@@ -358,7 +358,7 @@
         ],
         "title": "Advanced Python Data Science",
         "description": "Explore advanced data science concepts using Python.",
-        "price": 59.99,
+        "price": 599000,
         "author": "Anna Carter"
     }
 ]

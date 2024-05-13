@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('course_id');
             $table->unsignedBigInteger('user_id');
-            $table->integer('rating');
+            $table->integer('rating')->nullable();
             $table->text('content');
 
             // Foreign keys

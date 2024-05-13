@@ -10,7 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
  * * @OA\Info(
  *     version="1.0",
  *     title="Udemy API",
- *     description="BY ĐẶNG HỮU TẤN SIÊU CẤP VŨ TRỤ ",
+ *     description="BY Phan Văn Tuấn ",
  *     @OA\Contact(name="Swagger API Team")
  * ),
  * @OA\SecurityScheme(

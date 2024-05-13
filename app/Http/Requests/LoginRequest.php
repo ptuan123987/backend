@@ -2,6 +2,8 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\ProvinceDistricRule;
+use App\Rules\TuNguVanHoa;
 use Illuminate\Foundation\Http\FormRequest;
 use OpenApi\Annotations as OA;
 
@@ -32,7 +34,31 @@ class LoginRequest extends FormRequest
     {
         return [
             "email" => "required|email",
+            new TuNguVanHoa(),
+            new ProvinceDistricRule($this->province),
             "password" => "required|min:8|regex:/^(?=.*[A-Z])(?=.*\d).+$/",
+        ];
+    }
+   /**
+     * Get custom messages for validator errors.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [ 'required' => "Truong :attributes meo dung dau ban ei",
+        'password.min' =>'password qua ngan'];
+    }
+
+    /**
+     * Get custom attributes for validator errors.
+     *
+     * @return array
+     */
+    public function attributes()
+    {
+        return [
+            'email' => 'Tai khoan email'
         ];
     }
 }

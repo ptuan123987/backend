@@ -11,6 +11,7 @@ use App\Models\User;
 use App\Traits\HttpResponses;
 use App\Services\AuthService;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use OpenApi\Annotations as OA;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
@@ -167,7 +168,6 @@ class AuthController extends Controller
 
         $user = JWTAuth::parseToken()->authenticate();
         $userId = $user->id;
-
         $updated = User::where('id', $userId)->update([
             'display_name' => $request['display_name'],
             'email' => $request['email'],

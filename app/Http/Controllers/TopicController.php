@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\CourseResource;
 use App\Models\Topic;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreTopicRequest;
@@ -20,7 +21,7 @@ class TopicController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('jwt.admin', ['except' => ['index','show']]);
+        $this->middleware('jwt.admin', ['except' => ['index','show','getCourses']]);
     }
     /**
      * Display a listing of topics.

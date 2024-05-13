@@ -9,7 +9,7 @@ class Lecture extends Model
 {
     public $timestamps = false;
     use HasFactory;
-    protected $fillable = ['chapter_id', 'title'];
+    protected $fillable = ['chapter_id', 'title','created_at','updated_at'];
 
     public function chapter()
     {

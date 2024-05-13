@@ -29,10 +29,9 @@ class LectureResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'chapter_id' => $this->chapter_id,
             'title' => $this->title,
-            'resources' => LectureResourceResource::collection($this->whenLoaded('resources')),
             'video' => new LectureVideoResource($this->whenLoaded('video')),
+            'resources' => LectureResourceResource::collection($this->whenLoaded('resources')),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

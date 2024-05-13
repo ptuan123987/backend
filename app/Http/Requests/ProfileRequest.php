@@ -31,7 +31,7 @@ class ProfileRequest extends FormRequest
     {
         return [
             'display_name' => 'string|max:255',
-            'email' => 'email|unique:users,email,' ,
+            'email' => 'email' ,
         ];
     }
 }

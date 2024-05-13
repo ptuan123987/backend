@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "aws/aws-sdk-php": "^3.303",
         "darkaonline/l5-swagger": "^8.5",
         "doctrine/annotations": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
@@ -19,7 +20,9 @@
         "laravel/socialite": "^5.11",
         "laravel/tinker": "^2.8",
         "league/flysystem-aws-s3-v3": "^3.22",
+        "payos/payos": "^1.0",
         "pbmedia/laravel-ffmpeg": "^8.3",
+        "php-ffmpeg/php-ffmpeg": "^1.2",
         "socialiteproviders/github": "^4.1",
         "socialiteproviders/google": "^4.1",
         "socialiteproviders/zalo": "^5.0",

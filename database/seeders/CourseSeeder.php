@@ -17,6 +17,7 @@ class CourseSeeder extends Seeder
                 'description' => $courseData['description'],
                 'price' => $courseData['price'],
                 'author' => $courseData['author'],
+                'thumbnail_url' => "https://d1fi0jbb8q8r9s.cloudfront.net/thumbnails/Screenshot+2024-03-17+141815.png",
             ]);
 
             // Attach categories to the course

@@ -2,7 +2,7 @@
     "openapi": "3.0.0",
     "info": {
         "title": "Udemy API",
-        "description": "BY ĐẶNG HỮU TẤN SIÊU CẤP VŨ TRỤ ",
+        "description": "BY Phan Văn Tuấn ",
         "contact": {
             "name": "Swagger API Team"
         },
@@ -563,12 +563,7 @@
                     "404": {
                         "description": "Category not found"
                     }
-                },
-                "security": [
-                    {
-                        "bearerAuth": []
-                    }
-                ]
+                }
             }
         },
         "/api/categories/{categoryId}/courses/{courseId}": {
@@ -2380,12 +2375,12 @@
             "WishlistRequest": {
                 "title": "Wishlist Request",
                 "required": [
-                    "course_name"
+                    "course_id"
                 ],
                 "properties": {
-                    "course_name": {
-                        "description": "Name of the course in the wishlist.",
-                        "type": "string"
+                    "course_id": {
+                        "description": "id of the course in the wishlist.",
+                        "type": "integer"
                     }
                 },
                 "type": "object"

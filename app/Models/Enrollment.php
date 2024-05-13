@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Enrollment extends Model
 {
+    public $timestamps = false;
+
     use HasFactory;
     protected $fillable = ['user_id', 'course_id', 'status'];
 

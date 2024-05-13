@@ -6,6 +6,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 use App\Http\Resources\CategoryResource;
 use App\Http\Resources\CourseReviewResource;
 use App\Http\Resources\ChapterResource;
+use App\Models\Enrollment;
 
 /**
  * @OA\Schema(
@@ -35,6 +36,7 @@ class CourseResource extends JsonResource
             'reviews' => CourseReviewResource::collection($this->whenLoaded('reviews')),
             'chapters' => ChapterResource::collection($this->whenLoaded('chapters')),
             'total_video_duration' => $this->when(isset($this->total_video_duration), $this->total_video_duration),
+            'user_count' =>  Enrollment::where('course_id', 25)->distinct('user_id')->count(),
         ];
     }
 }

@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -23,7 +22,8 @@ class User extends Authenticatable implements JWTSubject
         'email',
         'password',
         'role',
-        'created_at'
+        'created_at',
+        'updated_at'
     ];
 
     /**
@@ -66,7 +66,6 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-    // return boolean  isAdmin
     public function isAdmin()
     {
         return $this->role === 'admin';
@@ -85,5 +84,9 @@ class User extends Authenticatable implements JWTSubject
     public function enrollments()
     {
         return $this->hasMany(Enrollment::class, 'user_id');
+    }
+
+    public function login_records() {
+        return $this->hasMany(LoginRecords::class,'user_id');
     }
 }

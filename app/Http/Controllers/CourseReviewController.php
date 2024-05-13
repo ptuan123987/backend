@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\CourseReviewRequest; // Assuming this request file exists for validation
-use App\Http\Resources\CourseReviewResource; // Assuming this resource file exists for JSON response formatting
+use App\Http\Requests\CourseReviewRequest;
+use App\Http\Resources\CourseReviewResource;
 use App\Models\CourseReview;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Log;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 class CourseReviewController extends Controller
@@ -17,7 +18,7 @@ class CourseReviewController extends Controller
         $this->middleware('auth:api');
     }
 
-        /**
+    /**
      * @OA\Get(
      *  path="/api/user/course-reviews",
      *  summary="Get a list of course reviews",
@@ -51,9 +52,11 @@ class CourseReviewController extends Controller
     {
         $pageNum = $request->input('pageNum', 1);
         $pageSize = $request->input('pageSize', 15);
-        $user = JWTAuth::parseToken()->authenticate();
-
-        $courseReviews = CourseReview::with('course', 'user')->where('user_id', $user->id)->paginate($pageSize, ['*'], 'page', $pageNum);
+        $courseId = $request->input('course_id');
+        $courseReviews = CourseReview::with('course')
+            ->where('course_id', $courseId)
+            ->orderBy('created_at', 'desc')
+            ->paginate($pageSize, ['*'], 'page', $pageNum);
 
         return CourseReviewResource::collection($courseReviews);
     }
@@ -87,6 +90,17 @@ class CourseReviewController extends Controller
             'rating' => $validated['rating'],
             'content' => $validated['content']
         ]);
+
+        if(isset($validated['parent_comment_id'])) {
+            $parentComment = CourseReview::findOrFail($validated['parent_comment_id']);
+            $nestedComment = new CourseReview([
+                'course_id' => $validated['course_id'],
+                'user_id' => $user->id,
+                'rating' => $validated['rating'],
+                'content' => $validated['content']
+            ]);
+            $parentComment->replies()->save($nestedComment);
+        }
 
         return new CourseReviewResource($courseReview);
     }

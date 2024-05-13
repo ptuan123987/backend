@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use App\Jobs\PutImageToS3;
+use App\Models\Enrollment;
 
 /**
  * @OA\Tag(
@@ -62,8 +63,9 @@ class CourseController extends Controller
         $pageSize = $request->input('pageSize', 15);
 
         $courses = Course::paginate($pageSize, ['*'], 'page', $pageNum);
-
-        return CourseResource::collection($courses);
+        return response()->json([
+            CourseResource::collection($courses)
+        ]);
     }
 
 
@@ -151,6 +153,7 @@ class CourseController extends Controller
             return $carry;
         }, 0);
     return $totalDuration;
+
     }
     public function show($course_id)
     {
@@ -312,7 +315,7 @@ class CourseController extends Controller
             return response()->json(['message' => 'Course not found'], 404);
         }
 
-        $reviews = $course->reviews()->with('user')->paginate($pageSize, ['*'], 'page', $pageNum);
+        $reviews = $course->reviews()->with('user')->orderBy('created_at', 'desc')->paginate($pageSize, ['*'], 'page', $pageNum);
 
         return CourseReviewResource::collection($reviews);
     }
