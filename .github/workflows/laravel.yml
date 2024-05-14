@@ -8,7 +8,6 @@ on:
 
 jobs:
   laravel-tests:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,9 +24,6 @@ jobs:
 
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
-
-    - name: Update Dependencies
-      run: composer update
 
     - name: Generate Application Key
       run: php artisan key:generate
