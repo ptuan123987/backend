@@ -1,14 +1,4 @@
 FROM elrincondeisma/octane:latest
-
-#-------------------------------------
-RUN sudo apt update && sudo apt install nginx
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
-
-RUN rm /etc/nginx/sites-enabled/default
-COPY nginx/nginx.conf /etc/nginx/sites-available/nginx.conf
-RUN ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
-
-#------------------------------------
 RUN curl -sS https://getcomposer.org/installer​ | php -- \
      --install-dir=/usr/local/bin --filename=composer
 
