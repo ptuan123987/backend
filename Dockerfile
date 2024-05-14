@@ -1,7 +1,7 @@
 FROM elrincondeisma/octane:latest
 
 #-------------------------------------
-RUN apt-get update && apt-get install -y nginx
+RUN sudo apt update && sudo apt install nginx
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
 RUN rm /etc/nginx/sites-enabled/default
