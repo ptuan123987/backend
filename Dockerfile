@@ -2,12 +2,11 @@ FROM elrincondeisma/octane:latest
 
 #-------------------------------------
 RUN apt-get update && apt-get install -y nginx
-
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
 RUN rm /etc/nginx/sites-enabled/default
-COPY laravel.conf /etc/nginx/sites-available/
-RUN ln -s /etc/nginx/sites-available/laravel.conf /etc/nginx/sites-enabled/
+COPY nginx/nginx.conf /etc/nginx/sites-available/nginx.conf
+RUN ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
 
 #------------------------------------
 RUN curl -sS https://getcomposer.org/installer​ | php -- \
