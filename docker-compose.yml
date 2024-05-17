@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  laravel-app:
+    build:
+      args:
+        user: tuanphan
+        uid: 1000
+      context: .
+    container_name: laravel-app
+    volumes:
+      - .:/home/source/main
+    working_dir: /home/source/main
+
+  nginx:
+    build:
+      context: ./nginx1
+    container_name: todo-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - laravel-app
+    volumes:
+      - .:/home/source/main
+
+volumes:
+  mysql-volumes:
+
+networks:
+  default:
+    name: laravel-app-network
