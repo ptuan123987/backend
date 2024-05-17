@@ -39,7 +39,6 @@ RUN docker-php-ext-install zip
 RUN docker-php-ext-install bcmath
 RUN docker-php-ext-install sockets
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-### End Init install
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mysql
 
@@ -49,7 +48,6 @@ COPY . .
 COPY composer.json .
 COPY composer.lock .
 COPY .env.example .env
-# Create a dummy artisan file
 RUN touch artisan
 
 RUN composer update

@@ -10,8 +10,6 @@ services:
     volumes:
       - .:/home/source/main
     working_dir: /home/source/main
-    environment:
-      - NGINX_HOST=nginx
 
   nginx:
     build:
@@ -20,7 +18,14 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    volumes:
-      - .:/home/source/main
     depends_on:
       - laravel-app
+    volumes:
+      - .:/home/source/main
+
+volumes:
+  mysql-volumes:
+
+networks:
+  default:
+    name: laravel-app-network
