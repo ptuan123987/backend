@@ -10,6 +10,7 @@ use App\Http\Controllers\LectureController;
 use App\Http\Controllers\ChapterController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\PasswordResetController;
+use App\Http\Controllers\PayOS\CheckoutController;
 use App\Http\Controllers\SocialAccountController;
 use App\Http\Controllers\TopicController;
 use App\Http\Controllers\CourseReviewController;
@@ -101,6 +102,8 @@ Route::group([
     Route::put('/edit-profile',[AuthController::class,'editProfile']);
     Route::get('/paid-courses',[PaidCourseController::class,'index']);
     Route::post('/check-out/momo', [PaymentController::class,'momoPayment']);
+
+    Route::post('/create-payment-link', [CheckoutController::class, 'createPaymentLink']);
     Route::get('/check-out/success',[PaymentController::class,'handleSuccessPayment']);
     Route::post('/check-out/vn-pay',[PaymentController::class,'vnPayment']);
 });
@@ -135,4 +138,16 @@ Route::group([
     Route::get('/analytics/yearly-revenue/{years?}',[AnalyticRevenueController::class,'revenueYearly']);
     Route::apiResource('/users',UserController::class);
 
+});
+
+// Route::post('/create-payment-link', [CheckoutController::class, 'createPaymentLink']);
+
+Route::prefix('/order')->group(function () {
+    Route::post('/create', [\App\Http\Controllers\PayOS\OrderController::class, 'createOrder']);
+    Route::get('/{id}', [\App\Http\Controllers\PayOS\OrderController::class, 'getPaymentLinkInfoOfOrder']);
+    Route::put('/{id}', [\App\Http\Controllers\PayOS\OrderController::class, 'cancelPaymentLinkOfOrder']);
+});
+
+Route::prefix('/payment')->group(function () {
+    Route::post('/payos', [\App\Http\Controllers\PayOS\PaymentPayOsController::class, 'handlePayOSWebhook']);
 });

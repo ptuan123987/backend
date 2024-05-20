@@ -36,7 +36,7 @@ class CourseResource extends JsonResource
             'reviews' => CourseReviewResource::collection($this->whenLoaded('reviews')),
             'chapters' => ChapterResource::collection($this->whenLoaded('chapters')),
             'total_video_duration' => $this->when(isset($this->total_video_duration), $this->total_video_duration),
-            'user_count' =>  Enrollment::where('course_id', 25)->distinct('user_id')->count(),
+            'user_count' =>  Enrollment::where('course_id',  $this->id)->distinct('user_id')->count(),
         ];
     }
 }

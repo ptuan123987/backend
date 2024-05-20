@@ -1,20 +1,11 @@
 <?php
 
-namespace App\PayOS\Utils;
-
-/**
- * PayOSSignatureUtils
- *
- * @package PayOS\Utils
- */
-class PayOSSignatureUtils
-{
-    public static function createSignatureFromObj($checksumKey, $obj)
-    {
+class SignatureUtils {
+    public static function createSignatureFromObj($checksumKey, $obj) {
         ksort($obj);
         $queryStrArr = [];
         foreach ($obj as $key => $value) {
-            if ($value === "undefined" || $value === "null" || gettype($value) == "NULL") {
+            if (in_array($value, ["undefined", "null"]) || gettype($value) == "NULL") {
                 $value = "";
             }
 
@@ -23,7 +14,7 @@ class PayOSSignatureUtils
                     ksort($ele);
                     return $ele;
                 }, $value);
-                $value = json_encode($valueSortedElementObj, JSON_UNESCAPED_UNICODE);
+                $value = json_encode($valueSortedElementObj);
             }
             $queryStrArr[] = $key . "=" . $value;
         }
@@ -32,8 +23,7 @@ class PayOSSignatureUtils
         return $signature;
     }
 
-    public static function createSignatureOfPaymentRequest($checksumKey, $obj)
-    {
+    public static function createSignaturePaymentRequest($checksumKey, $obj) {
         $dataStr = "amount={$obj["amount"]}&cancelUrl={$obj["cancelUrl"]}&description={$obj["description"]}&orderCode={$obj["orderCode"]}&returnUrl={$obj["returnUrl"]}";
         $signature = hash_hmac("sha256", $dataStr, $checksumKey);
         return $signature;

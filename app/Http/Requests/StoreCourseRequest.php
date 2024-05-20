@@ -50,5 +50,4 @@ class StoreCourseRequest extends FormRequest
         ];
     }
 
-    // Optionally, you could add custom messages or validation attribute names if necessary
 }

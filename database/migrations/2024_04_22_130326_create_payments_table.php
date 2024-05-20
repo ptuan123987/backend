@@ -19,7 +19,7 @@ return new class extends Migration
             $table->enum('status', ['0', '1'])->default('0');
             $table->string('payment_type');
             $table->decimal('amount', 10, 2);
-            $table->string('token')->unique()->nullable();
+            $table->string('token')->nullable();
             $table->timestamps();
         });
     }
