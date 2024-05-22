@@ -360,5 +360,146 @@
         "description": "Explore advanced data science concepts using Python.",
         "price": 599000,
         "author": "Anna Carter"
-    }
+    },
+        {
+            "category_ids": [1, 2],
+            "title": "Advanced JavaScript",
+            "description": "Dive deep into advanced concepts of JavaScript.",
+            "price": 399000,
+            "author": "Alice Johnson"
+        },
+        {
+            "category_ids": [1, 3],
+            "title": "Full-Stack Development",
+            "description": "Become a full-stack developer with this comprehensive course.",
+            "price": 599000,
+            "author": "Robert Brown"
+        },
+        {
+            "category_ids": [4, 5],
+            "title": "Machine Learning with Python",
+            "description": "Introduction to machine learning using Python.",
+            "price": 499000,
+            "author": "Emily Davis"
+        },
+        {
+            "category_ids": [4, 6],
+            "title": "Data Structures and Algorithms",
+            "description": "Learn essential data structures and algorithms.",
+            "price": 349000,
+            "author": "Michael Wilson"
+        },
+        {
+            "category_ids": [7],
+            "title": "Digital Marketing 101",
+            "description": "Learn the basics of digital marketing.",
+            "price": 199000,
+            "author": "Linda Taylor"
+        },
+        {
+            "category_ids": [1, 4],
+            "title": "React and Redux",
+            "description": "Master React and Redux for modern web development.",
+            "price": 459000,
+            "author": "Chris Martin"
+        },
+        {
+            "category_ids": [4],
+            "title": "Introduction to Data Science",
+            "description": "An introductory course to data science.",
+            "price": 399000,
+            "author": "Barbara Clark"
+        },
+        {
+            "category_ids": [1],
+            "title": "HTML & CSS Fundamentals",
+            "description": "Learn the fundamentals of HTML and CSS.",
+            "price": 299000,
+            "author": "David Lee"
+        },
+        {
+            "category_ids": [5, 8],
+            "title": "Deep Learning with TensorFlow",
+            "description": "Advanced course on deep learning with TensorFlow.",
+            "price": 599000,
+            "author": "James Lewis"
+        },
+        {
+            "category_ids": [3, 7],
+            "title": "SEO Mastery",
+            "description": "Become an expert in search engine optimization.",
+            "price": 399000,
+            "author": "Patricia Walker"
+        },
+        {
+            "category_ids": [2, 6],
+            "title": "Java Programming",
+            "description": "Comprehensive guide to Java programming.",
+            "price": 449000,
+            "author": "Thomas Young"
+        },
+        {
+            "category_ids": [3, 7],
+            "title": "Social Media Marketing",
+            "description": "Learn how to effectively market on social media.",
+            "price": 259000,
+            "author": "Susan Allen"
+        },
+        {
+            "category_ids": [4, 5],
+            "title": "Python for Data Analysis",
+            "description": "Analyze data effectively using Python.",
+            "price": 479000,
+            "author": "Jessica Scott"
+        },
+        {
+            "category_ids": [6],
+            "title": "C++ for Beginners",
+            "description": "Learn the basics of C++ programming.",
+            "price": 329000,
+            "author": "Kevin King"
+        },
+        {
+            "category_ids": [7, 8],
+            "title": "Content Marketing Strategies",
+            "description": "Develop effective content marketing strategies.",
+            "price": 369000,
+            "author": "Mark Harris"
+        },
+        {
+            "category_ids": [1, 3],
+            "title": "Node.js and Express",
+            "description": "Build server-side applications with Node.js and Express.",
+            "price": 499000,
+            "author": "Nancy White"
+        },
+        {
+            "category_ids": [2, 6],
+            "title": "Android App Development",
+            "description": "Learn to develop Android apps from scratch.",
+            "price": 549000,
+            "author": "Brian Robinson"
+        },
+        {
+            "category_ids": [3, 5],
+            "title": "Big Data with Hadoop",
+            "description": "Master big data technologies using Hadoop.",
+            "price": 599000,
+            "author": "Laura Martinez"
+        },
+        {
+            "category_ids": [1, 2],
+            "title": "Vue.js Essentials",
+            "description": "Learn the essentials of Vue.js for front-end development.",
+            "price": 389000,
+            "author": "Jason Rodriguez"
+        },
+        {
+            "category_ids": [5],
+            "title": "Data Visualization with D3.js",
+            "description": "Create stunning data visualizations with D3.js.",
+            "price": 439000,
+            "author": "Sarah Wright"
+        }
+
 ]

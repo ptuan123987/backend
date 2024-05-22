@@ -41,8 +41,6 @@ class PaymentController extends Controller
             'course_ids' => $course_ids,
         ], 200);
     }
-
-
     public function momoPayment(MomoRequest $request)
     {
         $courses = $request->course_ids;
