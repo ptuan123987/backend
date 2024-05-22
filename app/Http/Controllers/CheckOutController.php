@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\PayOS;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\PayOSRequest;
 use App\Models\Payment;
 use App\Models\Course;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use PayOS\PayOS;
 use Illuminate\Support\Str;

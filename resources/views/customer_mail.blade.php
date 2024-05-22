@@ -4,6 +4,6 @@
 
 
     Regards,
-    Tấn Đặng Udemy
+    Viet Udemy
 
 @endcomponent

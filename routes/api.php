@@ -5,12 +5,12 @@ use App\Http\Controllers\Auth\AdminController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ChangePasswordController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\LectureController;
 use App\Http\Controllers\ChapterController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\PasswordResetController;
-use App\Http\Controllers\PayOS\CheckoutController;
 use App\Http\Controllers\SocialAccountController;
 use App\Http\Controllers\TopicController;
 use App\Http\Controllers\CourseReviewController;
@@ -140,14 +140,3 @@ Route::group([
 
 });
 
-// Route::post('/create-payment-link', [CheckoutController::class, 'createPaymentLink']);
-
-Route::prefix('/order')->group(function () {
-    Route::post('/create', [\App\Http\Controllers\PayOS\OrderController::class, 'createOrder']);
-    Route::get('/{id}', [\App\Http\Controllers\PayOS\OrderController::class, 'getPaymentLinkInfoOfOrder']);
-    Route::put('/{id}', [\App\Http\Controllers\PayOS\OrderController::class, 'cancelPaymentLinkOfOrder']);
-});
-
-Route::prefix('/payment')->group(function () {
-    Route::post('/payos', [\App\Http\Controllers\PayOS\PaymentPayOsController::class, 'handlePayOSWebhook']);
-});
