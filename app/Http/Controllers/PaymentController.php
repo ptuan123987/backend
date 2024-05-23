@@ -45,7 +45,9 @@ class PaymentController extends Controller
     {
         $courses = $request->course_ids;
         $user = JWTAuth::parseToken()->authenticate();
-        $redirectUrl = "http://localhost:3000/user/check-out/success";
+        // $redirectUrl = "http://localhost:3000/user/check-out/success";
+        $redirectUrl = "http://13.229.208.74/user/check-out/success";
+
 
         $token = Str::random(32);
 
@@ -85,7 +87,7 @@ class PaymentController extends Controller
         $secretKey = 'at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa';
         $orderInfo = "Thanh toán qua MoMo";
         $orderId = time() . "";
-        $ipnUrl = "http://localhost:8000/api/user/check-out/success";
+        $ipnUrl = "http://13.229.85.161/api/user/check-out/success";
         $requestId = time() . "";
         $requestType = "payWithATM";
         $extraData = "extraData";
