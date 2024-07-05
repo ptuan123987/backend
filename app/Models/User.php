@@ -89,4 +89,7 @@ class User extends Authenticatable implements JWTSubject
     public function login_records() {
         return $this->hasMany(LoginRecords::class,'user_id');
     }
+    public function schedule_learning_reminders() {
+        return $this->hasMany(ScheduleLearningReminder::class,'user_id');
+    }
 }

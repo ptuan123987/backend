@@ -16,10 +16,8 @@ class CheckoutController extends Controller
 {
     public function createPaymentLink(PayOSRequest $request)
     {
-        $YOUR_DOMAIN = "http://13.229.208.74/";
-        // $returnUrl = "http://localhost:3000/user/check-out/success";
-        $returnUrl = "http://13.229.208.74/user/check-out/success";
-
+        $YOUR_DOMAIN = "http://localhost:3000";
+        $returnUrl = "http://localhost:3000/user/check-out/success";
 
         $user = JWTAuth::parseToken()->authenticate();
 

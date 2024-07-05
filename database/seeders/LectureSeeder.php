@@ -19,7 +19,7 @@ class LectureSeeder extends Seeder
         $data = json_decode($jsonData, true);
 
         $lecture_ids = [];
-        $video_thumbnail = "https://d1fi0jbb8q8r9s.cloudfront.net/videos/thumbnails/thumbnail-1713425046.jpg";
+        $video_thumbnail = "https://d1bos1fs7g1uv3.cloudfront.net/thumbnails/anh405.png";
         $video_url = "https://d1fi0jbb8q8r9s.cloudfront.net/videos/6620ca93bf03f_React+App+-+Google+Chrome+2023-12-25+14-06-38.mp4";
         $video_duration =13.28;
         $chapter_ids = DB::table('chapters')->pluck('id')->toArray();

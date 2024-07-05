@@ -18,6 +18,7 @@ use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\LoginRecordsController;
 use App\Http\Controllers\PaidCourseController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ScheduleLearningReminderController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\UploadController;
@@ -106,6 +107,9 @@ Route::group([
     Route::post('/create-payment-link', [CheckoutController::class, 'createPaymentLink']);
     Route::get('/check-out/success',[PaymentController::class,'handleSuccessPayment']);
     Route::post('/check-out/vn-pay',[PaymentController::class,'vnPayment']);
+    Route::put('/set-schedule-reminder', [ScheduleLearningReminderController::class, 'update']);
+    Route::post('/set-schedule-reminder', [ScheduleLearningReminderController::class, 'store']);
+    Route::get('/get-schedule-reminder',[ScheduleLearningReminderController::class,'fetchScheduleByUser']);
 });
 
 // admin
@@ -137,6 +141,6 @@ Route::group([
     Route::get('/analytics/monthly-revenue/{months?}',[AnalyticRevenueController::class,'revenueMonthly']);
     Route::get('/analytics/yearly-revenue/{years?}',[AnalyticRevenueController::class,'revenueYearly']);
     Route::apiResource('/users',UserController::class);
-
 });
+
 
